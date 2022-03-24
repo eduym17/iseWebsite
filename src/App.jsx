@@ -9,7 +9,7 @@ function App() {
           <span className="text-ise-sky bg-sungradient-o"> ya estaría</span>
         </h1>
         <h1 className="font-Cabin font-medium text-5xl bg-skygradient-b">
-          Cabin medium
+          Cabin mediums
         </h1>
         <h1 className="font-Cabin font-semibold text-5xl bg-skygradient-s">
           Cabin semibold
