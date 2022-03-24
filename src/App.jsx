@@ -4,13 +4,14 @@ function App() {
   return (
     <div className="bg-slate-900 text-slate-50 h-screen">
       <div className="Cabin">
-        <h1 className="font-Cabin font-regular text-5xl">
-          Cabin regular
+        <h1 className="font-Cabin font-regular text-5xl text-ise-orange bg-sungradient-y">
+          Y pues
+          <span className="text-ise-sky bg-sungradient-o"> ya estaría</span>
         </h1>
-        <h1 className="font-Cabin font-medium text-5xl">
+        <h1 className="font-Cabin font-medium text-5xl bg-skygradient-b">
           Cabin medium
         </h1>
-        <h1 className="font-Cabin font-semibold text-5xl">
+        <h1 className="font-Cabin font-semibold text-5xl bg-skygradient-s">
           Cabin semibold
         </h1>
         <h1 className="font-Cabin font-bold text-5xl">

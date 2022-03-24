@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .bg-sungradient-y {
+    @apply bg-gradient-to-r from-ise-yellow via-ise-orange to-ise-orange
+  }
+  .bg-sungradient-o {
+    @apply bg-gradient-to-l from-ise-yellow via-ise-orange to-ise-orange
+  }
+  .bg-skygradient-b {
+    @apply bg-gradient-to-r from-ise-blue to-ise-sky
+  }
+  .bg-skygradient-s {
+    @apply bg-gradient-to-l from-ise-blue to-ise-sky
+  }
+}
+
 @font-face {
   font-family: 'Cabin';
   src: local('cabin-regular'), url(assets/fonts/cabin/cabin-regular.ttf) format('ttf');
