@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Cabin';
+  src: local('cabin-regular'), url(assets/fonts/cabin/cabin-regular.ttf) format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: local('cabin-medium'), url(assets/fonts/cabin/cabin-medium.ttf) format('ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: local('cabin-semibold'), url(assets/fonts/cabin/cabin-semibold.ttf) format('ttf');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: local('cabin-bold'), url(assets/fonts/cabin/cabin-bold.ttf) format('ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Hero';
+  src: local('hero-light'), url(assets/fonts/hero/hero-light.ttf) format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Hero';
+  src: local('hero-regular'), url(assets/fonts/hero/hero-regular.ttf) format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Hero';
+  src: local('hero-bold'), url(assets/fonts/hero/hero-bold.ttf) format('ttf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Bariol';
+  src: local('bariol-thin'), url(assets/fonts/bariol/bariol-thin.ttf) format('ttf');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Bariol';
+  src: local('bariol-light'), url(assets/fonts/bariol/bariol-light.ttf) format('ttf');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Bariol';
+  src: local('bariol-regular'), url(assets/fonts/bariol/bariol-regular.ttf) format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Bariol';
+  src: local('bariol-bold'), url(assets/fonts/bariol/bariol-bold.ttf) format('ttf');
+  font-weight: 700;
+}
