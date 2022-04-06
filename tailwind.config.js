@@ -16,6 +16,8 @@ module.exports = {
             10: '#E1E2E2',
             20: '#D3D3D4',
             30: '#2B2C2C',
+            40: '#F0F0F0',
+            50: '#C4C4C4',
           },
           blue: '#015EEA',
           sky: '#00C0FA',
