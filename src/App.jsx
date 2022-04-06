@@ -7,6 +7,8 @@ import pemexIcon from './assets/icons/clients/pemex-logo.png';
 import toyotaIcon from './assets/icons/clients/toyota-logo.png';
 import electricaImgMobile from './assets/images/mobile-energia-electrica.png';
 import termicaImgMobile from './assets/images/mobile-energia-termica.png';
+import financiamientoIcon from './assets/icons/financiamiento-icon.png';
+import epcIcon from './assets/icons/epc-icon.png';
 
 function App() {
   return (
@@ -60,35 +62,76 @@ function App() {
         <p className="font-Hero text-xs text-center pb-2 w-4/5">
           Instala un sistema de calentamiento solar que te ayude a disminuir tu consumo de gas.
         </p>
-        <button type="button" className="font-bold py-1.5 px-6 bg-ise-orange hover:bg-sungradient-o active:bg-sungradient-o text-ise-gray-10 hover:text-ise-white active:text-ise-white rounded-full my-4">
-          Ponte en contacto
+        <button type="button" className="font-bold py-1.5 px-6 bg-ise-orange hover:bg-sungradient-o active:bg-sungradient-o text-ise-gray-10 hover:text-ise-white active:text-ise-white rounded-full my-4 mb-8">
+          Conoce más
         </button>
       </div>
-      <div className="Cabin">
-        <h1 className="font-Cabin font-regular text-5xl text-ise-orange bg-sungradient-y">
-          Y pues
-          <span className="text-ise-sky bg-sungradient-o"> ya estaría</span>
-        </h1>
-        <h1 className="font-Cabin font-medium text-5xl bg-skygradient-b">
-          Cabin mediums
-        </h1>
-        <h1 className="font-Cabin font-semibold text-5xl bg-skygradient-s">
-          Cabin semibold
-        </h1>
-        <h1 className="font-Cabin font-bold text-5xl">
-          Cabin bold
-        </h1>
+      <div className="experienceSection bg-sungradient-y text-ise-white flex flex-wrap gap-x-4 justify-center items-center py-3">
+        <div className="flex items-center gap-1">
+          <span className="text-4xl font-bold">+25 </span>
+          <div>
+            <p className="leading-none font-Hero text-sm">
+              clientes
+              <br />
+              satisfechos
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center gap-1">
+          <span className="text-4xl font-bold">+25 </span>
+          <div>
+            <p className="leading-none font-Hero text-sm">
+              proyectos
+              <br />
+              terminados
+            </p>
+          </div>
+        </div>
+        <div className="flex items-center gap-1">
+          <span className="text-4xl font-bold">+3 </span>
+          <div>
+            <p className="leading-none font-Hero text-sm">
+              MegaWatts
+              <br />
+              instalados
+            </p>
+          </div>
+        </div>
       </div>
-      <div className="Hero">
-        <h1 className="font-Hero font-light text-5xl">
-          Hero light
-        </h1>
-        <h1 className="font-Hero font-regular text-5xl">
-          Hero regular
-        </h1>
-        <h1 className="font-Hero font-bold text-5xl">
-          Hero bold
-        </h1>
+      <div className="servicesSection bg-ise-gray-10 flex flex-col items-center">
+        <p className="text-3xl font-bold text-center pt-8 w-4/5">
+          Nuestros
+          <span className="text-ise-orange"> servicios</span>
+        </p>
+        <p className="font-Hero text-xs text-center pt-2 pb-7 w-4/5">
+          Servicios diseñados para ayudarte a potenciar tu proyecto, a la medida de tus necesidades.
+        </p>
+        <div className="bg-ise-gray-40 w-[90%] rounded-lg p-2 mb-4">
+          <div className="flex items-center gap-2">
+            <img src={financiamientoIcon} alt="Financiamiento" className="h-8" />
+            <p className="text-2xl font-bold text-left py-1 ">
+              Financiamiento
+            </p>
+          </div>
+          <p className="font-Hero text-xs text-justify py-2 w-full">
+            Llevamos hasta ti diferentes esquemas y fuentes de financiamiento,
+            {' '}
+            de acuerdo con las necesidades y requerimientos de tu proyecto.
+          </p>
+        </div>
+        <div className="bg-ise-gray-40 w-[90%] rounded-lg p-2 mb-4">
+          <div className="flex items-center gap-2">
+            <img src={epcIcon} alt="Financiamiento" className="h-8" />
+            <p className="text-2xl font-bold text-left py-1 ">
+              Financiamiento
+            </p>
+          </div>
+          <p className="font-Hero text-xs text-justify py-2 w-full">
+            Llevamos hasta ti diferentes esquemas y fuentes de financiamiento,
+            {' '}
+            de acuerdo con las necesidades y requerimientos de tu proyecto.
+          </p>
+        </div>
       </div>
     </div>
   );
