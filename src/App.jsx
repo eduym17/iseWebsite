@@ -24,7 +24,7 @@ function App() {
         <img src={menuIcon} alt="menu icon" className="h-7" />
       </div>
       <div className="landingPage bg-ise-gray-10 flex flex-col items-center text-ise-gray-30">
-        <img src={landingImage} alt="sistema fotovoltaico" className="mb-2 w-3/4" />
+        <img src={landingImage} alt="sistema fotovoltaico" className="mb-2 w-3/4 max-w-md" />
         <p className="text-3xl font-bold text-center my-2 w-4/5">
           Los
           <span className="text-ise-orange"> beneficios </span>
