@@ -254,7 +254,7 @@ function App() {
               <img src={arrowOpen} alt="arrow" className="h-3" />
             </div>
           </div>
-          <div className="faqItem bg-ise-orange text-ise-white w-4/5 rounded-lg py-1 px-2 mb-3">
+          <div className="faqItem bg-ise-orange text-ise-white w-4/5 rounded-lg py-1 px-2 mb-10">
             <div className="itemTitle flex justify-between items-center">
               <p className="font-bold">¿Pregunta random de longitud amplia?</p>
               <img src={arrowClose} alt="arrow" className="h-3" />
@@ -270,6 +270,28 @@ function App() {
             </p>
           </div>
         </div>
+      </div>
+      <div className="contactSection bg-ise-orange text-ise-white flex flex-col items-center">
+        <p className="text-3xl font-bold text-center pt-8 w-[95%]">
+          ¿Aún tienes alguna pregunta?
+        </p>
+        <p className="text-2xl font-bold text-center pt-2 w-[95%]">
+          ¡Ponte en contacto con nosotros!
+        </p>
+        <p className="font-Hero text-xs text-center mt-2 mb-2 w-4/5">
+          Acércate a nosotros para poder ofrecerte una solución a la medida de tus necesidades,
+          {' '}
+          escucharemos tus opiniones y buscaremos optimizar tus proyectos.
+        </p>
+        <form action="/" className="w-4/5 mb-8 flex flex-col items-center">
+          <input type="text" name="Name" id="name" placeholder="Tu nombre*" className="font-Hero text-xs text-ise-white bg-transparent border-b-2 w-full my-2 placeholder-ise-white" required />
+          <input type="email" name="E-mail" id="mail" placeholder="Tu correo electrónico*" className="font-Hero text-xs text-ise-white bg-transparent border-b-2 w-full my-2 placeholder-ise-white" required />
+          <input type="tel" name="Phone" id="phone" placeholder="Tu teléfono" className="font-Hero text-xs text-ise-white bg-transparent border-b-2 w-full my-2 placeholder-ise-white" />
+          <textarea name="question" id="question" cols="30" rows="1" placeholder="¡Haz una pregunta!" className="w-full bg-transparent text-ise-white placeholder-ise-white border-b-2 font-Hero text-xs my-2 resize-y" />
+          <button type="submit" className="font-bold py-1.5 px-6 bg-ise-white text-ise-orange rounded-full my-4 self-end">
+            Enviar
+          </button>
+        </form>
       </div>
     </div>
   );
