@@ -31,12 +31,12 @@ function App() {
       </div>
       <div className="landingPage bg-ise-gray-10 flex flex-col items-center text-ise-gray-30">
         <img src={landingImage} alt="sistema fotovoltaico" className="mb-2 w-3/4 max-w-md" />
-        <p className="text-3xl font-bold text-center my-2 w-4/5">
+        <p className="text-3xl font-bold text-center my-2 w-[90%]">
           Los
           <span className="text-ise-orange"> beneficios </span>
           del Sol, siempre a tu alcance
         </p>
-        <p className="font-Hero text-xs text-center py-2 w-4/5">
+        <p className="font-Hero text-xs text-center py-2 w-[90%]">
           Genera tu propia energía y comienza a ahorrar de inmediato,
           {' '}
           tenemos la solución que necesitas.
@@ -51,27 +51,27 @@ function App() {
         <img src={pemexIcon} alt="PEMEX" className="h-10" />
       </div>
       <div className="solutionsSection bg-ise-gray-20 flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-4/5">
+        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
           Nuestras
           <span className="text-ise-orange"> soluciones</span>
         </p>
-        <p className="font-Hero text-xs text-center pt-2 pb-8 w-4/5">
+        <p className="font-Hero text-xs text-center pt-2 pb-8 w-[90%]">
           Tecnologías rentables que te permitirán generar ahorros con el poder del Sol.
         </p>
         <img src={electricaImgMobile} alt="Energía eléctrica" className="w-[90%] rounded-lg" />
-        <p className="text-2xl font-bold text-center py-1 w-4/5">
+        <p className="text-2xl font-bold text-center py-1 w-[90%]">
           Energía
           <span className="text-ise-orange"> eléctrica</span>
         </p>
-        <p className="font-Hero text-xs text-center pb-8 w-4/5">
+        <p className="font-Hero text-xs text-center pb-8 w-[90%]">
           Aprovecha techos, suelos y estacionamientos para generar tu propia energía eléctrica.
         </p>
         <img src={termicaImgMobile} alt="Energía eléctrica" className="w-[90%] rounded-lg" />
-        <p className="text-2xl font-bold text-center py-1 w-4/5">
+        <p className="text-2xl font-bold text-center py-1 w-[90%]">
           Energía
           <span className="text-ise-orange"> térmica</span>
         </p>
-        <p className="font-Hero text-xs text-center pb-2 w-4/5">
+        <p className="font-Hero text-xs text-center pb-2 w-[90%]">
           Instala un sistema de calentamiento solar que te ayude a disminuir tu consumo de gas.
         </p>
         <button type="button" className="font-bold py-1.5 px-6 bg-ise-orange hover:bg-sungradient-o active:bg-sungradient-o text-ise-gray-10 hover:text-ise-white active:text-ise-white rounded-full my-4 mb-8">
@@ -111,11 +111,11 @@ function App() {
         </div>
       </div>
       <div className="servicesSection bg-ise-gray-10 flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-4/5">
+        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
           Nuestros
           <span className="text-ise-orange"> servicios</span>
         </p>
-        <p className="font-Hero text-xs text-center pt-2 pb-7 w-4/5">
+        <p className="font-Hero text-xs text-center pt-2 pb-7 w-[90%]">
           Servicios diseñados para ayudarte a potenciar tu proyecto, a la medida de tus necesidades.
         </p>
         <div className="bg-ise-gray-40 w-[90%] rounded-lg p-2 mb-4">
@@ -163,26 +163,26 @@ function App() {
         </div>
       </div>
       <div className="projectsSection bg-ise-gray-20 flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-4/5">
+        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
           <span className="text-ise-orange">Proyectos </span>
           recientes
         </p>
-        <p className="font-Hero text-xs text-center pt-2 pb-7 w-4/5">
+        <p className="font-Hero text-xs text-center pt-2 pb-7 w-[90%]">
           Soluciones inteligentes, siempre a la medidas de las necesidades de nuestros clientes.
         </p>
-        <div className="mb-4">
+        <div className="mb-4 w-[90%] text-center">
           Esta es la sección del carrusel a la derecha
         </div>
-        <div className="mb-10">
+        <div className="mb-10 w-[90%] text-center">
           Esta es la sección del carrusel a la izquierda
         </div>
       </div>
       <div className="xpSection bg-ise-gray-10 flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-4/5">
+        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
           Nuestra
           <span className="text-ise-orange"> experiencia</span>
         </p>
-        <p className="font-Hero text-xs text-center pt-2 pb-7 w-4/5">
+        <p className="font-Hero text-xs text-center pt-2 pb-7 w-[90%]">
           Somos un equipo de profesionales altamente capacitados para atender los
           {' '}
           proyectos más exigentes.
@@ -213,11 +213,11 @@ function App() {
         </button>
       </div>
       <div className="faqSection bg-ise-gray-20 flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-4/5">
+        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
           Preguntas
           <span className="text-ise-orange"> frecuentes</span>
         </p>
-        <p className="font-Hero text-xs text-center mt-2 mb-2 w-4/5">
+        <p className="font-Hero text-xs text-center mt-2 mb-2 w-[90%]">
           Resuelve tus dudas acerca del funcionamiento de los sistemas solares,
           {' '}
           te compartimos las más frecuentes a continuación.
@@ -227,13 +227,13 @@ function App() {
             Energía
             <span className="text-ise-orange"> eléctrica</span>
           </p>
-          <div className="faqItem bg-ise-gray-50 w-4/5 rounded-full py-1 px-2 mb-3">
+          <div className="faqItem bg-ise-gray-50 w-[90%] rounded-full py-1 px-2 mb-3">
             <div className="itemTitle flex justify-between items-center">
               <p className="font-bold">¿Los sistemas solares usan baterías?</p>
               <img src={arrowOpen} alt="arrow" className="h-3" />
             </div>
           </div>
-          <div className="faqItem bg-ise-orange text-ise-white w-4/5 rounded-lg py-1 px-2 mb-3">
+          <div className="faqItem bg-ise-orange text-ise-white w-[90%] rounded-lg py-1 px-2 mb-3">
             <div className="itemTitle flex justify-between items-center">
               <p className="font-bold">¿Pregunta random de longitud amplia?</p>
               <img src={arrowClose} alt="arrow" className="h-3" />
@@ -254,13 +254,13 @@ function App() {
             Energía
             <span className="text-ise-orange"> térmica</span>
           </p>
-          <div className="faqItem bg-ise-gray-50 w-4/5 rounded-full py-1 px-2 mb-3">
+          <div className="faqItem bg-ise-gray-50 w-[90%] rounded-full py-1 px-2 mb-3">
             <div className="itemTitle flex justify-between items-center">
               <p className="font-bold">¿Los sistemas térmicos funcionan?</p>
               <img src={arrowOpen} alt="arrow" className="h-3" />
             </div>
           </div>
-          <div className="faqItem bg-ise-orange text-ise-white w-4/5 rounded-lg py-1 px-2 mb-10">
+          <div className="faqItem bg-ise-orange text-ise-white w-[90%] rounded-lg py-1 px-2 mb-10">
             <div className="itemTitle flex justify-between items-center">
               <p className="font-bold">¿Pregunta random de longitud amplia?</p>
               <img src={arrowClose} alt="arrow" className="h-3" />
@@ -278,13 +278,13 @@ function App() {
         </div>
       </div>
       <div className="contactSection bg-ise-orange text-ise-white flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-[95%]">
+        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
           ¿Aún tienes alguna pregunta?
         </p>
-        <p className="text-2xl font-bold text-center pt-2 w-[95%]">
+        <p className="text-xl font-bold text-center pt-2 w-[90%]">
           ¡Ponte en contacto con nosotros!
         </p>
-        <p className="font-Hero text-xs text-center mt-2 mb-2 w-4/5">
+        <p className="font-Hero text-xs text-justify mt-2 mb-2 w-[90%]">
           Acércate a nosotros para poder ofrecerte una solución a la medida de tus necesidades,
           {' '}
           escucharemos tus opiniones y buscaremos optimizar tus proyectos.
