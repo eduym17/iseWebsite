@@ -15,12 +15,18 @@ import exp30 from './assets/images/exp30.png';
 import exp35 from './assets/images/exp35.png';
 import arrowOpen from './assets/icons/arrow-open.png';
 import arrowClose from './assets/icons/arrow-close.png';
+import linkedinIcon from './assets/icons/linkedin-icon.png';
+import twitterIcon from './assets/icons/twitter-icon.png';
+import facebookIcon from './assets/icons/facebook-icon.png';
+import instagramIcon from './assets/icons/instagram-icon.png';
 
 function App() {
   return (
     <div className="text-ise-gray-30 h-screen font-Cabin">
       <div className="header bg-ise-gray-10 flex items-center justify-between p-3">
-        <img src={logoInSitu} alt="In Situ Energía" className="h-9" />
+        <a href="/">
+          <img src={logoInSitu} alt="In Situ Energía" className="h-9" />
+        </a>
         <img src={menuIcon} alt="menu icon" className="h-7" />
       </div>
       <div className="landingPage bg-ise-gray-10 flex flex-col items-center text-ise-gray-30">
@@ -292,6 +298,45 @@ function App() {
             Enviar
           </button>
         </form>
+      </div>
+      <div className="footer bg-ise-gray-20 py-5 px-2 flex flex-col items-stretch divide-y-2 divide-gray-400">
+        <div className="flex items-center justify-between mb-1">
+          <a href="/">
+            <img src={logoInSitu} alt="In Situ Energía" className="h-12" />
+          </a>
+          <div className="flex flex-col items-end gap-2">
+            <div className="social flex gap-3">
+              <a href="https://www.linkedin.com/company/insituenergia" target="_blank" rel="noreferrer">
+                <img src={linkedinIcon} alt="LinkedIn icon" className="h-7" />
+              </a>
+              <a href="https://twitter.com/InSituEnergia" target="_blank" rel="noreferrer">
+                <img src={twitterIcon} alt="Twitter icon" className="h-7" />
+              </a>
+              <a href="https://www.facebook.com/insituenergia" target="_blank" rel="noreferrer">
+                <img src={facebookIcon} alt="Facebook icon" className="h-7" />
+              </a>
+              <a href="https://www.instagram.com/insituenergia/" target="_blank" rel="noreferrer">
+                <img src={instagramIcon} alt="Instagram icon" className="h-7" />
+              </a>
+            </div>
+            <div className="router flex gap-2 text-sm">
+              <a href="/" className="hover:text-ise-orange">Soluciones</a>
+              <a href="/" className="hover:text-ise-orange">Nosotros</a>
+              <a href="/" className="hover:text-ise-orange">Proyectos</a>
+              <a href="/" className="hover:text-ise-orange">FAQ</a>
+            </div>
+          </div>
+        </div>
+        <div className="py-1">
+          <div className="router flex gap-2 text-sm items-center justify-center">
+            <a href="/" className="hover:text-ise-orange">Política de privacidad</a>
+            <a href="/" className="hover:text-ise-orange">Términos y condiciones</a>
+            <a href="/" className="hover:text-ise-orange">Log In</a>
+          </div>
+          <div className="copyright py-2 text-sm flex justify-center">
+            <p>© Todos los derechos reservados. In Situ Energía, 2022.</p>
+          </div>
+        </div>
       </div>
     </div>
   );
