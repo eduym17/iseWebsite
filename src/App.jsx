@@ -19,6 +19,7 @@ import linkedinIcon from './assets/icons/linkedin-icon.png';
 import twitterIcon from './assets/icons/twitter-icon.png';
 import facebookIcon from './assets/icons/facebook-icon.png';
 import instagramIcon from './assets/icons/instagram-icon.png';
+import { ButtonMain, Paragraph } from './components';
 
 function App() {
   return (
@@ -36,14 +37,14 @@ function App() {
           <span className="text-ise-orange"> beneficios </span>
           del Sol, siempre a tu alcance
         </p>
-        <p className="font-Hero text-xs text-center py-2 w-[90%]">
+        <Paragraph customClass="mb-0">
           Genera tu propia energía y comienza a ahorrar de inmediato,
           {' '}
           tenemos la solución que necesitas.
-        </p>
-        <button type="button" className="font-bold py-1.5 px-6 bg-ise-orange hover:bg-sungradient-o active:bg-sungradient-o text-ise-gray-10 hover:text-ise-white active:text-ise-white rounded-full my-4">
-          Ponte en contacto
-        </button>
+        </Paragraph>
+        <a href="/">
+          <ButtonMain btnText="Ponte en contacto" />
+        </a>
       </div>
       <div className="clientsBar flex items-center justify-evenly bg-ise-gray-10 py-6">
         <img src={toyotaIcon} alt="TOYOTA" className="h-10" />
@@ -55,28 +56,28 @@ function App() {
           Nuestras
           <span className="text-ise-orange"> soluciones</span>
         </p>
-        <p className="font-Hero text-xs text-center pt-2 pb-8 w-[90%]">
+        <Paragraph customClass="mb-0">
           Tecnologías rentables que te permitirán generar ahorros con el poder del Sol.
-        </p>
+        </Paragraph>
         <img src={electricaImgMobile} alt="Energía eléctrica" className="w-[90%] rounded-lg" />
         <p className="text-2xl font-bold text-center py-1 w-[90%]">
           Energía
           <span className="text-ise-orange"> eléctrica</span>
         </p>
-        <p className="font-Hero text-xs text-center pb-8 w-[90%]">
+        <Paragraph customClass="mb-0">
           Aprovecha techos, suelos y estacionamientos para generar tu propia energía eléctrica.
-        </p>
+        </Paragraph>
         <img src={termicaImgMobile} alt="Energía eléctrica" className="w-[90%] rounded-lg" />
         <p className="text-2xl font-bold text-center py-1 w-[90%]">
           Energía
           <span className="text-ise-orange"> térmica</span>
         </p>
-        <p className="font-Hero text-xs text-center pb-2 w-[90%]">
+        <Paragraph customClass="mb-0">
           Instala un sistema de calentamiento solar que te ayude a disminuir tu consumo de gas.
-        </p>
-        <button type="button" className="font-bold py-1.5 px-6 bg-ise-orange hover:bg-sungradient-o active:bg-sungradient-o text-ise-gray-10 hover:text-ise-white active:text-ise-white rounded-full my-4 mb-8">
-          Conoce más
-        </button>
+        </Paragraph>
+        <a href="/">
+          <ButtonMain btnText="Conoce más" />
+        </a>
       </div>
       <div className="xpresumeSection bg-sungradient-y text-ise-white flex flex-wrap gap-x-4 justify-center items-center py-3">
         <div className="flex items-center gap-1">
@@ -115,9 +116,9 @@ function App() {
           Nuestros
           <span className="text-ise-orange"> servicios</span>
         </p>
-        <p className="font-Hero text-xs text-center pt-2 pb-7 w-[90%]">
+        <Paragraph customClass="mb-0">
           Servicios diseñados para ayudarte a potenciar tu proyecto, a la medida de tus necesidades.
-        </p>
+        </Paragraph>
         <div className="bg-ise-gray-40 w-[90%] rounded-lg p-2 mb-4">
           <div className="flex items-center gap-2">
             <img src={financiamientoIcon} alt="Financiamiento" className="h-6" />
@@ -125,7 +126,7 @@ function App() {
               Financiamiento
             </p>
           </div>
-          <p className="font-Hero text-xs text-justify py-2 w-full">
+          <p className="font-Hero text-xs text-justify p-2 w-full">
             Llevamos hasta ti diferentes esquemas y fuentes de financiamiento,
             {' '}
             de acuerdo con las necesidades y requerimientos de tu proyecto.
@@ -138,7 +139,7 @@ function App() {
               Ingeniería, suministro y construcción
             </p>
           </div>
-          <p className="font-Hero text-xs text-justify py-2 w-full">
+          <p className="font-Hero text-xs text-justify p-2 w-full">
             Desarrollamos proyectos llave en mano, incluyendo ingeniería, procura
             {' '}
             y construcción, con base en energías renovables, especializándonos
@@ -153,7 +154,7 @@ function App() {
               Ingeniería y asesoría
             </p>
           </div>
-          <p className="font-Hero text-xs text-justify py-2 w-full">
+          <p className="font-Hero text-xs text-justify p-2 w-full">
             Nuestra experiencia en los aspectos técnicos y regulatorios nos permiten
             {' '}
             desarrollar correctamente proyectos de energía renovable de mediana y
@@ -167,9 +168,9 @@ function App() {
           <span className="text-ise-orange">Proyectos </span>
           recientes
         </p>
-        <p className="font-Hero text-xs text-center pt-2 pb-7 w-[90%]">
+        <Paragraph customClass="mb-0">
           Soluciones inteligentes, siempre a la medidas de las necesidades de nuestros clientes.
-        </p>
+        </Paragraph>
         <div className="mb-4 w-[90%] text-center">
           Esta es la sección del carrusel a la derecha
         </div>
@@ -182,11 +183,11 @@ function App() {
           Nuestra
           <span className="text-ise-orange"> experiencia</span>
         </p>
-        <p className="font-Hero text-xs text-center pt-2 pb-7 w-[90%]">
+        <Paragraph customClass="mb-0">
           Somos un equipo de profesionales altamente capacitados para atender los
           {' '}
           proyectos más exigentes.
-        </p>
+        </Paragraph>
         <div className="flex flex-col items-center mb-5">
           <img src={exp15} alt="Número 15" className="h-32" />
           <p className="text-2xl font-bold text-center">
@@ -208,20 +209,20 @@ function App() {
             instalados
           </p>
         </div>
-        <button type="button" className="font-bold py-1.5 px-6 bg-ise-orange hover:bg-sungradient-o active:bg-sungradient-o text-ise-gray-10 hover:text-ise-white active:text-ise-white rounded-full mt-4 mb-8">
-          Acerca de nosotros
-        </button>
+        <a href="/">
+          <ButtonMain btnText="Acerca de nosotros" />
+        </a>
       </div>
       <div className="faqSection bg-ise-gray-20 flex flex-col items-center">
         <p className="text-3xl font-bold text-center pt-8 w-[90%]">
           Preguntas
           <span className="text-ise-orange"> frecuentes</span>
         </p>
-        <p className="font-Hero text-xs text-center mt-2 mb-2 w-[90%]">
+        <Paragraph customClass="mb-0">
           Resuelve tus dudas acerca del funcionamiento de los sistemas solares,
           {' '}
           te compartimos las más frecuentes a continuación.
-        </p>
+        </Paragraph>
         <div className="faqElectrica flex flex-col items-center">
           <p className="text-2xl font-bold text-center mt-4 mb-2">
             Energía
