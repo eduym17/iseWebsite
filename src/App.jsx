@@ -19,7 +19,7 @@ import linkedinIcon from './assets/icons/linkedin-icon.png';
 import twitterIcon from './assets/icons/twitter-icon.png';
 import facebookIcon from './assets/icons/facebook-icon.png';
 import instagramIcon from './assets/icons/instagram-icon.png';
-import { ButtonMain, Paragraph } from './components';
+import { ButtonMain, Paragraph, ServiceCard } from './components';
 
 function App() {
   return (
@@ -119,49 +119,25 @@ function App() {
         <Paragraph customClass="mb-0">
           Servicios diseñados para ayudarte a potenciar tu proyecto, a la medida de tus necesidades.
         </Paragraph>
-        <div className="bg-ise-gray-40 w-[90%] rounded-lg p-2 mb-4">
-          <div className="flex items-center gap-2">
-            <img src={financiamientoIcon} alt="Financiamiento" className="h-6" />
-            <p className="text-2xl font-bold text-left py-1 ">
-              Financiamiento
-            </p>
-          </div>
-          <p className="font-Hero text-xs text-justify p-2 w-full">
-            Llevamos hasta ti diferentes esquemas y fuentes de financiamiento,
-            {' '}
-            de acuerdo con las necesidades y requerimientos de tu proyecto.
-          </p>
-        </div>
-        <div className="bg-ise-gray-40 w-[90%] rounded-lg p-2 mb-4">
-          <div className="flex items-center gap-2">
-            <img src={epcIcon} alt="Financiamiento" className="h-7" />
-            <p className="text-2xl font-bold text-left py-1 ">
-              Ingeniería, suministro y construcción
-            </p>
-          </div>
-          <p className="font-Hero text-xs text-justify p-2 w-full">
-            Desarrollamos proyectos llave en mano, incluyendo ingeniería, procura
-            {' '}
-            y construcción, con base en energías renovables, especializándonos
-            {' '}
-            en energía solar para generación de electricida y calentamiento de fluidos.
-          </p>
-        </div>
-        <div className="bg-ise-gray-40 w-[90%] rounded-lg p-2 mb-10">
-          <div className="flex items-center gap-2">
-            <img src={asesoriaIcon} alt="Financiamiento" className="h-6" />
-            <p className="text-2xl font-bold text-left py-1 ">
-              Ingeniería y asesoría
-            </p>
-          </div>
-          <p className="font-Hero text-xs text-justify p-2 w-full">
-            Nuestra experiencia en los aspectos técnicos y regulatorios nos permiten
-            {' '}
-            desarrollar correctamente proyectos de energía renovable de mediana y
-            {' '}
-            gran escala, garantizándote un diseño óptimo.
-          </p>
-        </div>
+        <ServiceCard title="Financiamiento" icon={financiamientoIcon} customClass="mb-1">
+          Llevamos hasta ti diferentes esquemas y fuentes de financiamiento,
+          {' '}
+          de acuerdo con las necesidades y requerimientos de tu proyecto.
+        </ServiceCard>
+        <ServiceCard title="Ingeniería, suministro y construcción" icon={epcIcon} customClass="mb-1">
+          Desarrollamos proyectos llave en mano, incluyendo ingeniería, procura y construcción,
+          {' '}
+          con base en energías renovables, especializándonos en energía solar para generación de
+          {' '}
+          electricidad y calentamiento de fluidos.
+        </ServiceCard>
+        <ServiceCard title="Ingeniería y asesoría" icon={asesoriaIcon} customClass="mb-1">
+          Nuestra experiencia en los aspectos técnicos y regulatorios nos permiten desarrollar
+          {' '}
+          correctamente proyectos de energía renovable de mediana y gran escala, garantizándote
+          {' '}
+          un diseño óptimo.
+        </ServiceCard>
       </div>
       <div className="projectsSection bg-ise-gray-20 flex flex-col items-center">
         <p className="text-3xl font-bold text-center pt-8 w-[90%]">
