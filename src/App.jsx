@@ -8,7 +8,7 @@ import {
   landingImage, electricaImgMobile, termicaImgMobile, exp15, exp30, exp35,
 } from './components/images';
 import {
-  ButtonMain, Paragraph, ServiceCard,
+  ButtonMain, Paragraph, ServiceCard, Titles,
 } from './components';
 
 function App() {
@@ -22,11 +22,7 @@ function App() {
       </div>
       <div className="landingPage bg-ise-gray-10 flex flex-col items-center text-ise-gray-30">
         <img src={landingImage} alt="sistema fotovoltaico" className="mb-2 w-3/4 max-w-md" />
-        <p className="text-3xl font-bold text-center my-2 w-[90%]">
-          Los
-          <span className="text-ise-orange"> beneficios </span>
-          del Sol, siempre a tu alcance
-        </p>
+        <Titles title="Los beneficios del Sol, siempre a tu alcance" magicWord="beneficios" />
         <Paragraph customClass="mb-0">
           Genera tu propia energía y comienza a ahorrar de inmediato,
           {' '}
@@ -42,10 +38,7 @@ function App() {
         <img src={pemexIcon} alt="PEMEX" className="h-10" />
       </div>
       <div className="solutionsSection bg-ise-gray-20 flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
-          Nuestras
-          <span className="text-ise-orange"> soluciones</span>
-        </p>
+        <Titles title="Nuestras soluciones" magicWord="soluciones" />
         <Paragraph customClass="mb-0">
           Tecnologías rentables que te permitirán generar ahorros con el poder del Sol.
         </Paragraph>
@@ -102,10 +95,7 @@ function App() {
         </div>
       </div>
       <div className="servicesSection bg-ise-gray-10 flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
-          Nuestros
-          <span className="text-ise-orange"> servicios</span>
-        </p>
+        <Titles title="Nuestros servicios" magicWord="servicios" />
         <Paragraph customClass="mb-0">
           Servicios diseñados para ayudarte a potenciar tu proyecto, a la medida de tus necesidades.
         </Paragraph>
@@ -130,10 +120,7 @@ function App() {
         </ServiceCard>
       </div>
       <div className="projectsSection bg-ise-gray-20 flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
-          <span className="text-ise-orange">Proyectos </span>
-          recientes
-        </p>
+        <Titles title="Proyectos recientes" magicWord="Proyectos" />
         <Paragraph customClass="mb-0">
           Soluciones inteligentes, siempre a la medidas de las necesidades de nuestros clientes.
         </Paragraph>
@@ -145,10 +132,7 @@ function App() {
         </div>
       </div>
       <div className="xpSection bg-ise-gray-10 flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
-          Nuestra
-          <span className="text-ise-orange"> experiencia</span>
-        </p>
+        <Titles title="Nuestra experiencia" magicWord="experiencia" />
         <Paragraph customClass="mb-0">
           Somos un equipo de profesionales altamente capacitados para atender los
           {' '}
@@ -180,10 +164,7 @@ function App() {
         </a>
       </div>
       <div className="faqSection bg-ise-gray-20 flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
-          Preguntas
-          <span className="text-ise-orange"> frecuentes</span>
-        </p>
+        <Titles title="Preguntas frecuentes" magicWord="frecuentes" />
         <Paragraph customClass="mb-0">
           Resuelve tus dudas acerca del funcionamiento de los sistemas solares,
           {' '}
