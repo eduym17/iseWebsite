@@ -1,14 +1,15 @@
 import React from 'react';
+import { faqsFV, faqsFT } from './components/texts/faqs';
 import {
   logoInSitu, menuIcon, pemexIcon, bbvaIcon, epcIcon, toyotaIcon,
-  financiamientoIcon, asesoriaIcon, arrowOpen, arrowClose, linkedinIcon,
+  financiamientoIcon, asesoriaIcon, linkedinIcon,
   twitterIcon, facebookIcon, instagramIcon,
 } from './components/icons';
 import {
   landingImage, electricaImgMobile, termicaImgMobile, exp15, exp30, exp35,
 } from './components/images';
 import {
-  ButtonMain, Paragraph, ServiceCard, Titles, Subtitles,
+  ButtonMain, Paragraph, ServiceCard, Titles, Subtitles, Faqs,
 } from './components';
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
           tenemos la solución que necesitas.
         </Paragraph>
         <a href="/">
-          <ButtonMain btnText="Ponte en contacto" />
+          <ButtonMain btnText="Ponte en contacto" customClass="my-0" />
         </a>
       </div>
       <div className="clientsBar flex items-center justify-evenly bg-ise-gray-10 py-6">
@@ -165,52 +166,24 @@ function App() {
           te compartimos las más frecuentes a continuación.
         </Paragraph>
         <div className="faqElectrica flex flex-col items-center">
-          <Subtitles title="Energía eléctrica" magicWord="eléctrica" />
-          <div className="faqItem bg-ise-gray-50 w-[90%] rounded-full py-1 px-2 mb-3">
-            <div className="itemTitle flex justify-between items-center">
-              <p className="font-bold">¿Los sistemas solares usan baterías?</p>
-              <img src={arrowOpen} alt="arrow" className="h-3" />
-            </div>
-          </div>
-          <div className="faqItem bg-ise-orange text-ise-white w-[90%] rounded-lg py-1 px-2 mb-3">
-            <div className="itemTitle flex justify-between items-center">
-              <p className="font-bold">¿Pregunta random de longitud amplia?</p>
-              <img src={arrowClose} alt="arrow" className="h-3" />
-            </div>
-            <p className="font-Hero text-xs text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              {' '}
-              Nisi provident laudantium voluptas, consequuntur esse iure tempora
-              {' '}
-              aspernatur magni officia dolor praesentium dolore eum fuga aperiam
-              {' '}
-              quod facere ad! Voluptate, dolores?
-            </p>
-          </div>
+          <Subtitles title="Energía eléctrica" magicWord="eléctrica" customClass="mt-5 mb-2" />
+          {
+            faqsFV.map((faq) => (
+              <Faqs question={faq.question} customClass="my-1">
+                {faq.answer}
+              </Faqs>
+            ))
+          }
         </div>
-        <div className="faqTermica flex flex-col items-center">
-          <Subtitles title="Energía térmica" magicWord="térmica" />
-          <div className="faqItem bg-ise-gray-50 w-[90%] rounded-full py-1 px-2 mb-3">
-            <div className="itemTitle flex justify-between items-center">
-              <p className="font-bold">¿Los sistemas térmicos funcionan?</p>
-              <img src={arrowOpen} alt="arrow" className="h-3" />
-            </div>
-          </div>
-          <div className="faqItem bg-ise-orange text-ise-white w-[90%] rounded-lg py-1 px-2 mb-10">
-            <div className="itemTitle flex justify-between items-center">
-              <p className="font-bold">¿Pregunta random de longitud amplia?</p>
-              <img src={arrowClose} alt="arrow" className="h-3" />
-            </div>
-            <p className="font-Hero text-xs text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              {' '}
-              Nisi provident laudantium voluptas, consequuntur esse iure tempora
-              {' '}
-              aspernatur magni officia dolor praesentium dolore eum fuga aperiam
-              {' '}
-              quod facere ad! Voluptate, dolores?
-            </p>
-          </div>
+        <div className="faqTermica flex flex-col items-center mb-10">
+          <Subtitles title="Energía térmica" magicWord="térmica" customClass="mt-5 mb-2" />
+          {
+            faqsFT.map((faq) => (
+              <Faqs question={faq.question} customClass="my-1">
+                {faq.answer}
+              </Faqs>
+            ))
+          }
         </div>
       </div>
       <div className="contactSection bg-ise-orange text-ise-white flex flex-col items-center">
