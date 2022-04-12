@@ -15,7 +15,7 @@ Titles.propTypes = {
   customClass: propTypes.string,
 };
 Titles.defaultProps = {
-  title: 'Título de seccion',
+  title: 'Título de sección',
   magicWord: '',
   customClass: '',
 };

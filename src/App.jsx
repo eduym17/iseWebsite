@@ -8,7 +8,7 @@ import {
   landingImage, electricaImgMobile, termicaImgMobile, exp15, exp30, exp35,
 } from './components/images';
 import {
-  ButtonMain, Paragraph, ServiceCard, Titles,
+  ButtonMain, Paragraph, ServiceCard, Titles, Subtitles,
 } from './components';
 
 function App() {
@@ -43,18 +43,12 @@ function App() {
           Tecnologías rentables que te permitirán generar ahorros con el poder del Sol.
         </Paragraph>
         <img src={electricaImgMobile} alt="Energía eléctrica" className="w-[90%] rounded-lg" />
-        <p className="text-2xl font-bold text-center py-1 w-[90%]">
-          Energía
-          <span className="text-ise-orange"> eléctrica</span>
-        </p>
+        <Subtitles title="Energía eléctrica" magicWord="eléctrica" />
         <Paragraph customClass="mb-0">
           Aprovecha techos, suelos y estacionamientos para generar tu propia energía eléctrica.
         </Paragraph>
         <img src={termicaImgMobile} alt="Energía eléctrica" className="w-[90%] rounded-lg" />
-        <p className="text-2xl font-bold text-center py-1 w-[90%]">
-          Energía
-          <span className="text-ise-orange"> térmica</span>
-        </p>
+        <Subtitles title="Energía térmica" magicWord="térmica" />
         <Paragraph customClass="mb-0">
           Instala un sistema de calentamiento solar que te ayude a disminuir tu consumo de gas.
         </Paragraph>
@@ -171,10 +165,7 @@ function App() {
           te compartimos las más frecuentes a continuación.
         </Paragraph>
         <div className="faqElectrica flex flex-col items-center">
-          <p className="text-2xl font-bold text-center mt-4 mb-2">
-            Energía
-            <span className="text-ise-orange"> eléctrica</span>
-          </p>
+          <Subtitles title="Energía eléctrica" magicWord="eléctrica" />
           <div className="faqItem bg-ise-gray-50 w-[90%] rounded-full py-1 px-2 mb-3">
             <div className="itemTitle flex justify-between items-center">
               <p className="font-bold">¿Los sistemas solares usan baterías?</p>
@@ -198,10 +189,7 @@ function App() {
           </div>
         </div>
         <div className="faqTermica flex flex-col items-center">
-          <p className="text-2xl font-bold text-center mt-4 mb-2">
-            Energía
-            <span className="text-ise-orange"> térmica</span>
-          </p>
+          <Subtitles title="Energía térmica" magicWord="térmica" />
           <div className="faqItem bg-ise-gray-50 w-[90%] rounded-full py-1 px-2 mb-3">
             <div className="itemTitle flex justify-between items-center">
               <p className="font-bold">¿Los sistemas térmicos funcionan?</p>
