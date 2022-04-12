@@ -23,6 +23,9 @@ module.exports = {
           sky: '#00C0FA',
         },
       },
+      transitionProperty: {
+        height: 'height',
+      },
     },
   },
   plugins: [],

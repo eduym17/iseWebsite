@@ -21,7 +21,7 @@ function ServiceCard({
 }
 
 ServiceCard.propTypes = {
-  children: propTypes.string,
+  children: propTypes.oneOfType([propTypes.string, propTypes.arrayOf(propTypes.string)]),
   customClass: propTypes.string,
   title: propTypes.string,
   icon: propTypes.string,

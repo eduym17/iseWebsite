@@ -10,7 +10,7 @@ function Paragraph({ children, customClass }) {
 }
 
 Paragraph.propTypes = {
-  children: propTypes.string,
+  children: propTypes.oneOfType([propTypes.string, propTypes.arrayOf(propTypes.string)]),
   customClass: propTypes.string,
 };
 Paragraph.defaultProps = {
