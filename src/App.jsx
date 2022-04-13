@@ -9,7 +9,7 @@ import {
   landingImage, electricaImgMobile, termicaImgMobile, exp15, exp30, exp35,
 } from './components/images';
 import {
-  ButtonMain, Paragraph, ServiceCard, Titles, Subtitles, Faqs,
+  ButtonMain, Paragraph, ServiceCard, Titles, Subtitles, Faqs, ExperienceBar,
 } from './components';
 
 function App() {
@@ -57,38 +57,7 @@ function App() {
           <ButtonMain btnText="Conoce más" />
         </a>
       </div>
-      <div className="xpresumeSection bg-sungradient-y text-ise-white flex flex-wrap gap-x-4 justify-center items-center py-3">
-        <div className="flex items-center gap-1">
-          <span className="text-4xl font-bold">+25 </span>
-          <div>
-            <p className="leading-none font-Hero text-sm">
-              clientes
-              <br />
-              satisfechos
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center gap-1">
-          <span className="text-4xl font-bold">+25 </span>
-          <div>
-            <p className="leading-none font-Hero text-sm">
-              proyectos
-              <br />
-              terminados
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center gap-1">
-          <span className="text-4xl font-bold">+3 </span>
-          <div>
-            <p className="leading-none font-Hero text-sm">
-              MegaWatts
-              <br />
-              instalados
-            </p>
-          </div>
-        </div>
-      </div>
+      <ExperienceBar customClass="" />
       <div className="servicesSection bg-ise-gray-10 flex flex-col items-center">
         <Titles title="Nuestros servicios" magicWord="servicios" />
         <Paragraph customClass="mb-0">
@@ -165,25 +134,27 @@ function App() {
           {' '}
           te compartimos las más frecuentes a continuación.
         </Paragraph>
-        <div className="faqElectrica flex flex-col items-center">
-          <Subtitles title="Energía eléctrica" magicWord="eléctrica" customClass="mt-5 mb-2" />
-          {
-            faqsFV.map((faq) => (
-              <Faqs question={faq.question} customClass="my-1">
-                {faq.answer}
-              </Faqs>
-            ))
-          }
-        </div>
-        <div className="faqTermica flex flex-col items-center mb-10">
-          <Subtitles title="Energía térmica" magicWord="térmica" customClass="mt-5 mb-2" />
-          {
-            faqsFT.map((faq) => (
-              <Faqs question={faq.question} customClass="my-1">
-                {faq.answer}
-              </Faqs>
-            ))
-          }
+        <div className="faqs flex flex-col items-center mb-10 md:flex-row md:items-start">
+          <div className="faqElectrica flex flex-col items-center">
+            <Subtitles title="Energía eléctrica" magicWord="eléctrica" customClass="mt-5 mb-2" />
+            {
+              faqsFV.map((faq) => (
+                <Faqs question={faq.question} customClass="my-1">
+                  {faq.answer}
+                </Faqs>
+              ))
+            }
+          </div>
+          <div className="faqTermica flex flex-col items-center">
+            <Subtitles title="Energía térmica" magicWord="térmica" customClass="mt-5 mb-2" />
+            {
+              faqsFT.map((faq) => (
+                <Faqs question={faq.question} customClass="my-1">
+                  {faq.answer}
+                </Faqs>
+              ))
+            }
+          </div>
         </div>
       </div>
       <div className="contactSection bg-ise-orange text-ise-white flex flex-col items-center">
