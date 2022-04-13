@@ -1,8 +1,7 @@
 import React from 'react';
 import { faqsFV, faqsFT } from './components/texts/faqs';
 import {
-  logoInSitu, menuIcon, pemexIcon, bbvaIcon, epcIcon, toyotaIcon,
-  financiamientoIcon, asesoriaIcon, linkedinIcon,
+  logoInSitu, menuIcon, epcIcon, financiamientoIcon, asesoriaIcon, linkedinIcon,
   twitterIcon, facebookIcon, instagramIcon,
 } from './components/icons';
 import {
@@ -10,6 +9,7 @@ import {
 } from './components/images';
 import {
   ButtonMain, Paragraph, ServiceCard, Titles, Subtitles, Faqs, ExperienceBar, ExperienceItem,
+  ClientsBar,
 } from './components';
 
 function App() {
@@ -32,11 +32,7 @@ function App() {
         <a href="/">
           <ButtonMain btnText="Ponte en contacto" customClass="my-0" />
         </a>
-      </div>
-      <div className="clientsBar flex items-center justify-evenly bg-ise-gray-10 py-6">
-        <img src={toyotaIcon} alt="TOYOTA" className="h-10" />
-        <img src={bbvaIcon} alt="BBVA" className="h-10" />
-        <img src={pemexIcon} alt="PEMEX" className="h-10" />
+        <ClientsBar />
       </div>
       <div className="solutionsSection bg-ise-gray-20 flex flex-col items-center">
         <Titles title="Nuestras soluciones" magicWord="soluciones" />
@@ -103,6 +99,7 @@ function App() {
           proyectos más exigentes.
         </Paragraph>
         <div className="flex flex-col items-center md:flex-row md:gap-28">
+          {/* Fix width of images in Photoshop, same width for all */}
           <ExperienceItem text="años de experiencia" magicWord="años" image={exp15} customClass="my-0" />
           <ExperienceItem text="proyectos ejecutados" magicWord="proyectos" image={exp30} customClass="my-0" />
           <ExperienceItem text="MW instalados" magicWord="MW" image={exp35} customClass="my-0" />
