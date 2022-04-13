@@ -6,7 +6,7 @@ function ExperienceItem({
 }) {
   return (
     <div className={`flex flex-col items-center ${customClass}`}>
-      <img src={image} alt={text} className="h-32 md:h-48" />
+      <img src={image} alt={text} className="h-32 md:h-40" />
       <p className="text-2xl font-bold text-center leading-none">
         {text.split(' ').map((word) => (word === magicWord ? <span key={word} className="text-ise-orange">{`${magicWord} `}</span> : <span key={word}>{`${word} `}</span>))}
       </p>
