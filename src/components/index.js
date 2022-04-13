@@ -5,7 +5,8 @@ import Titles from './Titles';
 import Subtitles from './Subtitles';
 import Faqs from './Faqs';
 import ExperienceBar from './ExperienceBar';
+import ExperienceItem from './ExperienceItem';
 
 export {
-  ButtonMain, Paragraph, ServiceCard, Titles, Subtitles, Faqs, ExperienceBar,
+  ButtonMain, Paragraph, ServiceCard, Titles, Subtitles, Faqs, ExperienceBar, ExperienceItem,
 };
