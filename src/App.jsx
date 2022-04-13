@@ -9,7 +9,7 @@ import {
   landingImage, electricaImgMobile, termicaImgMobile, exp15, exp30, exp35,
 } from './components/images';
 import {
-  ButtonMain, Paragraph, ServiceCard, Titles, Subtitles, Faqs, ExperienceBar,
+  ButtonMain, Paragraph, ServiceCard, Titles, Subtitles, Faqs, ExperienceBar, ExperienceItem,
 } from './components';
 
 function App() {
@@ -57,7 +57,7 @@ function App() {
           <ButtonMain btnText="Conoce más" />
         </a>
       </div>
-      <ExperienceBar customClass="" />
+      <ExperienceBar customClass="my-0" />
       <div className="servicesSection bg-ise-gray-10 flex flex-col items-center">
         <Titles title="Nuestros servicios" magicWord="servicios" />
         <Paragraph customClass="mb-0">
@@ -102,26 +102,10 @@ function App() {
           {' '}
           proyectos más exigentes.
         </Paragraph>
-        <div className="flex flex-col items-center mb-5">
-          <img src={exp15} alt="Número 15" className="h-32" />
-          <p className="text-2xl font-bold text-center">
-            <span className="text-ise-orange">años </span>
-            de experiencia
-          </p>
-        </div>
-        <div className="flex flex-col items-center my-5">
-          <img src={exp30} alt="Número 30" className="h-32" />
-          <p className="text-2xl font-bold text-center">
-            <span className="text-ise-orange">proyectos </span>
-            ejecutados
-          </p>
-        </div>
-        <div className="flex flex-col items-center my-5">
-          <img src={exp35} alt="Número 3.5" className="h-32" />
-          <p className="text-2xl font-bold text-center">
-            <span className="text-ise-orange">MW </span>
-            instalados
-          </p>
+        <div className="flex flex-col items-center md:flex-row md:gap-28">
+          <ExperienceItem text="años de experiencia" magicWord="años" image={exp15} customClass="my-0" />
+          <ExperienceItem text="proyectos ejecutados" magicWord="proyectos" image={exp30} customClass="my-0" />
+          <ExperienceItem text="MW instalados" magicWord="MW" image={exp35} customClass="my-0" />
         </div>
         <a href="/">
           <ButtonMain btnText="Acerca de nosotros" />
@@ -136,7 +120,7 @@ function App() {
         </Paragraph>
         <div className="faqs flex flex-col items-center mb-10 md:flex-row md:items-start">
           <div className="faqElectrica flex flex-col items-center">
-            <Subtitles title="Energía eléctrica" magicWord="eléctrica" customClass="mt-5 mb-2" />
+            <Subtitles title="Energía eléctrica" magicWord="eléctrica" customClass="mt-0 mb-0" />
             {
               faqsFV.map((faq) => (
                 <Faqs question={faq.question} customClass="my-1">
@@ -146,7 +130,7 @@ function App() {
             }
           </div>
           <div className="faqTermica flex flex-col items-center">
-            <Subtitles title="Energía térmica" magicWord="térmica" customClass="mt-5 mb-2" />
+            <Subtitles title="Energía térmica" magicWord="térmica" customClass="mt-0 mb-0" />
             {
               faqsFT.map((faq) => (
                 <Faqs question={faq.question} customClass="my-1">
