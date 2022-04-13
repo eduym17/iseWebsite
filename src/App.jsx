@@ -9,7 +9,7 @@ import {
 } from './components/images';
 import {
   ButtonMain, Paragraph, ServiceCard, Titles, Subtitles, Faqs, ExperienceBar, ExperienceItem,
-  ClientsBar,
+  ClientsBar, ContactForm,
 } from './components';
 
 function App() {
@@ -32,7 +32,7 @@ function App() {
         <a href="/">
           <ButtonMain btnText="Ponte en contacto" customClass="my-0" />
         </a>
-        <ClientsBar />
+        <ClientsBar customClass="" />
       </div>
       <div className="solutionsSection bg-ise-gray-20 flex flex-col items-center">
         <Titles title="Nuestras soluciones" magicWord="soluciones" />
@@ -44,7 +44,7 @@ function App() {
         <Paragraph customClass="mb-0">
           Aprovecha techos, suelos y estacionamientos para generar tu propia energía eléctrica.
         </Paragraph>
-        <img src={termicaImgMobile} alt="Energía eléctrica" className="w-[90%] rounded-lg" />
+        <img src={termicaImgMobile} alt="Energía eléctrica" className="w-[90%] max-w-md rounded-lg" />
         <Subtitles title="Energía térmica" magicWord="térmica" />
         <Paragraph customClass="mb-0">
           Instala un sistema de calentamiento solar que te ayude a disminuir tu consumo de gas.
@@ -116,7 +116,7 @@ function App() {
           te compartimos las más frecuentes a continuación.
         </Paragraph>
         <div className="faqs flex flex-col items-center mb-10 md:flex-row md:items-start">
-          <div className="faqElectrica flex flex-col items-center">
+          <div className="faqElectrica flex flex-col items-center md:w-1/2">
             <Subtitles title="Energía eléctrica" magicWord="eléctrica" customClass="mt-0 mb-0" />
             {
               faqsFV.map((faq) => (
@@ -126,7 +126,7 @@ function App() {
               ))
             }
           </div>
-          <div className="faqTermica flex flex-col items-center">
+          <div className="faqTermica flex flex-col items-center md:w-1/2">
             <Subtitles title="Energía térmica" magicWord="térmica" customClass="mt-0 mb-0" />
             {
               faqsFT.map((faq) => (
@@ -139,26 +139,14 @@ function App() {
         </div>
       </div>
       <div className="contactSection bg-ise-orange text-ise-white flex flex-col items-center">
-        <p className="text-3xl font-bold text-center pt-8 w-[90%]">
-          ¿Aún tienes alguna pregunta?
-        </p>
-        <p className="text-xl font-bold text-center pt-2 w-[90%]">
-          ¡Ponte en contacto con nosotros!
-        </p>
-        <p className="font-Hero text-xs text-justify mt-2 mb-2 w-[90%]">
+        <Titles title="¿Aún tienes alguna pregunta?" customClass="text-white" />
+        <Subtitles title="¡Ponte en contacto con nosotros!" customClass="text-white text-xl" />
+        <Paragraph customClass="text-white text-justify">
           Acércate a nosotros para poder ofrecerte una solución a la medida de tus necesidades,
           {' '}
           escucharemos tus opiniones y buscaremos optimizar tus proyectos.
-        </p>
-        <form action="/" className="w-4/5 mb-8 flex flex-col items-center">
-          <input type="text" name="Name" id="name" placeholder="Tu nombre*" className="font-Hero text-xs text-ise-white bg-transparent border-b-2 w-full my-2 placeholder-ise-white" required />
-          <input type="email" name="E-mail" id="mail" placeholder="Tu correo electrónico*" className="font-Hero text-xs text-ise-white bg-transparent border-b-2 w-full my-2 placeholder-ise-white" required />
-          <input type="tel" name="Phone" id="phone" placeholder="Tu teléfono" className="font-Hero text-xs text-ise-white bg-transparent border-b-2 w-full my-2 placeholder-ise-white" />
-          <textarea name="question" id="question" cols="30" rows="1" placeholder="¡Haz una pregunta!" className="w-full bg-transparent text-ise-white placeholder-ise-white border-b-2 font-Hero text-xs my-2 resize-y" />
-          <button type="submit" className="font-bold py-1.5 px-6 bg-ise-white text-ise-orange rounded-full my-4 self-end">
-            Enviar
-          </button>
-        </form>
+        </Paragraph>
+        <ContactForm />
       </div>
       <div className="footer bg-ise-gray-20 py-5 px-2 flex flex-col items-stretch divide-y-2 divide-gray-400">
         <div className="flex items-center justify-between mb-1">
