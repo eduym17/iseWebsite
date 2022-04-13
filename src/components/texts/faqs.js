@@ -47,7 +47,7 @@ export const faqsFT = [
     answer: 'Los calentadores solares certificados ofrecen garantías mínimas por defectos de fabricación por 10 años, sin embargo, con buenas prácticas de mantenimiento, es posible extender su vida útil hasta 15 o 20 años.',
   },
   {
-    question: '¿A qué temperatura pueden llegar?',
+    question: '¿A qué temperatura puede llegar?',
     answer: 'Dependiendo del tipo de calentadores solares instalados y la configuración del sistema, se pueden alcanzar temperaturas en el rango de los 50 °C o 60 °C, sin embargo, existe la posibilidad de instalar equipos especiales capaces de alcanzar temperaturas desde 80 °C hasta 150 °C.',
   },
   {
