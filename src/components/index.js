@@ -8,8 +8,10 @@ import ExperienceBar from './ExperienceBar';
 import ExperienceItem from './ExperienceItem';
 import ClientsBar from './ClientsBar';
 import ContactForm from './ContactForm';
+import Footer from './Footer';
+import Header from './Header';
 
 export {
   ButtonMain, Paragraph, ServiceCard, Titles, Subtitles, Faqs, ExperienceBar, ExperienceItem,
-  ClientsBar, ContactForm,
+  ClientsBar, ContactForm, Footer, Header,
 };
