@@ -14,11 +14,11 @@ function App() {
     <div className="text-ise-gray-30 h-screen font-Cabin">
       <Header />
       <div className="landingPage bg-ise-gray-10 containerFull">
-        <div className="containerContent md:flex-row-reverse md:justify-center md:py-10 md:px-10">
+        <div className="containerContent md:flex-row-reverse md:justify-center md:py-8 md:px-7">
           <img src={landingImage} alt="sistema fotovoltaico" className="w-4/6 max-w-xs lg:max-w-xl" />
-          <div className="flex flex-col items-center md:items-start lg:w-1/2">
-            <Titles title="Los beneficios del Sol, siempre a tu alcance" magicWord="beneficios" customClass="mt-5 md:text-left lg:w-full" />
-            <Paragraph customClass="mt-3 md:text-left md:w-4/5">
+          <div className="flex flex-col items-center md:items-start lg:w-1/2 md:w-1/2">
+            <Titles title="Los beneficios del Sol, siempre a tu alcance" magicWord="beneficios" customClass="mt-5 md:text-left lg:w-full lg:text-6xl" />
+            <Paragraph customClass="mt-3 md:text-left md:w-5/6 lg:w-4/5">
               Genera tu propia energía y comienza a ahorrar de inmediato,
               {' '}
               tenemos la solución que necesitas.
@@ -32,7 +32,7 @@ function App() {
       </div>
       <div className="solutionsSection bg-ise-gray-20 containerFull">
         <div className="containerContent">
-          <Titles title="Nuestras soluciones" magicWord="soluciones" customClass="mt-6 lg:mt-12 lg:text-5xl" />
+          <Titles title="Nuestras soluciones" magicWord="soluciones" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
             Tecnologías rentables que te permitirán generar ahorros con el poder del Sol.
           </Paragraph>
@@ -64,7 +64,7 @@ function App() {
       <ExperienceBar customClass="" />
       <div className="servicesSection bg-ise-gray-10 containerFull">
         <div className="containerContent">
-          <Titles title="Nuestros servicios" magicWord="servicios" customClass="mt-6 lg:mt-12 lg:text-5xl" />
+          <Titles title="Nuestros servicios" magicWord="servicios" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
             Servicios diseñados para ayudarte a potenciar tu proyecto,
             {' '}
@@ -95,7 +95,7 @@ function App() {
       </div>
       <div className="projectsSection bg-ise-gray-20 containerFull">
         <div className="containerContent">
-          <Titles title="Proyectos recientes" magicWord="Proyectos" customClass="mt-6 lg:mt-12 lg:text-5xl" />
+          <Titles title="Proyectos recientes" magicWord="Proyectos" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
             Soluciones inteligentes, siempre a la medidas de las necesidades de nuestros clientes.
           </Paragraph>
@@ -109,7 +109,7 @@ function App() {
       </div>
       <div className="xpSection bg-ise-gray-10 containerFull">
         <div className="containerContent">
-          <Titles title="Nuestra experiencia" magicWord="experiencia" customClass="mt-6 lg:mt-12 lg:text-5xl" />
+          <Titles title="Nuestra experiencia" magicWord="experiencia" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
             Somos un equipo de profesionales altamente capacitados para atender los
             {' '}
@@ -127,7 +127,7 @@ function App() {
       </div>
       <div className="faqSection bg-ise-gray-20 containerFull">
         <div className="containerContent">
-          <Titles title="Preguntas frecuentes" magicWord="frecuentes" customClass="mt-6 lg:mt-12 lg:text-5xl" />
+          <Titles title="Preguntas frecuentes" magicWord="frecuentes" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 md:w-1/2 lg:mt-2">
             Resuelve tus dudas acerca del funcionamiento de los sistemas solares,
             {' '}
@@ -162,7 +162,7 @@ function App() {
           <div className="md:w-7/12 flex flex-col items-center md:items-start">
             <Titles title="¿Aún tienes alguna pregunta?" customClass="mt-6 md:text-left lg:text-4xl" />
             <Subtitles title="¡Ponte en contacto con nosotros!" customClass="mt-2 md:text-left" />
-            <Paragraph customClass="text-justify mt-1 md:w-4/5">
+            <Paragraph customClass="text-justify mt-1 md:w-5/6 lg:w-4/5 lg:text-left">
               Acércate a nosotros para poder ofrecerte una solución a la medida de tus necesidades,
               {' '}
               escucharemos tus opiniones y buscaremos optimizar tus proyectos.
