@@ -6,14 +6,14 @@ function ServiceCard({
   children, customClass, title, icon,
 }) {
   return (
-    <div className={`bg-ise-gray-40 w-[90%] rounded-lg p-2 hover:drop-shadow-lg ${customClass}`}>
-      <div className="flex items-center gap-2">
-        <img src={icon} alt={title} className="h-6" />
-        <p className="text-2xl font-bold text-left py-1">
+    <div className={`bg-ise-gray-40 w-[90%] rounded-lg p-2 hover:drop-shadow-lg md:mt-0 lg:hover:drop-shadow-xl ${customClass}`}>
+      <div className="flex items-center gap-2 lg:flex-col lg:gap-0">
+        <img src={icon} alt={title} className="h-6 lg:h-12 lg:mt-4" />
+        <p className="text-2xl font-bold text-left py-1 lg:text-2xl lg:text-center">
           {title}
         </p>
       </div>
-      <p className="font-Hero text-xs text-justify p-2 w-full">
+      <p className="font-Hero text-xs text-justify p-2 w-full lg:text-base lg:px-4">
         {children}
       </p>
     </div>
