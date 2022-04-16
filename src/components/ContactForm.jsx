@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 
 function ContactForm({ customClass }) {
   return (
-    <form onSubmit={(e) => e.preventDefault()} className={`w-[80%] flex flex-col items-center gap-3 ${customClass}`}>
+    <form onSubmit={(e) => e.preventDefault()} className={`w-[80%] flex flex-col items-center gap-3 md:gap-5 ${customClass}`}>
       <input type="text" name="Name" id="name" placeholder="Tu nombre*" className="font-Hero text-xs text-ise-white bg-transparent border-b-2 w-full placeholder-ise-white" required />
       <input type="email" name="E-mail" id="mail" placeholder="Tu correo electrónico*" className="font-Hero text-xs text-ise-white bg-transparent border-b-2 w-full placeholder-ise-white" required />
       <input type="tel" name="Phone" id="phone" placeholder="Tu teléfono" className="font-Hero text-xs text-ise-white bg-transparent border-b-2 w-full placeholder-ise-white" />
