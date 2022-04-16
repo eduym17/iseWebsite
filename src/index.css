@@ -82,3 +82,12 @@
   src: local('bariol-bold'), url(./assets/fonts/bariol/bariol-bold.ttf) format('ttf');
   font-weight: 700;
 }
+
+@layer components {
+  .containerFull {
+    @apply w-full flex flex-col items-center
+  }
+  .containerContent {
+    @apply w-full max-w-6xl flex flex-col items-center
+  }
+}
