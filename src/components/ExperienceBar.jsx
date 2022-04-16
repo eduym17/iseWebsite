@@ -3,11 +3,11 @@ import propTypes from 'prop-types';
 
 function ExperienceBar({ customClass }) {
   return (
-    <div className={`xpresumeSection bg-sungradient-y text-ise-white flex flex-wrap gap-x-4 justify-center items-center py-3 ${customClass}`}>
+    <div className={`xpresumeSection bg-sungradient-y text-ise-white flex flex-wrap gap-x-4 justify-center items-center py-3 lg:py-6 lg:gap-12 ${customClass}`}>
       <div className="flex items-center gap-1">
-        <span className="text-4xl font-bold">+25</span>
+        <span className="text-4xl font-bold lg:text-6xl">+25</span>
         <div>
-          <p className="leading-none font-Hero text-sm">
+          <p className="leading-none font-Hero text-sm lg:text-lg lg:leading-none">
             clientes
             <br />
             satisfechos
@@ -15,9 +15,9 @@ function ExperienceBar({ customClass }) {
         </div>
       </div>
       <div className="flex items-center gap-1">
-        <span className="text-4xl font-bold">+25 </span>
+        <span className="text-4xl font-bold lg:text-6xl">+25 </span>
         <div>
-          <p className="leading-none font-Hero text-sm">
+          <p className="leading-none font-Hero text-sm lg:text-lg lg:leading-none">
             proyectos
             <br />
             terminados
@@ -25,9 +25,9 @@ function ExperienceBar({ customClass }) {
         </div>
       </div>
       <div className="flex items-center gap-1">
-        <span className="text-4xl font-bold">+3</span>
+        <span className="text-4xl font-bold lg:text-6xl">+3</span>
         <div>
-          <p className="leading-none font-Hero text-sm">
+          <p className="leading-none font-Hero text-sm lg:text-lg lg:leading-none">
             MegaWatts
             <br />
             instalados
