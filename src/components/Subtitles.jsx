@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 
 function Subtitles({ title, magicWord, customClass }) {
   return (
-    <p className={`text-2xl font-bold text-center w-[90%] ${customClass}`}>
+    <p className={`text-2xl font-bold text-center w-[90%] lg:text-3xl ${customClass}`}>
       {title.split(' ').map((word) => (word === magicWord ? <span key={word} className="text-ise-orange">{`${magicWord} `}</span> : <span key={word}>{`${word} `}</span>))}
     </p>
   );
