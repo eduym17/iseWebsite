@@ -5,8 +5,8 @@ import {
   landingImage, electricaImgMobile, termicaImgMobile, exp15, exp30, exp35,
 } from '../components/images';
 import {
-  ButtonMain, Paragraph, ServiceCard, Titles, Subtitles, Faqs, ExperienceBar, ExperienceItem,
-  ClientsBar, ContactForm, Footer, Header,
+  ButtonMain, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles, Faqs,
+  ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header,
 } from '../components';
 
 function Home() {
@@ -17,7 +17,7 @@ function Home() {
         <div className="containerContent md:flex-row-reverse md:justify-center md:py-8 md:px-7">
           <img src={landingImage} alt="sistema fotovoltaico" className="w-4/6 max-w-xs lg:max-w-xl" />
           <div className="flex flex-col items-center md:items-start lg:w-1/2 md:w-1/2">
-            <Titles title="Los beneficios del Sol, siempre a tu alcance" magicWord="beneficios" customClass="mt-5 md:text-left lg:w-full lg:text-6xl" />
+            <Titles6xl title="Los beneficios del Sol, siempre a tu alcance" magicWord="beneficios" customClass="mt-5 md:text-left lg:w-full" />
             <Paragraph customClass="mt-3 md:text-left md:w-5/6 lg:w-4/5">
               Genera tu propia energía y comienza a ahorrar de inmediato,
               {' '}
@@ -138,7 +138,7 @@ function Home() {
               <Subtitles title="Energía eléctrica" magicWord="eléctrica" customClass="mt-6 mb-1 lg:mt-10" />
               {
                 faqsFV.map((faq) => (
-                  <Faqs question={faq.question} customClass="my-1">
+                  <Faqs question={faq.question} key={faq.question} customClass="my-1">
                     {faq.answer}
                   </Faqs>
                 ))
@@ -148,7 +148,7 @@ function Home() {
               <Subtitles title="Energía térmica" magicWord="térmica" customClass="mt-6 mb-1 lg:mt-10" />
               {
                 faqsFT.map((faq) => (
-                  <Faqs question={faq.question} customClass="my-1">
+                  <Faqs question={faq.question} key={faq.question} customClass="my-1">
                     {faq.answer}
                   </Faqs>
                 ))
@@ -160,7 +160,7 @@ function Home() {
       <div className="contactSection bg-ise-orange text-ise-white containerFull">
         <div className="containerContent md:flex-row md:items-start md:justify-center md:px-10 md:py-6">
           <div className="md:w-7/12 flex flex-col items-center md:items-start">
-            <Titles title="¿Aún tienes alguna pregunta?" customClass="mt-6 md:text-left lg:text-4xl" />
+            <TitlesNegative title="¿Aún tienes alguna pregunta?" customClass="mt-6 md:text-left" />
             <Subtitles title="¡Ponte en contacto con nosotros!" customClass="mt-2 md:text-left" />
             <Paragraph customClass="text-justify mt-1 md:w-5/6 lg:w-4/5 lg:text-left">
               Acércate a nosotros para poder ofrecerte una solución a la medida de tus necesidades,
