@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { logoInSitu } from './icons';
 
 function Header() {
@@ -15,8 +16,8 @@ function Header() {
         </a>
         <div className={`absolute right-3 top-3 transition-all duration-1000 ${menu ? 'text-ise-orange' : 'flex gap-8 bg-ise-orange py-1 pr-1 pl-3 rounded-lg text-ise-white font-semibold'}`}>
           <div className={`${menu ? 'hidden' : 'flex flex-col'}`}>
-            <a href="/" className="">Soluciones</a>
-            <a href="/" className="">Nosotros</a>
+            <Link to="/soluciones">Soluciones</Link>
+            <Link to="/nosotros">Nosotros</Link>
             <a href="/" className="">Proyectos</a>
             <a href="/" className="">Contacto</a>
           </div>
