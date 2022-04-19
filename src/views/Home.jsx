@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { faqsFV, faqsFT } from '../components/texts/faqs';
 import { epcIcon, financiamientoIcon, asesoriaIcon } from '../components/icons';
 import {
@@ -13,7 +14,7 @@ function Home() {
   return (
     <div className="text-ise-gray-30 font-Cabin">
       <Header />
-      <div className="landingPage bg-ise-gray-10 containerFull">
+      <div id="landingPage" className="landingPage bg-ise-gray-10 containerFull">
         <div className="containerContent md:flex-row-reverse md:justify-center md:py-8 md:px-7">
           <img src={landingImage} alt="sistema fotovoltaico" className="w-4/6 max-w-xs lg:max-w-xl" />
           <div className="flex flex-col items-center md:items-start lg:w-1/2 md:w-1/2">
@@ -23,8 +24,8 @@ function Home() {
               {' '}
               tenemos la solución que necesitas.
             </Paragraph>
-            <a href="/">
-              <ButtonMain btnText="Ponte en contacto" customClass="my-5" />
+            <a href="#contact">
+              <ButtonMain customClass="my-5">Ponte en contacto</ButtonMain>
             </a>
           </div>
         </div>
@@ -56,9 +57,9 @@ function Home() {
               </Paragraph>
             </div>
           </div>
-          <a href="/">
-            <ButtonMain btnText="Conoce más" customClass="my-6 lg:mt-8 lg:mb-12" />
-          </a>
+          <Link to="/soluciones">
+            <ButtonMain customClass="my-6 lg:mt-8 lg:mb-12">Conoce más</ButtonMain>
+          </Link>
         </div>
       </div>
       <ExperienceBar customClass="" />
@@ -93,7 +94,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="projectsSection bg-ise-gray-20 containerFull">
+      <div id="projects" className="projectsSection bg-ise-gray-20 containerFull">
         <div className="containerContent">
           <Titles title="Proyectos recientes" magicWord="Proyectos" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
@@ -107,7 +108,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="xpSection bg-ise-gray-10 containerFull">
+      <div id="faqs" className="xpSection bg-ise-gray-10 containerFull">
         <div className="containerContent">
           <Titles title="Nuestra experiencia" magicWord="experiencia" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
@@ -120,9 +121,9 @@ function Home() {
             <ExperienceItem text="proyectos ejecutados" magicWord="proyectos" image={exp30} customClass="mt-10" />
             <ExperienceItem text="MW instalados" magicWord="MW" image={exp35} customClass="mt-10" />
           </div>
-          <a href="/">
-            <ButtonMain btnText="Acerca de nosotros" customClass="mt-10 md:mb-8 lg:mb-12" />
-          </a>
+          <Link to="/nosotros">
+            <ButtonMain customClass="mt-10 md:mb-8 lg:mb-12">Acerca de nosotros</ButtonMain>
+          </Link>
         </div>
       </div>
       <div className="faqSection bg-ise-gray-20 containerFull">
@@ -157,7 +158,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="contactSection bg-ise-orange text-ise-white containerFull">
+      <div id="contact" className="contactSection bg-ise-orange text-ise-white containerFull">
         <div className="containerContent md:flex-row md:items-start md:justify-center md:px-10 md:py-6">
           <div className="md:w-7/12 flex flex-col items-center md:items-start">
             <TitlesNegative title="¿Aún tienes alguna pregunta?" customClass="mt-6 md:text-left" />
