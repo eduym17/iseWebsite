@@ -10,7 +10,7 @@ function Footer({ customClass }) {
     <div className="containerFull bg-ise-gray-20">
       <div className={`containerContent px-2 items-stretch divide-y-2 divide-gray-400 ${customClass}`}>
         <div className="flex items-center justify-between mb-1 md:mb-4">
-          <a href="#header">
+          <a href="/#header">
             <img src={logoInSitu} alt="In Situ Energía" className="h-10 lg:h-12" />
           </a>
           <div className="flex flex-col items-end gap-2 md:flex-row-reverse md:items-center md:gap-10">
@@ -31,8 +31,8 @@ function Footer({ customClass }) {
             <div className="router flex gap-2 text-sm">
               <Link to="/soluciones" className="hover:text-ise-orange">Soluciones</Link>
               <Link to="/nosotros" className="hover:text-ise-orange">Nosotros</Link>
-              <a href="#projects" className="hover:text-ise-orange">Proyectos</a>
-              <a href="#faqs" className="hover:text-ise-orange">FAQs</a>
+              <a href="/#projects" className="hover:text-ise-orange">Proyectos</a>
+              <a href="/#faqs" className="hover:text-ise-orange">FAQs</a>
             </div>
           </div>
         </div>

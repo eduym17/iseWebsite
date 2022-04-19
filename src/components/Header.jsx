@@ -12,15 +12,15 @@ function Header() {
   return (
     <div className="header bg-ise-gray-10 containerFull">
       <div id="header" className="containerContent flex-row justify-between p-3 items-start md:items-center lg:py-6 lg:px-4">
-        <a href="#header">
+        <a href="/#header">
           <img src={logoInSitu} alt="In Situ Energía" className="h-9 lg:h-12" />
         </a>
         <div className={`lg:hidden absolute right-3 top-3 transition-all duration-1000 ${menu ? 'text-ise-orange' : 'flex gap-8 bg-ise-orange py-1 pr-1 pl-3 rounded-lg text-ise-white font-semibold'}`}>
           <div className={`${menu ? 'hidden' : 'flex flex-col'}`}>
             <Link to="/soluciones">Soluciones</Link>
             <Link to="/nosotros">Nosotros</Link>
-            <Link to="/">Proyectos</Link>
-            <Link to="/">Contacto</Link>
+            <a href="/#projects">Proyectos</a>
+            <a href="/#contact">Contacto</a>
           </div>
           <div className="">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" onClick={() => handleClick()} className={`hover:cursor-pointer ${menu ? 'h-8 w-8' : 'h-6 w-6'}`}>
@@ -31,8 +31,8 @@ function Header() {
         <div className="hidden font-semibold text-lg lg:flex items-center gap-12">
           <Link to="/soluciones">Soluciones</Link>
           <Link to="/nosotros">Nosotros</Link>
-          <a href="#projects">Proyectos</a>
-          <a href="#contact">
+          <a href="/#projects">Proyectos</a>
+          <a href="/#contact">
             <ButtonMain customClass="my-5">Contacto</ButtonMain>
           </a>
         </div>

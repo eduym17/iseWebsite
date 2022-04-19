@@ -24,7 +24,7 @@ function Home() {
               {' '}
               tenemos la solución que necesitas.
             </Paragraph>
-            <a href="#contact">
+            <a href="/#contact">
               <ButtonMain customClass="my-5">Ponte en contacto</ButtonMain>
             </a>
           </div>
@@ -122,7 +122,7 @@ function Home() {
             <ExperienceItem text="MW instalados" magicWord="MW" image={exp35} customClass="mt-10" />
           </div>
           <Link to="/nosotros">
-            <ButtonMain customClass="mt-10 md:mb-8 lg:mb-12">Acerca de nosotros</ButtonMain>
+            <ButtonMain customClass="mt-10 mb-8 lg:mb-12">Acerca de nosotros</ButtonMain>
           </Link>
         </div>
       </div>
