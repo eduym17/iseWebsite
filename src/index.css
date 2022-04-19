@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer components {
   .bg-sungradient-y {
     @apply bg-gradient-to-r from-ise-yellow via-ise-orange to-ise-orange
