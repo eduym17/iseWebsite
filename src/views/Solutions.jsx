@@ -22,6 +22,18 @@ function Solutions() {
               </Paragraph>
             </div>
           </div>
+          <div className="flex flex-col items-center mt-6 md:flex-row md:items-center md:justify-center md:gap-6 md:mt-8 lg:mt-16">
+            <div className="flex flex-col items-center justify-center w-full md:w-1/5">
+              <Subtitles title="Net Metering" magicWord="Metering" customClass="md:w-full md:text-left" />
+              <p className="leading-none text-sm font-semibold text-center md:w-full md:text-left lg:text-base">
+                Generación distribuida
+              </p>
+            </div>
+            <Paragraph customClass="mt-2 text-justify md:whitespace-pre-line md:mt-0 md:w-3/5">
+              {`Sistemas con una capacidad instalada menor a 500 kW que generan energía eléctrica para autoconsumo.
+              Cada contrato con CFE puede conectarse a un único sistema fotovoltaico.`}
+            </Paragraph>
+          </div>
         </div>
       </div>
       <div className="electricaSolutions bg-ise-gray-10 containerFull">
