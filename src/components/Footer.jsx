@@ -8,7 +8,7 @@ import {
 function Footer({ customClass }) {
   return (
     <div className="containerFull bg-ise-gray-20">
-      <div className={`containerContent px-2 items-stretch divide-y-2 divide-gray-400 ${customClass}`}>
+      <div className={`containerContent px-3 md:px-4 items-stretch divide-y-2 divide-gray-400 ${customClass}`}>
         <div className="flex items-center justify-between mb-1 md:mb-4">
           <a href="/#header">
             <img src={logoInSitu} alt="In Situ Energía" className="h-10 lg:h-12" />
