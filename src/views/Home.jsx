@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { faqsFV, faqsFT } from '../components/texts/faqs';
 import { epcIcon, financiamientoIcon, asesoriaIcon } from '../components/icons';
 import {
@@ -57,9 +56,9 @@ function Home() {
               </Paragraph>
             </div>
           </div>
-          <Link to="/soluciones">
+          <a href="/soluciones">
             <ButtonMain customClass="my-6 lg:mt-8 lg:mb-12">Conoce más</ButtonMain>
-          </Link>
+          </a>
         </div>
       </div>
       <ExperienceBar customClass="" />
@@ -108,7 +107,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div id="faqs" className="xpSection bg-ise-gray-10 containerFull">
+      <div className="xpSection bg-ise-gray-10 containerFull">
         <div className="containerContent">
           <Titles title="Nuestra experiencia" magicWord="experiencia" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
@@ -121,12 +120,12 @@ function Home() {
             <ExperienceItem text="proyectos ejecutados" magicWord="proyectos" image={exp30} customClass="mt-10" />
             <ExperienceItem text="MW instalados" magicWord="MW" image={exp35} customClass="mt-10" />
           </div>
-          <Link to="/nosotros">
+          <a href="/nosotros">
             <ButtonMain customClass="mt-10 mb-8 lg:mb-12">Acerca de nosotros</ButtonMain>
-          </Link>
+          </a>
         </div>
       </div>
-      <div className="faqSection bg-ise-gray-20 containerFull">
+      <div id="faqs" className="faqSection bg-ise-gray-20 containerFull">
         <div className="containerContent">
           <Titles title="Preguntas frecuentes" magicWord="frecuentes" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 md:w-1/2 lg:mt-2">
