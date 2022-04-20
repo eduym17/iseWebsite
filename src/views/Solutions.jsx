@@ -1,7 +1,8 @@
 import React from 'react';
 import {
-  Header, Footer, Titles, Subtitles, Paragraph,
+  Header, Footer, Titles, Paragraph,
 } from '../components';
+import TechnicalScheme from '../components/TechnicalScheme';
 import { electricaImgMobile, landingImage } from '../components/images';
 
 function Solutions() {
@@ -22,54 +23,18 @@ function Solutions() {
               </Paragraph>
             </div>
           </div>
-          <div className="flex flex-col items-center mt-6 md:flex-row md:items-center md:justify-center md:gap-6 md:mt-8 lg:mt-16">
-            <div className="flex flex-col items-center justify-center w-full md:w-1/5">
-              <Subtitles title="Net Metering" magicWord="Metering" customClass="md:w-full md:text-left" />
-              <p className="leading-none text-sm font-semibold text-center md:w-full md:text-left lg:text-base">
-                Generación distribuida
-              </p>
-            </div>
-            <Paragraph customClass="mt-2 text-justify md:whitespace-pre-line md:mt-0 md:w-3/5">
-              {`Sistemas con una capacidad instalada menor a 500 kW que generan energía eléctrica para autoconsumo.
-              Cada contrato con CFE puede conectarse a un único sistema fotovoltaico.`}
-            </Paragraph>
-          </div>
-        </div>
-      </div>
-      <div className="electricaSolutions bg-ise-gray-10 containerFull">
-        <div div className="containerContent">
-          <div className="flex flex-col items-center md:flex-row md:items-center md:justify-center mt-6">
-            <div className="flex flex-col items-center justify-center w-full md:w-1/5">
-              <Subtitles title="Net Metering" magicWord="Metering" customClass="lg:mt-2" />
-              <p className="leading-none text-sm font-semibold md:text-base">
-                Generación distribuida
-              </p>
-            </div>
-            <Paragraph customClass="mt-2 text-justify whitespace-pre-line">
-              Sistemas con una capacidad instalada menor a 500 kW que generan energía eléctrica para
-              {' '}
-              autoconsumo.
-              {'\n'}
-              Cada contrato con CFE puede conectarse a un único sistema fotovoltaico.
-            </Paragraph>
-          </div>
-          <Subtitles title="Venta Total" magicWord="Total" customClass="mt-6 lg:mt-2" />
-          <p className="leading-none text-sm font-semibold md:text-base">
-            Generación distribuida
-          </p>
-          <Paragraph customClass="mt-2 lg:w-4/5 text-justify">
-            Sistemas con una capacidad instalada menor a 500 kW que generan energía eléctrica para
-            {' '}
-            ser vendida a suministradores.
-          </Paragraph>
-          <Subtitles title="Abasto Aislado" magicWord="Aislado" customClass="mt-6 lg:mt-2" />
-          <Paragraph customClass="mt-2 lg:w-4/5 text-justify whitespace-pre-line">
-            Sistemas con una capacidad instalada mayor o igual a 500 kW para generación y consumo
-            {' '}
-            <span className="italic">in situ.</span>
-            {'\n'}
-            Pueden tener, o no, intercambio de energía con la red.
-          </Paragraph>
+          <TechnicalScheme title="Net Metering" magicWord="Metering" subtitleFooter="Generación distribuida" customClassSubtitle="my-0" customClassParag="" customClass="mt-4 md:mt-5 lg:mt-12">
+            {`Sistemas con una capacidad instalada menor a 500 kW que generan energía eléctrica para autoconsumo.
+            Cada contrato con CFE puede conectarse a un único sistema fotovoltaico.`}
+          </TechnicalScheme>
+          <TechnicalScheme title="Venta Total" magicWord="Total" subtitleFooter="Generación distribuida" customClassSubtitle="my-0" customClassParag="" customClass="mt-4 md:mt-5 lg:mt-6">
+            {`Sistemas con una capacidad instalada menor a 500 kW.
+            Generan energía eléctrica para ser vendida en su totalidad a suministradores.`}
+          </TechnicalScheme>
+          <TechnicalScheme title="Abasto Aislado" magicWord="Aislado" subtitleFooter="" customClassSubtitle="my-0" customClassParag="" customClass="mt-4 mb-6 md:mt-5 lg:mt-6 lg:mb-10">
+            {`Sistemas con una capacidad instalada mayor o igual a 500 kW para generación y consumo in situ.
+            Pueden tener, o no, intercambio de energía con la red.`}
+          </TechnicalScheme>
         </div>
       </div>
       <Footer customClass="my-5" />
