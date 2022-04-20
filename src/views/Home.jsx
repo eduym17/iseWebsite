@@ -24,7 +24,7 @@ function Home() {
               {' '}
               tenemos la solución que necesitas.
             </Paragraph>
-            <a href="/#contact">
+            <a href="/#contacto">
               <ButtonMain customClass="my-5">Ponte en contacto</ButtonMain>
             </a>
           </div>
@@ -94,7 +94,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div id="projects" className="projectsSection bg-ise-gray-20 containerFull">
+      <div id="proyectos" className="projectsSection bg-ise-gray-20 containerFull">
         <div className="containerContent">
           <Titles title="Proyectos recientes" magicWord="Proyectos" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
@@ -158,7 +158,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div id="contact" className="contactSection bg-ise-orange text-ise-white containerFull">
+      <div id="contacto" className="contactSection bg-ise-orange text-ise-white containerFull">
         <div className="containerContent md:flex-row md:items-start md:justify-center md:px-10 md:py-6">
           <div className="md:w-7/12 flex flex-col items-center md:items-start">
             <TitlesNegative title="¿Aún tienes alguna pregunta?" customClass="mt-6 md:text-left" />
