@@ -8,7 +8,7 @@ function TechnicalScheme({
 }) {
   return (
     <div className={`flex flex-col items-center md:flex-row md:items-center md:justify-center md:gap-2 md:w-[90%] ${customClass}`}>
-      <div className="flex flex-col items-center justify-center w-full md:w-1/3">
+      <div className="flex flex-col items-center justify-center w-full md:w-2/5">
         <Subtitles title={title} magicWord={magicWord} customClass={`md:w-full md:text-left ${customClassSubtitle}`} />
         <p className="leading-none text-sm font-semibold text-center md:w-full md:text-left lg:text-base">
           {subtitleFooter}
