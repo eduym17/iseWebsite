@@ -25,8 +25,16 @@ function Faqs({ question, children, customClass }) {
     handleClick();
   }, [height]);
 
+  const blurHandler = (e) => {
+    if (!e.currentTarget.contains(e.relatedTarget)) {
+      // Focus left self
+      setFaq(true);
+      content.current.style.height = 0;
+    }
+  };
+
   return (
-    <div className={`faqItem transition-all duration-500 w-[90%] py-2 px-2 ${!faq ? 'bg-ise-orange text-ise-white rounded-lg' : 'bg-ise-gray-50 text-ise-gray-30 rounded-3xl'} ${customClass}`}>
+    <button onBlur={(e) => blurHandler(e)} type="button" className={`cursor-default faqItem transition-all duration-500 w-[90%] py-2 px-2 ${!faq ? 'bg-ise-orange text-ise-white rounded-lg' : 'bg-ise-gray-50 text-ise-gray-30 rounded-3xl'} ${customClass}`}>
       <div className="itemTitle flex justify-between items-center">
         <p className="font-bold">{question}</p>
         <svg xmlns="http://www.w3.org/2000/svg" onClick={() => handleClick()} className={`h-6 transform transition-all duration-500 hover:cursor-pointer ${!faq ? 'rotate-180' : 'rotate-0'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -36,7 +44,7 @@ function Faqs({ question, children, customClass }) {
       <p ref={content} className="font-Hero text-xs text-justify overflow-hidden transition-height duration-500 box-border">
         {children}
       </p>
-    </div>
+    </button>
   );
 }
 
