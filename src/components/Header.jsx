@@ -21,7 +21,7 @@ function Header() {
         <a href="/">
           <img src={logoInSitu} alt="In Situ Energía" className="h-9 lg:h-12" />
         </a>
-        <button type="button" onBlur={(e) => blurHandler(e)} className={`lg:hidden absolute right-3 top-3 transition-all duration-1000 ${menu ? 'text-ise-orange' : 'flex gap-8 bg-ise-orange py-1 pr-1 pl-3 rounded-lg text-ise-white font-semibold'}`}>
+        <button type="button" onBlur={(e) => blurHandler(e)} className={`cursor-default lg:hidden absolute right-3 top-3 transition-all duration-1000 ${menu ? 'text-ise-orange' : 'flex gap-8 bg-ise-orange py-1 pr-1 pl-3 rounded-lg text-ise-white font-semibold'}`}>
           <div className={`${menu ? 'hidden' : 'flex flex-col items-start'}`}>
             <a href="/">Inicio</a>
             <a href="/soluciones">Soluciones</a>
