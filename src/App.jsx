@@ -1,9 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './views/Home';
-import AboutUs from './views/AboutUs';
-import Solutions from './views/Solutions';
-import NotFound from './views/NotFound';
+import {
+  Home, AboutUs, Solutions, NotFound,
+} from './views';
 
 function App() {
   return (
