@@ -11,7 +11,7 @@ function AboutUs() {
       <Header />
       <div className="bg-ise-gray-10 containerFull">
         <div className="containerContent flex flex-col">
-          <Titles title="Acerca de nosotros" magicWord="nosotros" customClass="mt-2 lg:mt-6" />
+          <Titles title="Acerca de nosotros" magicWord="nosotros" customClass="mt-5 lg:mt-6" />
           <div className="flex md:my-6 md:flex-row-reverse md:items-center md:justify-center md:gap-8 lg:mt-4">
             <img src={landingImage} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:flex md:w-1/3 lg:max-w-sm" />
             <div className="flex flex-col items-center md:w-1/2 lg:w-1/2">
