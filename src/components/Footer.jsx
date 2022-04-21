@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import propTypes from 'prop-types';
 import {
   logoInSitu, linkedinIcon, twitterIcon, facebookIcon, instagramIcon,
@@ -38,8 +37,8 @@ function Footer({ customClass }) {
         </div>
         <div className="pt-1 flex flex-col md:flex-row md:justify-between md:items-center ">
           <div className="router flex text-sm items-center justify-around md:gap-4">
-            <Link to="/" className="hover:text-ise-orange">Política de privacidad</Link>
-            <Link to="/" className="hover:text-ise-orange">Términos y condiciones</Link>
+            <a href="/privacidad" className="hover:text-ise-orange">Política de privacidad</a>
+            <a href="/terminos" className="hover:text-ise-orange">Términos y condiciones</a>
             <a href="/" className="hover:text-ise-orange hidden">Log In</a>
           </div>
           <div className="copyright pt-1 text-sm flex justify-center">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {
-  Home, AboutUs, Solutions, NotFound,
+  Home, AboutUs, Solutions, TermsAndConditions, PrivacyPolicy, NotFound,
 } from './views';
 
 function App() {
@@ -11,6 +11,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/soluciones" element={<Solutions />} />
         <Route path="/nosotros" element={<AboutUs />} />
+        <Route path="/terminos" element={<TermsAndConditions />} />
+        <Route path="/privacidad" element={<PrivacyPolicy />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
