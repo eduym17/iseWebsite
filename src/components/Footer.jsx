@@ -10,9 +10,9 @@ function Footer({ customClass }) {
     <div className="containerFull bg-ise-gray-20">
       <div className={`containerContent px-3 md:px-4 items-stretch divide-y-2 divide-gray-400 ${customClass}`}>
         <div className="flex items-center justify-between mb-1 md:mb-4">
-          <Link to="/">
+          <a href="/">
             <img src={logoInSitu} alt="In Situ Energía" className="h-10 lg:h-12" />
-          </Link>
+          </a>
           <div className="flex flex-col items-end gap-2 md:flex-row-reverse md:items-center md:gap-10">
             <div className="social flex gap-3">
               <a href="https://www.linkedin.com/company/insituenergia" target="_blank" rel="noreferrer">
