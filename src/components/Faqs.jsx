@@ -33,11 +33,17 @@ function Faqs({ question, children, customClass }) {
     }
   };
 
+  const enterHandlesFaq = (e) => {
+    if (e.key === 'Enter') {
+      handleClick();
+    }
+  };
+
   return (
-    <button onBlur={(e) => blurHandler(e)} type="button" className={`cursor-default faqItem transition-all duration-500 w-[90%] py-2 px-2 ${!faq ? 'bg-ise-orange text-ise-white rounded-lg' : 'bg-ise-gray-50 text-ise-gray-30 rounded-3xl'} ${customClass}`}>
+    <button onKeyUp={(e) => enterHandlesFaq(e)} onBlur={(e) => blurHandler(e)} type="button" className={`cursor-default faqItem transition-all duration-500 w-[90%] py-2 px-2 ${!faq ? 'bg-ise-orange text-ise-white rounded-lg' : 'bg-ise-gray-50 text-ise-gray-30 rounded-3xl'} ${customClass}`}>
       <div className="itemTitle flex justify-between items-center">
         <p className="font-bold">{question}</p>
-        <svg xmlns="http://www.w3.org/2000/svg" onClick={() => handleClick()} className={`h-6 transform transition-all duration-500 hover:cursor-pointer ${!faq ? 'rotate-180' : 'rotate-0'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+        <svg xmlns="http://www.w3.org/2000/svg" onClick={() => handleClick()} className={`cursor-pointer h-6 transform transition-all duration-500 hover:cursor-pointer ${!faq ? 'rotate-180' : 'rotate-0'}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </div>
