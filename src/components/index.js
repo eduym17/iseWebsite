@@ -13,8 +13,9 @@ import ClientsBar from './ClientsBar';
 import ContactForm from './ContactForm';
 import Footer from './Footer';
 import Header from './Header';
+import ScrollToTop from './ScrollToTop';
 
 export {
   ButtonAnchor, ButtonLink, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles,
-  Faqs, ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header,
+  Faqs, ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header, ScrollToTop,
 };
