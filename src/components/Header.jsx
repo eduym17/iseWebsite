@@ -16,13 +16,19 @@ function Header() {
     }
   };
 
+  const enterHandlesMenu = (e) => {
+    if (e.key === 'Enter') {
+      handleClick();
+    }
+  };
+
   return (
     <div id="inicio" className="header bg-ise-gray-10 containerFull">
       <div id="header" className="containerContent flex-row justify-between p-3 items-start md:items-center lg:py-6 lg:px-4">
         <Link to="/">
           <img src={logoInSitu} alt="In Situ Energía" className="h-9 lg:h-12" />
         </Link>
-        <button type="button" onBlur={(e) => blurHandler(e)} className={`cursor-default lg:hidden absolute right-3 top-3 transition-all duration-1000 ${menu ? 'text-ise-orange' : 'flex gap-8 bg-ise-orange py-1 pr-1 pl-3 rounded-lg text-ise-white font-semibold'}`}>
+        <button type="button" onKeyUp={(e) => enterHandlesMenu(e)} onBlur={(e) => blurHandler(e)} className={`cursor-default lg:hidden absolute right-3 top-3 transition-all duration-1000 ${menu ? 'text-ise-orange' : 'flex gap-8 bg-ise-orange py-1 pr-1 pl-3 rounded-lg text-ise-white font-semibold'}`}>
           <div className={`${menu ? 'hidden' : 'flex flex-col items-start'}`}>
             <Link to="/">Inicio</Link>
             <Link to="/soluciones">Soluciones</Link>
