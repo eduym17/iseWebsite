@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import propTypes from 'prop-types';
 import {
   logoInSitu, linkedinIcon, twitterIcon, facebookIcon, instagramIcon,
@@ -9,9 +10,9 @@ function Footer({ customClass }) {
     <div className="containerFull bg-ise-gray-20">
       <div className={`containerContent px-3 md:px-4 items-stretch divide-y-2 divide-gray-400 ${customClass}`}>
         <div className="flex items-center justify-between mb-1 md:mb-4">
-          <a href="/">
+          <Link to="/">
             <img src={logoInSitu} alt="In Situ Energía" className="h-10 lg:h-12" />
-          </a>
+          </Link>
           <div className="flex flex-col items-end gap-2 md:flex-row-reverse md:items-center md:gap-10">
             <div className="social flex gap-3">
               <a href="https://www.linkedin.com/company/insituenergia" target="_blank" rel="noreferrer">
@@ -28,8 +29,8 @@ function Footer({ customClass }) {
               </a>
             </div>
             <div className="router flex gap-2 text-sm">
-              <a href="/soluciones" className="hover:text-ise-orange">Soluciones</a>
-              <a href="/nosotros" className="hover:text-ise-orange">Nosotros</a>
+              <Link to="/soluciones" className="hover:text-ise-orange">Soluciones</Link>
+              <Link to="/nosotros" className="hover:text-ise-orange">Nosotros</Link>
               <a href="/#proyectos" className="hover:text-ise-orange">Proyectos</a>
               <a href="/#faqs" className="hover:text-ise-orange">FAQs</a>
             </div>
@@ -37,9 +38,9 @@ function Footer({ customClass }) {
         </div>
         <div className="pt-1 flex flex-col md:flex-row md:justify-between md:items-center ">
           <div className="router flex text-sm items-center justify-around md:gap-4">
-            <a href="/privacidad" className="hover:text-ise-orange">Política de privacidad</a>
-            <a href="/terminos" className="hover:text-ise-orange">Términos y condiciones</a>
-            <a href="/" className="hover:text-ise-orange hidden">Log In</a>
+            <Link to="/privacidad" className="hover:text-ise-orange">Política de privacidad</Link>
+            <Link to="/terminos" className="hover:text-ise-orange">Términos y condiciones</Link>
+            <Link to="/" className="hover:text-ise-orange hidden">Log In</Link>
           </div>
           <div className="copyright pt-1 text-sm flex justify-center">
             <p>{`© Todos los derechos reservados. In Situ Energía, ${new Date().getFullYear()}.`}</p>

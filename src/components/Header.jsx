@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { logoInSitu } from './icons';
-import ButtonMain from './ButtonMain';
+import ButtonAnchor from './ButtonAnchor';
 
 function Header() {
   const [menu, setMenu] = useState('0');
@@ -18,14 +19,14 @@ function Header() {
   return (
     <div id="inicio" className="header bg-ise-gray-10 containerFull">
       <div id="header" className="containerContent flex-row justify-between p-3 items-start md:items-center lg:py-6 lg:px-4">
-        <a href="/">
+        <Link to="/">
           <img src={logoInSitu} alt="In Situ Energía" className="h-9 lg:h-12" />
-        </a>
+        </Link>
         <button type="button" onBlur={(e) => blurHandler(e)} className={`cursor-default lg:hidden absolute right-3 top-3 transition-all duration-1000 ${menu ? 'text-ise-orange' : 'flex gap-8 bg-ise-orange py-1 pr-1 pl-3 rounded-lg text-ise-white font-semibold'}`}>
           <div className={`${menu ? 'hidden' : 'flex flex-col items-start'}`}>
-            <a href="/">Inicio</a>
-            <a href="/soluciones">Soluciones</a>
-            <a href="/nosotros">Nosotros</a>
+            <Link to="/">Inicio</Link>
+            <Link to="/soluciones">Soluciones</Link>
+            <Link to="/nosotros">Nosotros</Link>
             <a href="/#proyectos">Proyectos</a>
             <a href="/#contacto">Contacto</a>
           </div>
@@ -34,13 +35,11 @@ function Header() {
           </svg>
         </button>
         <div className="hidden font-semibold text-lg lg:flex items-center gap-12">
-          <a href="/">Inicio</a>
-          <a href="/soluciones">Soluciones</a>
-          <a href="/nosotros">Nosotros</a>
+          <Link to="/">Inicio</Link>
+          <Link to="/soluciones">Soluciones</Link>
+          <Link to="/nosotros">Nosotros</Link>
           <a href="/#proyectos">Proyectos</a>
-          <a href="/#contacto">
-            <ButtonMain customClass="my-5">Contacto</ButtonMain>
-          </a>
+          <ButtonAnchor customClass="" href="/#contacto">Contacto</ButtonAnchor>
         </div>
       </div>
     </div>
