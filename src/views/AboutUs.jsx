@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Header, Footer, Titles, Paragraph,
+  Header, Footer, Titles, Paragraph, ScrollToTop,
 } from '../components';
 import { electricaImgMobile, landingImage } from '../components/images';
 import { bbvaIcon } from '../components/icons';
@@ -8,6 +8,7 @@ import { bbvaIcon } from '../components/icons';
 function AboutUs() {
   return (
     <div className="text-ise-gray-30 font-Cabin bg-ise-gray-20 h-screen">
+      <ScrollToTop />
       <Header />
       <div className="bg-ise-gray-10 containerFull">
         <div className="containerContent flex flex-col">

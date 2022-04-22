@@ -1,12 +1,13 @@
 import React from 'react';
 import {
-  Header, Footer, Titles, Subtitles, Paragraph, ButtonAnchor,
+  Header, Footer, Titles, Subtitles, Paragraph, ButtonAnchor, ScrollToTop,
 } from '../components';
 import { landingImage, electricaImgMobile, termicaImgMobile } from '../components/images';
 
 function TermsAndConditions() {
   return (
     <div className="text-ise-gray-30 font-Cabin h-screen bg-red-300">
+      <ScrollToTop />
       <Header />
       <div id="landingPage" className="landingPage bg-ise-gray-10 containerFull">
         <div className="containerContent md:flex-row-reverse md:justify-center md:py-8 md:px-7">

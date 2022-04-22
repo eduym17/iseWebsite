@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Header, Footer, Titles, Paragraph,
+  Header, Footer, Titles, Paragraph, ScrollToTop,
 } from '../components';
 import TechnicalScheme from '../components/TechnicalScheme';
 import { electricaImgMobile, termicaImgMobile, landingImage } from '../components/images';
@@ -8,6 +8,7 @@ import { electricaImgMobile, termicaImgMobile, landingImage } from '../component
 function Solutions() {
   return (
     <div className="text-ise-gray-30 font-Cabin">
+      <ScrollToTop />
       <Header />
       <div className="bg-ise-gray-10 containerFull">
         <div className="containerContent flex flex-col md:py-4 lg:py-6">

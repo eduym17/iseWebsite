@@ -6,12 +6,13 @@ import {
 } from '../components/images';
 import {
   ButtonAnchor, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles, Faqs,
-  ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header, ButtonLink,
+  ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header, ButtonLink, ScrollToTop,
 } from '../components';
 
 function Home() {
   return (
     <div className="text-ise-gray-30 font-Cabin">
+      <ScrollToTop />
       <Header />
       <div id="landingPage" className="landingPage bg-ise-gray-10 containerFull">
         <div className="containerContent md:flex-row-reverse md:justify-center md:py-8 md:px-7">
