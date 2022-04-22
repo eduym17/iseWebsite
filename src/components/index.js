@@ -1,4 +1,5 @@
-import ButtonMain from './ButtonMain';
+import ButtonAnchor from './ButtonAnchor';
+import ButtonLink from './ButtonLink';
 import Paragraph from './Paragraph';
 import ServiceCard from './ServiceCard';
 import Titles from './Titles';
@@ -14,6 +15,6 @@ import Footer from './Footer';
 import Header from './Header';
 
 export {
-  ButtonMain, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles, Faqs,
-  ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header,
+  ButtonAnchor, ButtonLink, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles,
+  Faqs, ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header,
 };

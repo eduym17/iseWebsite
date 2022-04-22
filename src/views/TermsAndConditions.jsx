@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Header, Footer, Titles, Subtitles, Paragraph, ButtonMain,
+  Header, Footer, Titles, Subtitles, Paragraph, ButtonAnchor,
 } from '../components';
 import { landingImage, electricaImgMobile, termicaImgMobile } from '../components/images';
 
@@ -19,7 +19,7 @@ function TermsAndConditions() {
               tenemos la solución que necesitas.
             </Paragraph>
             <a href="/#contacto">
-              <ButtonMain customClass="my-5">Ponte en contacto</ButtonMain>
+              <ButtonAnchor customClass="my-5">Ponte en contacto</ButtonAnchor>
             </a>
           </div>
         </div>
@@ -51,7 +51,7 @@ function TermsAndConditions() {
             </div>
           </div>
           <a href="/soluciones">
-            <ButtonMain customClass="my-6 lg:mt-8 lg:mb-12">Conoce más</ButtonMain>
+            <ButtonAnchor customClass="my-6 lg:mt-8 lg:mb-12">Conoce más</ButtonAnchor>
           </a>
         </div>
       </div>

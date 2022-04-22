@@ -5,8 +5,8 @@ import {
   landingImage, electricaImgMobile, termicaImgMobile, exp15, exp30, exp35,
 } from '../components/images';
 import {
-  ButtonMain, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles, Faqs,
-  ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header,
+  ButtonAnchor, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles, Faqs,
+  ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header, ButtonLink,
 } from '../components';
 
 function Home() {
@@ -23,9 +23,7 @@ function Home() {
               {' '}
               tenemos la solución que necesitas.
             </Paragraph>
-            <a href="/#contacto">
-              <ButtonMain customClass="my-5">Ponte en contacto</ButtonMain>
-            </a>
+            <ButtonAnchor href="/#contacto" customClass="my-5">Ponte en contacto</ButtonAnchor>
           </div>
         </div>
         <ClientsBar customClass="py-5 lg:py-8" />
@@ -56,9 +54,7 @@ function Home() {
               </Paragraph>
             </div>
           </div>
-          <a href="/soluciones">
-            <ButtonMain customClass="my-6 lg:mt-8 lg:mb-12">Conoce más</ButtonMain>
-          </a>
+          <ButtonLink to="/soluciones" customClass="my-6 lg:mt-8 lg:mb-12">Conoce más</ButtonLink>
         </div>
       </div>
       <ExperienceBar customClass="" />
@@ -120,9 +116,7 @@ function Home() {
             <ExperienceItem text="proyectos ejecutados" magicWord="proyectos" image={exp30} customClass="mt-10" />
             <ExperienceItem text="MW instalados" magicWord="MW" image={exp35} customClass="mt-10" />
           </div>
-          <a href="/nosotros">
-            <ButtonMain customClass="mt-10 mb-8 lg:mb-12">Acerca de nosotros</ButtonMain>
-          </a>
+          <ButtonLink to="/nosotros" customClass="mt-10 mb-8 lg:mb-12">Acerca de nosotros</ButtonLink>
         </div>
       </div>
       <div id="faqs" className="faqSection bg-ise-gray-20 containerFull">
