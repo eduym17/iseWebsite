@@ -4,9 +4,11 @@ import { useLocation } from 'react-router-dom';
 function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 100);
+    if (!window.location.href.includes('#')) {
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+      }, 100);
+    }
   }, [pathname]);
 
   return null;
