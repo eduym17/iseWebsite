@@ -22,7 +22,7 @@ function Solutions() {
             <img src={electricSolutionsDeskImg} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:flex lg:max-w-sm" />
             <div className="flex flex-col items-center lg:w-1/2 md:w-1/2">
               <Titles title="Generación de energía eléctrica" magicWord="eléctrica" customClass="mt-5 md:mt-0 md:text-center md:w-3/5 lg:w-3/4" />
-              <img src={electricaImgMobile} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
+              <img src={electricSolutionsMobImg} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
               <Paragraph customClass="mt-3 whitespace-pre-line text-justify md:w-full md:mt-4">
                 {`Aprovecha techos, suelos y estacionamientos para generar tu propia energía eléctrica, reduciendo costos internos.
 
@@ -50,7 +50,7 @@ function Solutions() {
             <img src={thermalSolutionsDeskImg} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:mt-6 md:flex lg:mt-8 lg:max-w-sm" />
             <div className="flex flex-col items-center lg:w-1/2 md:w-1/2">
               <Titles title="Calentamiento solar de fluidos" magicWord="Calentamiento" customClass="mt-8 md:mt-0 md:text-center md:w-3/5 lg:w-3/4" />
-              <img src={termicaImgMobile} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
+              <img src={thermalSolutionsMobImg} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
               <Paragraph customClass="mt-3 whitespace-pre-line text-justify md:w-full md:mt-4">
                 {`Diseñamos sistemas especiales para calentamiento solar de agua, generación de vapor o calentamiento de fluidos, con el objetivo de ahorrar combustible o energía eléctrica.
 
@@ -78,7 +78,7 @@ function Solutions() {
             <img src={storageSolutionsDeskImg} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:mt-6 md:flex lg:mt-8 lg:max-w-sm" />
             <div className="flex flex-col items-center lg:w-1/2 md:w-1/2">
               <Titles title="Almacenamiento de energía eléctrica" magicWord="Almacenamiento" customClass="mt-8 md:mt-0 md:text-center md:w-2/3 lg:w-4/5" />
-              <img src={electricaImgMobile} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
+              <img src={storageSolutionsMobImg} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
               <Paragraph customClass="mt-3 whitespace-pre-line text-justify md:w-full md:mt-4">
                 {`Somos pioneros en la implementación de sistemas para el almacenamiento de energía en México. Hemos encontrado una forma de generarte ahorros muy atractivos.
 
