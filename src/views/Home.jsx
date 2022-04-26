@@ -3,6 +3,10 @@ import { faqsFV, faqsFT } from '../components/texts/faqs';
 import { epcIcon, financiamientoIcon, asesoriaIcon } from '../components/icons';
 import {
   landingImage, electricaImgMobile, termicaImgMobile, exp15, exp30, exp35,
+  notFound, LandingImg, electricDeskImg, electricMobImg, thermalDeskImg, thermalMobImg,
+  xp15, xp30, xp85, electricSolutionsDeskImg, electricSolutionsMobImg, thermalSolutionsDeskImg,
+  thermalSolutionsMobImg, storageSolutionsDeskImg, storageSolutionsMobImg, usDeskImg, usMobImg,
+  commitmentDeskImg, commitmentMobImg,
 } from '../components/images';
 import {
   ButtonAnchor, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles, Faqs,
@@ -16,7 +20,7 @@ function Home() {
       <Header />
       <div id="landingPage" className="landingPage bg-ise-gray-10 containerFull">
         <div className="containerContent md:flex-row-reverse md:justify-center md:py-8 md:px-7">
-          <img src={landingImage} alt="sistema fotovoltaico" className="w-4/6 max-w-xs lg:max-w-xl" />
+          <img src={LandingImg} alt="sistema fotovoltaico" className="w-4/6 max-w-xs lg:max-w-xl" />
           <div className="flex flex-col items-center md:items-start lg:w-1/2 md:w-1/2">
             <Titles6xl title="Los beneficios del Sol, siempre a tu alcance" magicWord="beneficios" customClass="mt-5 md:text-left lg:w-full" />
             <Paragraph customClass="mt-3 md:text-left md:w-5/6 lg:w-4/5">
@@ -35,20 +39,20 @@ function Home() {
           <Paragraph customClass="mt-1 lg:mt-2">
             Tecnologías rentables que te permitirán generar ahorros con el poder del Sol.
           </Paragraph>
-          <div className="flex flex-col items-center md:flex-row md:justify-center md:gap-2 lg:gap-8">
+          <div className="flex flex-col items-start md:flex-row md:justify-center md:gap-2 lg:gap-8">
             <div className="flex flex-col items-center md:w-2/5">
-              <img src={electricaImgMobile} alt="Energía eléctrica" className="w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit" />
+              <img src={electricDeskImg} alt="Energía eléctrica" className="hidden md:flex w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit" />
               <Subtitles title="Energía eléctrica" magicWord="eléctrica" customClass="mt-1 lg:mt-2" />
-              <Paragraph customClass="mt-1 lg:w-4/5">
+              <Paragraph customClass="mt-1 md:w-[90%]">
                 Aprovecha techos, suelos y estacionamientos para generar tu
                 {' '}
                 propia energía eléctrica.
               </Paragraph>
             </div>
             <div className="flex flex-col items-center md:w-2/5">
-              <img src={termicaImgMobile} alt="Energía eléctrica" className="w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit" />
+              <img src={thermalDeskImg} alt="Energía eléctrica" className="hidden md:flex w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit" />
               <Subtitles title="Energía térmica" magicWord="térmica" customClass="mt-1 lg:mt-2" />
-              <Paragraph customClass="mt-1 lg:w-4/5">
+              <Paragraph customClass="mt-1 md:w-[90%]">
                 Instala un sistema de calentamiento solar que te ayude a disminuir tu
                 {' '}
                 consumo de gas.
@@ -113,9 +117,9 @@ function Home() {
             proyectos más exigentes.
           </Paragraph>
           <div className="flex flex-col items-center md:flex-row md:w-11/12 lg:w-full lg:justify-center md:gap-3">
-            <ExperienceItem text="años de experiencia" magicWord="años" image={exp15} customClass="mt-10" />
-            <ExperienceItem text="proyectos ejecutados" magicWord="proyectos" image={exp30} customClass="mt-10" />
-            <ExperienceItem text="MW instalados" magicWord="MW" image={exp35} customClass="mt-10" />
+            <ExperienceItem text="años de experiencia" magicWord="años" image={xp15} customClass="mt-10" />
+            <ExperienceItem text="proyectos ejecutados" magicWord="proyectos" image={xp30} customClass="mt-10" />
+            <ExperienceItem text="MW instalados" magicWord="MW" image={xp85} customClass="mt-10" />
           </div>
           <ButtonLink to="/nosotros" customClass="mt-10 mb-8 lg:mb-12">Acerca de nosotros</ButtonLink>
         </div>
