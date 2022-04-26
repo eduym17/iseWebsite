@@ -3,7 +3,13 @@ import {
   Header, Footer, Titles, Paragraph, ScrollToTop,
 } from '../components';
 import TechnicalScheme from '../components/TechnicalScheme';
-import { electricaImgMobile, termicaImgMobile, landingImage } from '../components/images';
+import {
+  landingImage, electricaImgMobile, termicaImgMobile, exp15, exp30, exp35,
+  notFound, LandingImg, electricDeskImg, electricMobImg, thermalDeskImg, thermalMobImg,
+  xp15, xp30, xp85, electricSolutionsDeskImg, electricSolutionsMobImg, thermalSolutionsDeskImg,
+  thermalSolutionsMobImg, storageSolutionsDeskImg, storageSolutionsMobImg, usDeskImg, usMobImg,
+  commitmentDeskImg, commitmentMobImg,
+} from '../components/images';
 
 function Solutions() {
   return (
@@ -12,8 +18,8 @@ function Solutions() {
       <Header />
       <div className="bg-ise-gray-10 containerFull">
         <div className="containerContent flex flex-col md:py-4 lg:py-6">
-          <div className="flex md:flex-row-reverse md:items-center md:justify-center md:gap-8">
-            <img src={landingImage} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:flex lg:max-w-sm" />
+          <div className="flex md:flex-row-reverse md:items-center md:justify-center md:gap-8 lg:gap-16">
+            <img src={electricSolutionsDeskImg} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:flex lg:max-w-sm" />
             <div className="flex flex-col items-center lg:w-1/2 md:w-1/2">
               <Titles title="Generación de energía eléctrica" magicWord="eléctrica" customClass="mt-5 md:mt-0 md:text-center md:w-3/5 lg:w-3/4" />
               <img src={electricaImgMobile} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
@@ -40,8 +46,8 @@ function Solutions() {
       </div>
       <div className="bg-ise-gray-20 containerFull">
         <div className="containerContent flex flex-col md:py-4 lg:py-6">
-          <div className="flex md:flex-row md:items-center md:justify-center md:gap-8">
-            <img src={landingImage} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:mt-6 md:flex lg:mt-8 lg:max-w-sm" />
+          <div className="flex md:flex-row md:items-center md:justify-center md:gap-8 lg:gap-16">
+            <img src={thermalSolutionsDeskImg} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:mt-6 md:flex lg:mt-8 lg:max-w-sm" />
             <div className="flex flex-col items-center lg:w-1/2 md:w-1/2">
               <Titles title="Calentamiento solar de fluidos" magicWord="Calentamiento" customClass="mt-8 md:mt-0 md:text-center md:w-3/5 lg:w-3/4" />
               <img src={termicaImgMobile} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
@@ -68,8 +74,8 @@ function Solutions() {
       </div>
       <div className="bg-ise-gray-10 containerFull">
         <div className="containerContent flex flex-col md:py-4 lg:py-6">
-          <div className="flex md:flex-row-reverse md:items-center md:justify-center md:gap-8">
-            <img src={landingImage} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:mt-6 md:flex lg:mt-8 lg:max-w-sm" />
+          <div className="flex md:flex-row-reverse md:items-center md:justify-center md:gap-8 lg:gap-16">
+            <img src={storageSolutionsDeskImg} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:mt-6 md:flex lg:mt-8 lg:max-w-sm" />
             <div className="flex flex-col items-center lg:w-1/2 md:w-1/2">
               <Titles title="Almacenamiento de energía eléctrica" magicWord="Almacenamiento" customClass="mt-8 md:mt-0 md:text-center md:w-2/3 lg:w-4/5" />
               <img src={electricaImgMobile} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
