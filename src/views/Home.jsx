@@ -41,6 +41,7 @@ function Home() {
           </Paragraph>
           <div className="flex flex-col items-start md:flex-row md:justify-center md:gap-2 lg:gap-8">
             <div className="flex flex-col items-center md:w-2/5">
+              <img src={electricMobImg} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-6" />
               <img src={electricDeskImg} alt="Energía eléctrica" className="hidden md:flex w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit" />
               <Subtitles title="Energía eléctrica" magicWord="eléctrica" customClass="mt-1 lg:mt-2" />
               <Paragraph customClass="mt-1 md:w-[90%]">
@@ -50,7 +51,8 @@ function Home() {
               </Paragraph>
             </div>
             <div className="flex flex-col items-center md:w-2/5">
-              <img src={thermalDeskImg} alt="Energía eléctrica" className="hidden md:flex w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit" />
+              <img src={thermalMobImg} alt="Energía térmica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-6" />
+              <img src={thermalDeskImg} alt="Energía térmica" className="hidden md:flex w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit" />
               <Subtitles title="Energía térmica" magicWord="térmica" customClass="mt-1 lg:mt-2" />
               <Paragraph customClass="mt-1 md:w-[90%]">
                 Instala un sistema de calentamiento solar que te ayude a disminuir tu
