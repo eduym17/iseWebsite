@@ -19,10 +19,10 @@ function AboutUs() {
       <div className="bg-ise-gray-10 containerFull">
         <div className="containerContent flex flex-col">
           <Titles title="Acerca de nosotros" magicWord="nosotros" customClass="mt-5 lg:mt-6" />
-          <div className="flex md:my-6 md:flex-row-reverse md:items-center md:justify-center md:gap-8 lg:mt-4">
+          <div className="flex md:my-6 md:flex-row-reverse md:items-center md:justify-center md:gap-8 lg:mt-4 lg:mb-12">
             <img src={usDeskImg} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:flex md:w-1/3 lg:max-w-sm" />
             <div className="flex flex-col items-center md:w-1/2 lg:w-1/2">
-              <img src={electricaImgMobile} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
+              <img src={usMobImg} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
               <Paragraph customClass="mt-3 mb-6 whitespace-pre-line text-justify md:w-full md:mt-4">
                 {`Fundada en el año 2017, y con más de diez años de experiencia dentro de la industria de las energías renovables, In Situ Energía se ha convertido en la empresa proveedora de servicios de Ingeniería, Procura y Construcción (EPC, por sus siglas en inglés), referente del rubro.
 
@@ -48,7 +48,7 @@ function AboutUs() {
           <div className="flex md:my-6 md:flex-row md:items-center md:justify-center md:gap-8 lg:mt-4">
             <img src={commitmentDeskImg} alt="sistema fotovoltaico" className="hidden w-4/6 max-w-xs md:flex md:w-1/3 lg:max-w-sm md:mt-2" />
             <div className="flex flex-col items-center md:w-1/2 lg:w-1/2">
-              <img src={electricaImgMobile} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
+              <img src={commitmentMobImg} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-4 lg:mt-10 lg:h-40 lg:w-fit" />
               <Paragraph customClass="mt-3 mb-8 whitespace-pre-line text-justify md:w-full md:mt-4">
                 {`Somos una empresa profundamente comprometida con las causas sociales y el combate al cambio climático, estamos seguros de que podemos ayudar a dejar un mundo mejor para las siguientes generaciones.
                 
