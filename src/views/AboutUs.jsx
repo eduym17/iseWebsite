@@ -3,11 +3,7 @@ import {
   Header, Footer, Titles, Paragraph, ScrollToTop,
 } from '../components';
 import {
-  landingImage, electricaImgMobile, termicaImgMobile, exp15, exp30, exp35,
-  notFound, LandingImg, electricDeskImg, electricMobImg, thermalDeskImg, thermalMobImg,
-  xp15, xp30, xp85, electricSolutionsDeskImg, electricSolutionsMobImg, thermalSolutionsDeskImg,
-  thermalSolutionsMobImg, storageSolutionsDeskImg, storageSolutionsMobImg, usDeskImg, usMobImg,
-  commitmentDeskImg, commitmentMobImg,
+  usDeskImg, usMobImg, commitmentDeskImg, commitmentMobImg,
 } from '../components/images';
 import { bbvaIcon } from '../components/icons';
 
