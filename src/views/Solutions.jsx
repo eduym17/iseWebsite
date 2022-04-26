@@ -4,11 +4,8 @@ import {
 } from '../components';
 import TechnicalScheme from '../components/TechnicalScheme';
 import {
-  landingImage, electricaImgMobile, termicaImgMobile, exp15, exp30, exp35,
-  notFound, LandingImg, electricDeskImg, electricMobImg, thermalDeskImg, thermalMobImg,
-  xp15, xp30, xp85, electricSolutionsDeskImg, electricSolutionsMobImg, thermalSolutionsDeskImg,
-  thermalSolutionsMobImg, storageSolutionsDeskImg, storageSolutionsMobImg, usDeskImg, usMobImg,
-  commitmentDeskImg, commitmentMobImg,
+  electricSolutionsDeskImg, electricSolutionsMobImg, thermalSolutionsDeskImg,
+  thermalSolutionsMobImg, storageSolutionsDeskImg, storageSolutionsMobImg,
 } from '../components/images';
 
 function Solutions() {
