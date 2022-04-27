@@ -17,10 +17,17 @@ import usDeskImg from '../assets/images/desktop-aboutus-us.png';
 import usMobImg from '../assets/images/mobile-aboutus-us.png';
 import commitmentDeskImg from '../assets/images/desktop-aboutus-commitment.png';
 import commitmentMobImg from '../assets/images/mobile-aboutus-commitment.png';
+import roblesDeskImg from '../assets/images/projects/desktop-home-robles.png';
+import roblesMobImg from '../assets/images/projects/mobile-home-robles.png';
+import coatzaDeskImg from '../assets/images/projects/desktop-home-coatza.png';
+import coatzaMobImg from '../assets/images/projects/mobile-home-coatza.png';
+import juncoDeskImg from '../assets/images/projects/desktop-home-junco.png';
+import juncoMobImg from '../assets/images/projects/mobile-home-junco.png';
 
 export {
   notFound, LandingImg, electricDeskImg, electricMobImg, thermalDeskImg, thermalMobImg,
   xp15, xp30, xp85, electricSolutionsDeskImg, electricSolutionsMobImg, thermalSolutionsDeskImg,
   thermalSolutionsMobImg, storageSolutionsDeskImg, storageSolutionsMobImg, usDeskImg, usMobImg,
-  commitmentDeskImg, commitmentMobImg,
+  commitmentDeskImg, commitmentMobImg, roblesDeskImg, roblesMobImg, coatzaDeskImg, coatzaMobImg,
+  juncoDeskImg, juncoMobImg,
 };
