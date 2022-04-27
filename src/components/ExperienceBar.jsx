@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 
 function ExperienceBar({ customClass }) {
   return (
-    <div className={`xpresumeSection bg-sungradient-y text-ise-white flex flex-wrap gap-x-4 justify-center items-center py-3 lg:py-6 lg:gap-12 ${customClass}`}>
+    <div className={`xpresumeSection selection:bg-ise-white selection:text-ise-orange bg-sungradient-y text-ise-white flex flex-wrap gap-x-4 justify-center items-center py-3 lg:py-6 lg:gap-12 ${customClass}`}>
       <div className="flex items-center gap-1">
         <span className="text-4xl font-bold lg:text-6xl">+25</span>
         <div>

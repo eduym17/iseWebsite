@@ -10,7 +10,7 @@ import {
 
 function Solutions() {
   return (
-    <div className="text-ise-gray-30 font-Cabin">
+    <div className="text-ise-gray-30 font-Cabin selection:bg-ise-orange selection:text-ise-white">
       <ScrollToTop />
       <Header />
       <div className="bg-ise-gray-10 containerFull">

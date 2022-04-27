@@ -9,7 +9,7 @@ import { logoCanadianSolar, logoPdcEnergy, logoTrinaSolar } from '../components/
 
 function AboutUs() {
   return (
-    <div className="text-ise-gray-30 font-Cabin bg-ise-gray-20 h-screen">
+    <div className="text-ise-gray-30 font-Cabin bg-ise-gray-20 selection:bg-ise-orange selection:text-ise-white">
       <ScrollToTop />
       <Header />
       <div className="bg-ise-gray-10 containerFull">

@@ -8,7 +8,7 @@ import {
 
 function NotFound() {
   return (
-    <div className="text-ise-gray-30 bg-ise-gray-10 font-Cabin h-screen flex flex-col justify-between">
+    <div className="text-ise-gray-30 bg-ise-gray-10 font-Cabin h-screen flex flex-col justify-between selection:bg-ise-orange selection:text-ise-white">
       <ScrollToTop />
       <Header />
       <div id="landingPage" className="landingPage bg-ise-gray-10 containerFull">

@@ -7,7 +7,7 @@ import Privacy from '../components/texts/privacy';
 
 function PrivacyPolicy() {
   return (
-    <div className="text-ise-gray-30 font-Cabin">
+    <div className="text-ise-gray-30 font-Cabin selection:bg-ise-orange selection:text-ise-white">
       <ScrollToTop />
       <Header />
       <div id="landingPage" className="landingPage bg-ise-gray-10 containerFull">
