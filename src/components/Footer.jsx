@@ -7,7 +7,7 @@ import {
 
 function Footer({ customClass }) {
   return (
-    <div className="containerFull bg-ise-gray-20">
+    <div className="containerFull bg-ise-gray-20 selection:bg-ise-orange selection:text-ise-white">
       <div className={`containerContent px-3 md:px-4 items-stretch divide-y-2 divide-gray-400 ${customClass}`}>
         <div className="flex items-center justify-between mb-1 md:mb-4">
           <a href="/">

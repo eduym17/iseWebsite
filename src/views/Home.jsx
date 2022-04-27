@@ -14,10 +14,10 @@ import {
 
 function Home() {
   return (
-    <div className="text-ise-gray-30 font-Cabin selection:bg-ise-orange selection:text-ise-white">
+    <div className="text-ise-gray-30 font-Cabin">
       <ScrollToTop />
       <Header />
-      <div id="landingPage" className="landingPage bg-ise-gray-10 containerFull">
+      <div id="landingPage" className="landingPage bg-ise-gray-10 containerFull selection:bg-ise-orange selection:text-ise-white">
         <div className="containerContent md:flex-row-reverse md:justify-center md:py-8 md:px-7">
           <img src={LandingImg} alt="sistema fotovoltaico" className="w-4/6 max-w-xs lg:max-w-xl" />
           <div className="flex flex-col items-center md:items-start lg:w-1/2 md:w-1/2">
@@ -32,7 +32,7 @@ function Home() {
         </div>
         <ClientsBar customClass="py-5 lg:py-8" />
       </div>
-      <div className="solutionsSection bg-ise-gray-20 containerFull">
+      <div className="solutionsSection bg-ise-gray-20 containerFull selection:bg-ise-orange selection:text-ise-white">
         <div className="containerContent">
           <Titles title="Nuestras soluciones" magicWord="soluciones" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
@@ -64,7 +64,7 @@ function Home() {
         </div>
       </div>
       <ExperienceBar customClass="" />
-      <div className="servicesSection bg-ise-gray-10 containerFull">
+      <div className="servicesSection bg-ise-gray-10 containerFull selection:bg-ise-orange selection:text-ise-white">
         <div className="containerContent">
           <Titles title="Nuestros servicios" magicWord="servicios" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
@@ -95,7 +95,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div id="proyectos" className="projectsSection bg-ise-gray-20 containerFull">
+      <div id="proyectos" className="projectsSection bg-ise-gray-20 containerFull selection:bg-ise-orange selection:text-ise-white">
         <div className="containerContent">
           <Titles title="Proyectos recientes" magicWord="Proyectos" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
@@ -111,14 +111,14 @@ function Home() {
               Generación distribuida.
               Capacidad instalada: 499 kW.`}
             </ProjectItem>
-            <ProjectItem mobileImg={coatzaMobImg} desktopImg={coatzaDeskImg} title="Coatzacoalcos" customClass="mt-3 mb-8 md:my-0">
+            <ProjectItem mobileImg={coatzaMobImg} desktopImg={coatzaDeskImg} title="CIIT" customClass="mt-3 mb-8 md:my-0">
               {`Sistema fotovoltaico.
               Capacidad instalada: 90 kW.`}
             </ProjectItem>
           </div>
         </div>
       </div>
-      <div className="xpSection bg-ise-gray-10 containerFull">
+      <div className="xpSection bg-ise-gray-10 containerFull selection:bg-ise-orange selection:text-ise-white">
         <div className="containerContent">
           <Titles title="Nuestra experiencia" magicWord="experiencia" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
@@ -134,7 +134,7 @@ function Home() {
           <ButtonLink to="/nosotros" customClass="mt-10 mb-8 lg:my-12">Acerca de nosotros</ButtonLink>
         </div>
       </div>
-      <div id="faqs" className="faqSection bg-ise-gray-20 containerFull">
+      <div id="faqs" className="faqSection bg-ise-gray-20 containerFull selection:bg-ise-orange selection:text-ise-white">
         <div className="containerContent">
           <Titles title="Preguntas frecuentes" magicWord="frecuentes" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 md:w-1/2 lg:mt-2">

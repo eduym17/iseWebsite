@@ -23,7 +23,7 @@ function Header() {
   };
 
   return (
-    <div id="inicio" className="header bg-ise-gray-10 containerFull">
+    <div id="inicio" className="header bg-ise-gray-10 containerFull selection:bg-ise-orange selection:text-ise-white">
       <div id="header" className="containerContent flex-row justify-between p-3 items-start md:items-center lg:py-6 lg:px-4">
         <Link to="/">
           <img src={logoInSitu} alt="In Situ Energía" className="h-9 lg:h-12" />
