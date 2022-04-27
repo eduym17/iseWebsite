@@ -3,16 +3,18 @@ import { faqsFV, faqsFT } from '../components/texts/faqs';
 import { epcIcon, financiamientoIcon, asesoriaIcon } from '../components/icons';
 import {
   LandingImg, electricDeskImg, electricMobImg, thermalDeskImg, thermalMobImg,
-  xp15, xp30, xp85,
+  xp15, xp30, xp85, roblesDeskImg, roblesMobImg, coatzaDeskImg, coatzaMobImg,
+  juncoDeskImg, juncoMobImg,
 } from '../components/images';
 import {
   ButtonAnchor, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles, Faqs,
   ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header, ButtonLink, ScrollToTop,
+  ProjectItem,
 } from '../components';
 
 function Home() {
   return (
-    <div className="text-ise-gray-30 font-Cabin">
+    <div className="text-ise-gray-30 font-Cabin selection:bg-ise-orange selection:text-ise-white">
       <ScrollToTop />
       <Header />
       <div id="landingPage" className="landingPage bg-ise-gray-10 containerFull">
@@ -36,7 +38,7 @@ function Home() {
           <Paragraph customClass="mt-1 lg:mt-2">
             Tecnologías rentables que te permitirán generar ahorros con el poder del Sol.
           </Paragraph>
-          <div className="flex flex-col items-start md:flex-row md:justify-center md:gap-2 lg:gap-8">
+          <div className="flex flex-col items-center md:flex-row md:justify-center md:gap-2 lg:gap-8">
             <div className="flex flex-col items-center md:w-2/5">
               <img src={electricMobImg} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-6" />
               <img src={electricDeskImg} alt="Energía eléctrica" className="hidden md:flex w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit" />
@@ -58,7 +60,7 @@ function Home() {
               </Paragraph>
             </div>
           </div>
-          <ButtonLink to="/soluciones" customClass="my-6 lg:mt-8 lg:mb-12">Conoce más</ButtonLink>
+          <ButtonLink to="/soluciones" customClass="my-6 lg:my-12">Conoce más</ButtonLink>
         </div>
       </div>
       <ExperienceBar customClass="" />
@@ -70,20 +72,20 @@ function Home() {
             {' '}
             a la medida de tus necesidades.
           </Paragraph>
-          <div className="flex flex-col items-center md:flex-row md:items-start md:gap-3 md:my-8 md:w-11/12 lg:w-5/6 lg:gap-6 lg:mt-10 lg:mb-12">
-            <ServiceCard title="Financiamiento" icon={financiamientoIcon} customClass="mt-6">
+          <div className="flex flex-col items-center md:flex-row md:items-start md:gap-3 md:my-8 md:justify-center md:w-11/12 lg:w-5/6 lg:gap-6 lg:mt-10 lg:mb-12">
+            <ServiceCard title="Financiamiento" icon={financiamientoIcon} customClass="mt-6 md:mt-0">
               Llevamos hasta ti diferentes esquemas y fuentes de financiamiento,
               {' '}
               de acuerdo con las necesidades y requerimientos de tu proyecto.
             </ServiceCard>
-            <ServiceCard title="Ingeniería, suministro y construcción" icon={epcIcon} customClass="mt-3">
+            <ServiceCard title="Ingeniería, suministro y construcción" icon={epcIcon} customClass="mt-3 md:mt-0">
               Desarrollamos proyectos llave en mano, incluyendo ingeniería, procura y construcción,
               {' '}
               con base en energías renovables, especializándonos en energía solar para generación de
               {' '}
               electricidad y calentamiento de fluidos.
             </ServiceCard>
-            <ServiceCard title="Ingeniería y asesoría" icon={asesoriaIcon} customClass="mt-3 mb-8">
+            <ServiceCard title="Ingeniería y asesoría" icon={asesoriaIcon} customClass="mt-3 mb-8 md:my-0">
               Nuestra experiencia en los aspectos técnicos y regulatorios nos permiten desarrollar
               {' '}
               correctamente proyectos de energía renovable de mediana y gran escala, garantizándote
@@ -99,11 +101,20 @@ function Home() {
           <Paragraph customClass="mt-1 lg:mt-2">
             Soluciones inteligentes, siempre a la medidas de las necesidades de nuestros clientes.
           </Paragraph>
-          <div className="mt-6 w-[90%] text-center">
-            Esta es la sección del carrusel a la derecha
-          </div>
-          <div className="my-6 w-[90%] text-center">
-            Esta es la sección del carrusel a la izquierda
+          <div className="w-full  flex flex-col items-center md:flex-row md:items-start md:justify-center md:gap-3 md:w-11/12 md:mt-6 md:mb-8 lg:mt-10 lg:mb-12 lg:gap-6">
+            <ProjectItem mobileImg={roblesMobImg} desktopImg={roblesDeskImg} title="Los Robles" customClass="mt-6 md:mt-0" customClassTexts="">
+              {`Calentamiento solar de alberca.
+              Capacidad instalada: 84 kW.`}
+            </ProjectItem>
+            <ProjectItem mobileImg={juncoMobImg} desktopImg={juncoDeskImg} title="El Junco" customClass="mt-3 md:mt-0">
+              {`Sistema fotovoltaico.
+              Generación distribuida.
+              Capacidad instalada: 499 kW.`}
+            </ProjectItem>
+            <ProjectItem mobileImg={coatzaMobImg} desktopImg={coatzaDeskImg} title="Coatzacoalcos" customClass="mt-3 mb-8 md:my-0">
+              {`Sistema fotovoltaico.
+              Capacidad instalada: 90 kW.`}
+            </ProjectItem>
           </div>
         </div>
       </div>
@@ -116,11 +127,11 @@ function Home() {
             proyectos más exigentes.
           </Paragraph>
           <div className="flex flex-col items-center md:flex-row md:w-11/12 lg:w-full lg:justify-center md:gap-3">
-            <ExperienceItem text="años de experiencia" magicWord="años" image={xp15} customClass="mt-10" />
-            <ExperienceItem text="proyectos ejecutados" magicWord="proyectos" image={xp30} customClass="mt-10" />
-            <ExperienceItem text="MW instalados" magicWord="MW" image={xp85} customClass="mt-10" />
+            <ExperienceItem text="años de experiencia" magicWord="años" image={xp15} customClass="mt-6 md:mt-10 lg:mt-12" />
+            <ExperienceItem text="proyectos ejecutados" magicWord="proyectos" image={xp30} customClass="mt-10 lg:mt-12" />
+            <ExperienceItem text="MW instalados" magicWord="MW" image={xp85} customClass="mt-10 lg:mt-12" />
           </div>
-          <ButtonLink to="/nosotros" customClass="mt-10 mb-8 lg:mb-12">Acerca de nosotros</ButtonLink>
+          <ButtonLink to="/nosotros" customClass="mt-10 mb-8 lg:my-12">Acerca de nosotros</ButtonLink>
         </div>
       </div>
       <div id="faqs" className="faqSection bg-ise-gray-20 containerFull">
@@ -155,7 +166,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div id="contacto" className="contactSection bg-ise-orange text-ise-white containerFull">
+      <div id="contacto" className="contactSection bg-ise-orange text-ise-white containerFull selection:bg-ise-white selection:text-ise-orange">
         <div className="containerContent md:flex-row md:items-start md:justify-center md:px-10 md:py-6">
           <div className="md:w-7/12 flex flex-col items-center md:items-start">
             <TitlesNegative title="¿Aún tienes alguna pregunta?" customClass="mt-6 md:text-left" />
