@@ -15,7 +15,7 @@ function ExperienceBar({ customClass }) {
         </div>
       </div>
       <div className="flex items-center gap-1">
-        <span className="text-4xl font-bold lg:text-6xl">+25 </span>
+        <span className="text-4xl font-bold lg:text-6xl">+30 </span>
         <div>
           <p className="leading-none font-Hero text-sm lg:text-lg lg:leading-none">
             proyectos
@@ -25,7 +25,7 @@ function ExperienceBar({ customClass }) {
         </div>
       </div>
       <div className="flex items-center gap-1">
-        <span className="text-4xl font-bold lg:text-6xl">+3</span>
+        <span className="text-4xl font-bold lg:text-6xl">+8</span>
         <div>
           <p className="leading-none font-Hero text-sm lg:text-lg lg:leading-none">
             MegaWatts
