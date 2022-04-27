@@ -14,8 +14,10 @@ import ContactForm from './ContactForm';
 import Footer from './Footer';
 import Header from './Header';
 import ScrollToTop from './ScrollToTop';
+import ProjectItem from './ProjectItem';
 
 export {
   ButtonAnchor, ButtonLink, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles,
   Faqs, ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header, ScrollToTop,
+  ProjectItem,
 };
