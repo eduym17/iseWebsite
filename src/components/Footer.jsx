@@ -13,7 +13,13 @@ function Footer({ customClass }) {
           <a href="/">
             <img src={logoInSitu} alt="In Situ Energía" className="h-10 lg:h-12" />
           </a>
-          <div className="flex flex-col items-end gap-2 md:flex-row-reverse md:items-center md:gap-10">
+          <div className="flex flex-col-reverse items-end gap-2 md:flex-row md:items-center md:gap-10">
+            <div className="router flex gap-2 text-sm">
+              <Link to="/soluciones" className="hover:text-ise-orange">Soluciones</Link>
+              <Link to="/nosotros" className="hover:text-ise-orange">Nosotros</Link>
+              <a href="/#proyectos" className="hover:text-ise-orange">Proyectos</a>
+              <a href="/#faqs" className="hover:text-ise-orange">FAQs</a>
+            </div>
             <div className="social flex gap-3">
               <a href="https://www.linkedin.com/company/insituenergia" target="_blank" rel="noreferrer">
                 <img src={linkedinIcon} alt="LinkedIn icon" className="h-7" />
@@ -27,12 +33,6 @@ function Footer({ customClass }) {
               <a href="https://www.instagram.com/insituenergia/" target="_blank" rel="noreferrer">
                 <img src={instagramIcon} alt="Instagram icon" className="h-7" />
               </a>
-            </div>
-            <div className="router flex gap-2 text-sm">
-              <Link to="/soluciones" className="hover:text-ise-orange">Soluciones</Link>
-              <Link to="/nosotros" className="hover:text-ise-orange">Nosotros</Link>
-              <a href="/#proyectos" className="hover:text-ise-orange">Proyectos</a>
-              <a href="/#faqs" className="hover:text-ise-orange">FAQs</a>
             </div>
           </div>
         </div>
