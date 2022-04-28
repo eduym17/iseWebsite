@@ -171,7 +171,7 @@ function Home() {
           <div className="md:w-7/12 flex flex-col items-center md:items-start">
             <TitlesNegative title="¿Aún tienes alguna pregunta?" customClass="mt-6 md:text-left" />
             <Subtitles title="¡Ponte en contacto con nosotros!" customClass="mt-2 md:text-left" />
-            <Paragraph customClass="text-justify mt-1 md:w-5/6 lg:w-4/5 lg:text-left">
+            <Paragraph customClass="text-justify mt-1 md:mb-6 md:w-5/6 lg:w-4/5 lg:text-left">
               Acércate a nosotros para poder ofrecerte una solución a la medida de tus necesidades,
               {' '}
               escucharemos tus opiniones y buscaremos optimizar tus proyectos.
