@@ -1,12 +1,20 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {
+  Home, AboutUs, Solutions, PrivacyPolicy, NotFound,
+} from './views';
 
 function App() {
   return (
-    <div className="bg-slate-900 text-slate-50 h-screen">
-      <h1>
-        Hola, mundo
-      </h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/soluciones" element={<Solutions />} />
+        <Route path="/nosotros" element={<AboutUs />} />
+        <Route path="/privacidad" element={<PrivacyPolicy />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
