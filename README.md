@@ -10,7 +10,7 @@ Company website.
 
 ## Built With
 
-- React JS, Figma
+- React JS, Tailwind, Vite, Figma
 
 ## Live Demo (if available)
 
