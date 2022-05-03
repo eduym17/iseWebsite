@@ -4,7 +4,7 @@ export const faqsFV = [
     answer: 'Los sistemas interconectados a la red no requieren de baterías. Sólo los sistemas que están aislados de la red las requieren.',
   },
   {
-    question: '¿Puedo usar mi sistema solar si se va la luz?',
+    question: '¿Puedo usar mi sistema si se va la luz?',
     answer: 'En el caso de los sistemas interconectados sencillos, no es posible por protección del sistema y seguridad de los trabajadores que reparan la red, sin embargo, los sistemas híbridos pueden seguir operando ya que cuentan con baterías de respaldo y tienen medios de desconexión de la red.',
   },
   {
