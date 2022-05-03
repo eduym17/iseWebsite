@@ -14,7 +14,7 @@ function TechnicalScheme({
           {subtitleFooter}
         </p>
       </div>
-      <p className={`md:whitespace-pre-line font-Hero text-xs text-justify w-[90%] mt-2 md:w-full lg:text-base ${customClassParag}`}>
+      <p className={`md:whitespace-pre-line font-Hero text-sm text-justify w-[90%] mt-2 md:w-full lg:text-base ${customClassParag}`}>
         {children}
       </p>
     </div>
