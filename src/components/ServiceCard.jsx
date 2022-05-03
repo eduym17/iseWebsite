@@ -13,7 +13,7 @@ function ServiceCard({
           {title}
         </p>
       </div>
-      <p className="font-Hero text-xs text-justify p-2 w-full lg:text-base lg:px-4">
+      <p className="font-Hero text-sm text-justify p-2 w-full lg:text-base lg:px-4">
         {children}
       </p>
     </div>
