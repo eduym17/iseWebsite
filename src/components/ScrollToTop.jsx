@@ -7,7 +7,7 @@ function ScrollToTop() {
     if (!window.location.href.includes('#')) {
       setTimeout(() => {
         window.scrollTo(0, 0);
-      }, 100);
+      }, 300);
     }
   }, [pathname]);
 
