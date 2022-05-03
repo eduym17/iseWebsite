@@ -3,7 +3,7 @@ import propTypes from 'prop-types';
 
 function Paragraph({ children, customClass }) {
   return (
-    <p className={`font-Hero text-xs text-center w-[90%] md:w-full lg:text-base ${customClass}`}>
+    <p className={`font-Hero text-sm text-center w-[90%] md:w-full lg:text-base ${customClass}`}>
       {children}
     </p>
   );
