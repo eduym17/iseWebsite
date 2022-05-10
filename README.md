@@ -22,9 +22,20 @@ In Situ Energía website.
 ## Built with
 
 This sections sould only list major frameworks or libraries used to build this project.
-* [ReactJS](https://reactjs.org/)
-* [ViteJS](https://vitejs.dev/)
-* [TailwindCSS](https://tailwindcss.com/)
+
+[<img src="https://img.shields.io/badge/reactjs-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />][ReactJS] <br/>
+[<img src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white" />][ReduxJS] <br/>
+[<img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />][TailwindCSS] <br/>
+[<img src="https://img.shields.io/badge/Vite-bd34fe?style=for-the-badge&logo=vite&logoColor=white" />][ViteJS] <br/>
+[<img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />][NodeJS] <br/>
+[<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />][MongoDB] <br/>
+
+[ReactJS]: https://reactjs.org/
+[ReduxJS]: https://redux.js.org/
+[TailwindCSS]: https://tailwindcss.com/
+[ViteJS]: https://vitejs.dev/
+[NodeJS]: https://nodejs.org/
+[MongoDB]: https://www.mongodb.com/
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
