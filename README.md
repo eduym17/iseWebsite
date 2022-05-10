@@ -1,11 +1,36 @@
 ## About the project
+
 In Situ Energía website.
 
+### Roadmap
+
+- [x] Build first website stage.
+- [ ] Photovoltaic and photothermal calculators for In Situ Energía employees.
+- [ ] Multi-language support
+     - [x] Spanish
+     - [ ] English
+- [ ] Multi theme support
+     - [x] Light mode
+     - [ ] Dark mode
+
 ### Built with
+
 This sections sould only list major frameworks or libraries used to build this project.
 * [ReactJS](https://reactjs.org/)
 * [ViteJS](https://vitejs.dev/)
 * [TailwindCSS](https://tailwindcss.com/)
+
+## Getting Started
+
+To get a local copy and run this project follow the next steps.
+
+### Prerequisites
+* npm
+  ```sh
+  npm install react
+  ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 # ISE-website
 Company website.
@@ -26,8 +51,6 @@ Company website.
 [Live Demo Link Not Available Yet](https://livedemo.com)
 
 To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
 
 ### Setup
 
