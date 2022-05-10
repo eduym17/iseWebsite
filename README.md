@@ -45,13 +45,37 @@ npm
 
 ### Setup
 
+  ```sh
+  $ git clone https://github.com/eduym17/ISE-website
+  ```
+  
+  ```sh
+  cd ISE-website
+  ```
+
 ### Install
+
+  ```sh
+  npm install
+  ```
 
 ### Usage
 
+  ```sh
+  npm run dev
+  ```
+
 ### Run tests
 
+  ```sh
+  npm run test
+  ```
+
 ### Deployment
+
+  ```sh
+  pull request
+  ```
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
