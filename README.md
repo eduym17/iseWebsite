@@ -33,9 +33,14 @@ This sections sould only list major frameworks or libraries used to build this p
 To get a local copy and run this project follow the next steps.
 
 ### Prerequisites
-* npm
+node
   ```sh
-  npm install react
+  download and install, v16.x
+  ```
+
+npm
+  ```sh
+  npm install, v8.x
   ```
 
 ### Setup
