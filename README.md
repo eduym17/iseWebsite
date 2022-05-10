@@ -73,9 +73,7 @@ npm
 
 ### Deployment
 
-  ```sh
-  pull request
-  ```
+ Make a pull request and when approved and merged the changes will show up on website.
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
