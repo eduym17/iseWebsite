@@ -79,15 +79,30 @@ npm
 
 ## Authors
 
-**Eduardo Yañez** / ![]https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white [@eduym17](https://github.com/eduym17)
-- GitHub: [@eduym17](https://github.com/eduym17)
-- Twitter: [@Edu_YM](https://twitter.com/Edu_YM)
-- LinkedIn: [Eduardo Yañez](https://www.linkedin.com/in/eduardoym/)
+**Eduardo Yañez** 
 
-👤 **Abel Herrera**
+[<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />][github-lalo]
+[<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />][twitter-lalo]
+[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />][linkedin-lalo]
+[<img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" />][telegram-lalo]
+[<img src="https://img.shields.io/badge/Mail-00C300?style=for-the-badge&logo=gmail&logoColor=white" />][mail-lalo]
 
-- GitHub: [@Lino09](https://github.com/Lino09)
-- Twitter: [@AbelHerreraZam1](https://twitter.com/AbelHerreraZam1)
-- LinkedIn: [Abel Herrera](https://www.linkedin.com/in/abelherreraz/)
+[github-lalo]: https://github.com/eduym17
+[twitter-lalo]: https://twitter.com/Edu_YM
+[linkedin-lalo]: https://www.linkedin.com/in/eduardoym/
+[telegram-lalo]: https://t.me/EduYM
+[mail-lalo]: mailto:eduardo_yanez@live.com.mx
+
+**Abel Herrera**
+
+[<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />][github-lino]
+[<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />][twitter-lino]
+[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />][linkedin-lino]
+[<img src="https://img.shields.io/badge/Mail-00C300?style=for-the-badge&logo=gmail&logoColor=white" />][mail-lino]
+
+[github-lino]: https://github.com/Lino09
+[twitter-lino]: https://twitter.com/AbelHerreraZam1
+[linkedin-lino]: https://www.linkedin.com/in/abelherreraz/
+[mail-lino]: mailto:abel09hz@outlook.es
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
