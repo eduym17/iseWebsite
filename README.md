@@ -79,7 +79,7 @@ npm
 
 ## Authors
 
-**Eduardo Yañez** / https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white [@eduym17](https://github.com/eduym17)
+**Eduardo Yañez** / ![]https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white [@eduym17](https://github.com/eduym17)
 - GitHub: [@eduym17](https://github.com/eduym17)
 - Twitter: [@Edu_YM](https://twitter.com/Edu_YM)
 - LinkedIn: [Eduardo Yañez](https://www.linkedin.com/in/eduardoym/)
