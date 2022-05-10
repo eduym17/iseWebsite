@@ -76,7 +76,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Eduardo Yañez**
 
-[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/eduardoym/]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 - GitHub: [@eduym17](https://github.com/eduym17)
 - Twitter: [@Edu_YM](https://twitter.com/Edu_YM)
@@ -87,3 +87,6 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@Lino09](https://github.com/Lino09)
 - Twitter: [@AbelHerreraZam1](https://twitter.com/AbelHerreraZam1)
 - LinkedIn: [Abel Herrera](https://www.linkedin.com/in/abelherreraz/)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[linkedin-url]: https://www.linkedin.com/in/eduardoym/
