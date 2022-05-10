@@ -15,6 +15,10 @@ In Situ Energía website.
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
+## Live page
+
+[In Situ Energía website here](https://www.in-situ.com.mx)
+
 ## Built with
 
 This sections sould only list major frameworks or libraries used to build this project.
@@ -71,6 +75,8 @@ To get a local copy up and running follow these simple example steps.
 ## Authors
 
 👤 **Eduardo Yañez**
+
+[![LinkedIn][linkedin-shield]][https://www.linkedin.com/in/eduardoym/]
 
 - GitHub: [@eduym17](https://github.com/eduym17)
 - Twitter: [@Edu_YM](https://twitter.com/Edu_YM)
