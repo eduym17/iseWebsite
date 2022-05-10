@@ -38,28 +38,6 @@ To get a local copy and run this project follow the next steps.
   npm install react
   ```
 
-<p align="right">(<a href="#top">Back to top</a>)</p>
-
-# ISE-website
-Company website.
-
-![](https://img.shields.io/badge/InSituEnergia-orange)
-
-# Project Name
-
-> Company website: stage 1.
-
-
-## Built With
-
-- React JS, Tailwind, Vite, Figma
-
-## Live Demo (if available)
-
-[Live Demo Link Not Available Yet](https://livedemo.com)
-
-To get a local copy up and running follow these simple example steps.
-
 ### Setup
 
 ### Install
@@ -70,13 +48,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-
+<p align="right">(<a href="#top">Back to top</a>)</p>
 
 ## Authors
 
 👤 **Eduardo Yañez**
-
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 - GitHub: [@eduym17](https://github.com/eduym17)
 - Twitter: [@Edu_YM](https://twitter.com/Edu_YM)
@@ -88,5 +64,4 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@AbelHerreraZam1](https://twitter.com/AbelHerreraZam1)
 - LinkedIn: [Abel Herrera](https://www.linkedin.com/in/abelherreraz/)
 
-<!-- MARKDOWN LINKS & IMAGES -->
-[linkedin-url]: https://www.linkedin.com/in/eduardoym/
+<p align="right">(<a href="#top">Back to top</a>)</p>
