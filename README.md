@@ -1,3 +1,12 @@
+## About the project
+In Situ Energía website.
+
+### Built with
+This sections sould only list major frameworks or libraries used to build this project.
+* [ReactJS](https://reactjs.org/)
+* [ViteJS](https://vitejs.dev/)
+* [TailwindCSS](https://tailwindcss.com/)
+
 # ISE-website
 Company website.
 
