@@ -26,6 +26,7 @@ In Situ Energía website.
 This sections sould only list major frameworks or libraries used to build this project.
 
 [<img src="https://img.shields.io/badge/reactjs-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />][ReactJS] <br/>
+[<img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" />][ReactRouter] <br/>
 [<img src="https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white" />][ReduxJS] <br/>
 [<img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" />][TailwindCSS] <br/>
 [<img src="https://img.shields.io/badge/Vite-bd34fe?style=for-the-badge&logo=vite&logoColor=white" />][ViteJS] <br/>
@@ -33,6 +34,7 @@ This sections sould only list major frameworks or libraries used to build this p
 [<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" />][MongoDB] <br/>
 
 [ReactJS]: https://reactjs.org/
+[ReactRouter]: https://reactrouter.com/
 [ReduxJS]: https://redux.js.org/
 [TailwindCSS]: https://tailwindcss.com/
 [ViteJS]: https://vitejs.dev/
