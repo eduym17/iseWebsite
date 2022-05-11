@@ -120,25 +120,25 @@ npm
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
-## Contributing
+<!-- ## Contributing
 
 Contributions, issues and feature request are welcome!
 Feel free to check the [issues page](../../../issues/).
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">Back to top</a>)</p> -->
 
-## Show your support
+<!-- ## Show your support
 
 Give a ⭐️ if you like this project!
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">Back to top</a>)</p> -->
 
-## Acknowledgments
+<!-- ## Acknowledgments
 
 - Mention to anyone whose code was used
 - Inspiration
 - Etc.
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">Back to top</a>)</p> -->
 
-## License
+<!-- ## License
 
 This project is `MIT` licensed.
-<p align="right">(<a href="#top">Back to top</a>)</p>
+<p align="right">(<a href="#top">Back to top</a>)</p> -->
