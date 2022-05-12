@@ -1,5 +1,11 @@
 ![ISEwebsite](https://user-images.githubusercontent.com/96452418/167742942-5013ec3d-351f-4972-9875-22b78e46e542.png)
 
+<p align=center>
+     <a href="https://nodejs.org/" target="_blank"><img src="https://img.shields.io/badge/Node%20js-16.x.x-339933?style=for-the-badge&logo=node.js&labelColor=20232a" /></a>
+     <a href="https://www.npmjs.com/" target="_blank"><img src="https://img.shields.io/badge/npm-8.x.x-CB3837?style=for-the-badge&logo=npm&labelColor=20232a" /></a>
+     <a href="https://www.in-situ.com.mx" target="_blank"><img src="https://img.shields.io/badge/license-PRIVATE-orange?style=for-the-badge&logo=github&labelColor=20232a" /></a>
+</p>
+
 ## About the project
 
 In Situ Energía website.
@@ -48,14 +54,10 @@ This sections sould only list major frameworks or libraries used to build this p
 To get a local copy and run this project follow the next steps.
 
 ### Prerequisites
-node
-  ```sh
-  download and install, v16.x
-  ```
 
 npm
   ```sh
-  npm install, v8.x
+  npm install
   ```
 
 ### Setup
