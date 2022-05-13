@@ -3,7 +3,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import ButtonAnchor from '../ButtonAnchor';
-import { mockButtonData } from './mockData';
+import { mockButtonData } from './__mockData__';
 
 // arrange
 // act
