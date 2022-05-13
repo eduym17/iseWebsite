@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest --watch"
   },
   "dependencies": {
     "@formspree/react": "^2.2.4",
@@ -19,9 +19,9 @@
     "vite": "^2.8.0"
   },
   "devDependencies": {
-    "jest-environment-jsdom": "^28.1.0",
     "@babel/preset-env": "^7.17.10",
     "@babel/preset-react": "^7.16.7",
+    "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "autoprefixer": "^10.4.4",
     "babel-jest": "^28.1.0",
@@ -32,11 +32,9 @@
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.3.0",
     "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "postcss": "^8.4.12",
     "react-test-renderer": "^18.1.0",
     "tailwindcss": "^3.0.23"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
   }
 }
