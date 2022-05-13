@@ -1,10 +1,13 @@
+/* eslint-disable no-undef */
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import ButtonAnchor from '../ButtonAnchor';
+import '@testing-library/jest-dom';
 
 // arrange
 // act
 // assert
+// npm test -- --coverage
 
 const mockChildren = 'Conoce más';
 const mockCustomClass = 'bg-violet-200';
@@ -18,5 +21,14 @@ describe('Button Anchor component', () => {
       </ButtonAnchor>,
     );
     expect(button).toBeDefined();
+  });
+
+  test('Default values rendering', () => {
+    const button = render(
+      <ButtonAnchor />,
+    );
+    const buttonDefault = screen.getByText('Texto aquí');
+    expect(button).toBeDefined();
+    expect(buttonDefault).toBeInTheDocument();
   });
 });
