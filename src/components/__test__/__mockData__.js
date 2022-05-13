@@ -6,4 +6,8 @@ const mockButtonData = {
   mockTo: '/nosotros',
 };
 
-export { mockButtonData };
+const mockClientsBar = {
+  mockCustomClass: 'py-5 lg:py-8',
+};
+
+export { mockButtonData, mockClientsBar };
