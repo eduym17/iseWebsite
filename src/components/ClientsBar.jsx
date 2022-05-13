@@ -10,7 +10,7 @@ function ClientsBar({ customClass }) {
       <img src={iconToyota} alt="Toyota" className="h-10 md:h-12 lg:h-14" />
       <img src={iconRobles} alt="Los Robles" className="h-10 md:h-12 lg:h-14" />
       <img src={iconPemex} alt="PEMEX" className="h-10 md:h-12 lg:h-14" />
-      <img src={iconRecsa} alt="PEMEX" className="hidden h-10 md:h-12 lg:h-14" />
+      <img src={iconRecsa} alt="RECSA" className="hidden h-10 md:h-12 lg:h-14" />
     </div>
   );
 }
