@@ -6,26 +6,37 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest"
   },
   "dependencies": {
     "@formspree/react": "^2.2.4",
+    "@vitejs/plugin-react": "^1.0.7",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
-    "@vitejs/plugin-react": "^1.0.7",
     "vite": "^2.8.0"
   },
   "devDependencies": {
+    "jest-environment-jsdom": "^28.1.0",
+    "@babel/preset-env": "^7.17.10",
+    "@babel/preset-react": "^7.16.7",
+    "@testing-library/react": "^13.2.0",
     "autoprefixer": "^10.4.4",
+    "babel-jest": "^28.1.0",
     "eslint": "^8.11.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "jest": "^28.1.0",
     "postcss": "^8.4.12",
+    "react-test-renderer": "^18.1.0",
     "tailwindcss": "^3.0.23"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
   }
 }
