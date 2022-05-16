@@ -25,8 +25,8 @@ describe('Clients Bar component', () => {
     const { baseElement } = render(
       <ClientsBar customClass={mockClientsBar.mockCustomClass} />,
     );
-    const prueba = screen.getByAltText('Toyota').parentElement;
+    const parentEl = screen.getByAltText('Toyota').parentElement;
     expect(baseElement).toBeDefined();
-    expect(prueba).toHaveClass(CLASS);
+    expect(parentEl).toHaveClass(CLASS);
   });
 });
