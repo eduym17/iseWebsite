@@ -21,7 +21,6 @@ describe('Experience Bar component', () => {
     const { baseElement } = render(
       <ExperienceBar customClass={mockExperienceBar.mockCustomClass} />,
     );
-    screen.debug();
     const parentEl = screen.getByText('+30').parentElement.parentElement;
     expect(baseElement).toBeDefined();
     expect(parentEl).toHaveClass(CLASS);

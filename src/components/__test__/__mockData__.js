@@ -14,4 +14,13 @@ const mockExperienceBar = {
   mockCustomClass: '',
 };
 
-export { mockButtonData, mockClientsBar, mockExperienceBar };
+const mockExperienceItem = {
+  mockText: 'años de experiencia',
+  mockMagicWord: 'años',
+  mockImage: 'imagen',
+  mockCustomClass: 'mt-6 md:mt-10 lg:mt-12',
+};
+
+export {
+  mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem,
+};
