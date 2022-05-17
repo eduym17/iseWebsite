@@ -10,4 +10,8 @@ const mockClientsBar = {
   mockCustomClass: 'py-5 lg:py-8',
 };
 
-export { mockButtonData, mockClientsBar };
+const mockExperienceBar = {
+  mockCustomClass: '',
+};
+
+export { mockButtonData, mockClientsBar, mockExperienceBar };
