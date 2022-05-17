@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm({ customClass }) {
   const [state, handleSubmit] = useForm('xwkywnek');
-  if (state.succeeded) {
+  if (state.succeeded || state.submitting) {
     return <p className="text-center font-semibold my-16 text-2xl self-center md:text-3xl lg:text-4xl">¡Gracias por contactarnos!</p>;
   }
   return (
