@@ -68,4 +68,13 @@ describe('Faqs component', () => {
     fireEvent.blur(button);
     expect(screen.findByTestId('arrowButton false')).toBeTruthy();
   });
+
+  it('Should handle keyUp', () => {
+    render(
+      <Faqs />,
+    );
+    const button = screen.getByText('Pregunta aquí').parentElement.parentElement;
+    fireEvent.keyUp(button, { key: 'Enter' });
+    expect(screen.findByTestId('arrowButton true')).toBeTruthy();
+  });
 });
