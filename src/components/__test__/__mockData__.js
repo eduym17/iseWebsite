@@ -21,6 +21,12 @@ const mockExperienceItem = {
   mockCustomClass: 'mt-6 md:mt-10 lg:mt-12',
 };
 
+const mockFaqs = {
+  mockQuestion: '¿Los sistemas solares usan baterías?',
+  mockChildren: 'Los sistemas interconectados a la red no requieren de baterías. Sólo los sistemas que están aislados de la red las requieren.',
+  mockCustomClass: 'my-1',
+};
+
 export {
-  mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem,
+  mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs,
 };
