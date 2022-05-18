@@ -47,7 +47,7 @@ describe('Faqs component', () => {
   });
 
   it('Should expand and collapse', () => {
-    const { baseElement } = render(
+    render(
       <Faqs />,
     );
     const arrowButton = screen.getByText('Pregunta aquí').nextSibling;
@@ -56,5 +56,16 @@ describe('Faqs component', () => {
     expect(screen.findByTestId('arrowButton false')).toBeTruthy();
     fireEvent.click(arrowButton);
     expect(screen.findByTestId('arrowButton true')).toBeTruthy();
+  });
+
+  it('Should blur button', () => {
+    render(
+      <Faqs />,
+    );
+    const button = screen.getByText('Pregunta aquí').parentElement.parentElement;
+    const arrowButton = screen.getByText('Pregunta aquí').nextSibling;
+    fireEvent.click(arrowButton);
+    fireEvent.blur(button);
+    expect(screen.findByTestId('arrowButton false')).toBeTruthy();
   });
 });
