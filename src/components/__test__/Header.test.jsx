@@ -32,4 +32,18 @@ describe('Header component', () => {
     const logoInSitu = screen.getByAltText('In Situ Energía');
     expect(logoInSitu).toBeInTheDocument();
   });
+
+  it('Should handle click', () => {
+    render(
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>,
+    );
+    const textInicio = screen.getAllByText('Inicio');
+    const svgButton = textInicio[0].parentElement.nextSibling;
+    expect(svgButton).toBeDefined();
+    expect(screen.queryByTestId('svgButton false')).toBeTruthy();
+    fireEvent.click(svgButton);
+    expect(screen.queryByTestId('svgButton true')).toBeTruthy();
+  });
 });
