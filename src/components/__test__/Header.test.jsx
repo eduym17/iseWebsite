@@ -22,4 +22,14 @@ describe('Header component', () => {
     expect(defaultSolutions[0]).toBeInTheDocument();
     expect(defaultAboutUs[0]).toBeInTheDocument();
   });
+
+  it('Should render icons', () => {
+    render(
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>,
+    );
+    const logoInSitu = screen.getByAltText('In Situ Energía');
+    expect(logoInSitu).toBeInTheDocument();
+  });
 });
