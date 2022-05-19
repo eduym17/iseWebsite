@@ -39,4 +39,16 @@ describe('Footer component', () => {
     expect(logoInSitu).toBeInTheDocument();
     expect(defaultLinkedinIcon).toBeInTheDocument();
   });
+
+  it('Should render using non default data', () => {
+    render(
+      <BrowserRouter>
+        <Footer customClass={mockFooter.mockCustomClass} />
+      </BrowserRouter>,
+    );
+    const parentEl = screen.getByAltText('In Situ Energía').parentElement.parentElement.parentElement;
+    const date = screen.getByText('© Todos los derechos reservados. In Situ Energía, 2022.');
+    expect(parentEl).toHaveClass(CLASS);
+    expect(date).toBeInTheDocument();
+  });
 });

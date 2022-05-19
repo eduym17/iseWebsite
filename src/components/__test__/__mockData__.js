@@ -27,6 +27,10 @@ const mockFaqs = {
   mockCustomClass: 'my-1',
 };
 
+const mockFooter = {
+  mockCustomClass: 'my-5',
+};
+
 export {
-  mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs,
+  mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs, mockFooter,
 };
