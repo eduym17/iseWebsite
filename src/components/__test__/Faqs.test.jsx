@@ -53,9 +53,9 @@ describe('Faqs component', () => {
     const arrowButton = screen.getByText('Pregunta aquí').nextSibling;
     const arrowButtonFalse = screen.queryByTestId('arrowButton false');
     expect(arrowButtonFalse).toBeDefined();
-    expect(screen.findByTestId('arrowButton false')).toBeTruthy();
+    expect(screen.queryByTestId('arrowButton true')).toBeTruthy();
     fireEvent.click(arrowButton);
-    expect(screen.findByTestId('arrowButton true')).toBeTruthy();
+    expect(screen.queryByTestId('arrowButton false')).toBeTruthy();
   });
 
   it('Should blur button', () => {
@@ -66,7 +66,7 @@ describe('Faqs component', () => {
     const arrowButton = screen.getByText('Pregunta aquí').nextSibling;
     fireEvent.click(arrowButton);
     fireEvent.blur(button);
-    expect(screen.findByTestId('arrowButton false')).toBeTruthy();
+    expect(screen.queryByTestId('arrowButton false')).toBeTruthy();
   });
 
   it('Should handle keyUp', () => {
@@ -75,6 +75,6 @@ describe('Faqs component', () => {
     );
     const button = screen.getByText('Pregunta aquí').parentElement.parentElement;
     fireEvent.keyUp(button, { key: 'Enter' });
-    expect(screen.findByTestId('arrowButton true')).toBeTruthy();
+    expect(screen.queryByTestId('arrowButton false')).toBeTruthy();
   });
 });
