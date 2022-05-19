@@ -27,4 +27,16 @@ describe('Footer component', () => {
     expect(defaultCopyRight).toBeInTheDocument();
     expect(defaultLogIn).toBeInTheDocument();
   });
+
+  it('Should render icons', () => {
+    render(
+      <BrowserRouter>
+        <Footer />
+      </BrowserRouter>,
+    );
+    const logoInSitu = screen.getByAltText('In Situ Energía');
+    const defaultLinkedinIcon = screen.getByAltText('LinkedIn icon');
+    expect(logoInSitu).toBeInTheDocument();
+    expect(defaultLinkedinIcon).toBeInTheDocument();
+  });
 });
