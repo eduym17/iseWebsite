@@ -46,4 +46,16 @@ describe('Header component', () => {
     fireEvent.click(svgButton);
     expect(screen.queryByTestId('svgButton true')).toBeTruthy();
   });
+
+  it('Should blur menu', () => {
+    render(
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>,
+    );
+    const menuButton = screen.getByAltText('In Situ Energía').parentElement.nextSibling;
+    expect(screen.queryByTestId('menuButton true')).toBeDefined();
+    fireEvent.blur(menuButton);
+    expect(screen.queryByTestId('menuButton false')).toBeTruthy();
+  });
 });
