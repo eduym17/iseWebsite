@@ -58,4 +58,16 @@ describe('Header component', () => {
     fireEvent.blur(menuButton);
     expect(screen.queryByTestId('menuButton false')).toBeTruthy();
   });
+
+  it('Should handle keyUp', () => {
+    render(
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>,
+    );
+    const menuButton = screen.getByAltText('In Situ Energía').parentElement.nextSibling;
+    expect(screen.queryByTestId('menuButton false')).toBeDefined();
+    fireEvent.keyUp(menuButton, { key: 'Enter' });
+    expect(screen.queryByTestId('menuButton true')).toBeTruthy();
+  });
 });
