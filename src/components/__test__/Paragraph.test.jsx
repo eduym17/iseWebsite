@@ -14,6 +14,8 @@ const TEXT_THREE = 'Fundada en el año 2017, y con más de diez años de experie
 const CLASS_THREE = `${CLASS_DEFAULT} mt-3 mb-6 whitespace-pre-line text-justify md:w-full md:mt-4`;
 const CLASS_FOUR = 'mt-2 whitespace-pre-line lg:mb-4';
 const TEXT_FOUR = 'Lo sentimos pero no pudimos encontrar lo que buscabas. ¡Vuelve a intentar desde nuestra página de inicio!';
+const CLASS_FIVE = 'mt-4 text-justify whitespace-pre-line lg:mb-4';
+const TEXT_FIVE = 'De conformidad con la Ley Federal de Protección de Datos personales en Posesión de los Particulares (en adelante la &quot;Ley&quot;), vigente en los Estados Unidos Mexicanos, hacemos de su conocimiento que In Situ Energía, con domicilio en Insurgentes Sur 615, Col. Nápoles, Benito Juárez, CDMX, C.P. 03810, podrá recolectar y usar información proporcionada por usted (en adelante El Usuario) en este sitio web.';
 
 describe('Paragraph component', () => {
   it('Should render using default values', () => {
@@ -48,7 +50,7 @@ describe('Paragraph component', () => {
     expect(paragraphExampleTwo).toHaveClass(CLASS_TWO);
   });
 
-  it('Should render text three on aboutUs view', () => {
+  it('Should render text three on about us view', () => {
     render(
       <Paragraph customClass={mockParagraph.mockCustomClassThree}>
         {mockParagraph.mockChildrenThree}
@@ -59,7 +61,7 @@ describe('Paragraph component', () => {
     expect(paragraphExampleThree).toHaveClass(CLASS_THREE);
   });
 
-  it('Should render text three on notFound view', () => {
+  it('Should render text four on not found view', () => {
     render(
       <Paragraph customClass={mockParagraph.mockCustomClassFour}>
         {mockParagraph.mockChildrenFour}
@@ -68,5 +70,16 @@ describe('Paragraph component', () => {
     const paragraphExampleFour = screen.getByText(TEXT_FOUR);
     expect(paragraphExampleFour).toBeInTheDocument();
     expect(paragraphExampleFour).toHaveClass(CLASS_FOUR);
+  });
+
+  it('Should render text five on privacy policy view', () => {
+    render(
+      <Paragraph customClass={mockParagraph.mockCustomClassFive}>
+        {mockParagraph.mockChildrenFive}
+      </Paragraph>,
+    );
+    const paragraphExampleFive = screen.getByText(TEXT_FIVE);
+    expect(paragraphExampleFive).toBeInTheDocument();
+    expect(paragraphExampleFive).toHaveClass(CLASS_FIVE);
   });
 });

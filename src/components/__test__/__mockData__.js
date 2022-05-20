@@ -40,6 +40,8 @@ const mockParagraph = {
   mockChildrenThree: 'Fundada en el año 2017, y con más de diez años de experiencia dentro de la industria de las energías renovables, In Situ Energía se ha convertido en la empresa proveedora de servicios de Ingeniería, Procura y Construcción (EPC, por sus siglas en inglés), referente del rubro. Desarrollamos con profesionalismo cada uno de nuestros proyectos, apoyados en nuestras capacidades técnicas, regulatorias y financieras, a través de las cuales somos capaces de generar proyectos de alta calidad.',
   mockCustomClassFour: 'mt-2 whitespace-pre-line lg:mb-4',
   mockChildrenFour: 'Lo sentimos pero no pudimos encontrar lo que buscabas. ¡Vuelve a intentar desde nuestra página de inicio!',
+  mockCustomClassFive: 'mt-4 text-justify whitespace-pre-line lg:mb-4',
+  mockChildrenFive: 'De conformidad con la Ley Federal de Protección de Datos personales en Posesión de los Particulares (en adelante la &quot;Ley&quot;), vigente en los Estados Unidos Mexicanos, hacemos de su conocimiento que In Situ Energía, con domicilio en Insurgentes Sur 615, Col. Nápoles, Benito Juárez, CDMX, C.P. 03810, podrá recolectar y usar información proporcionada por usted (en adelante El Usuario) en este sitio web.',
 };
 
 export {
