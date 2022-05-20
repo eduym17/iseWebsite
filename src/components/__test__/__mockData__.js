@@ -31,6 +31,14 @@ const mockFooter = {
   mockCustomClass: 'my-5',
 };
 
+const mockParagraph = {
+  mockCustomClassOne: 'mt-3 md:text-left md:w-5/6 lg:w-4/5',
+  mockChildrenOne: 'Genera tu propia energía y comienza a ahorrar de inmediato, tenemos la solución que necesitas.',
+  mockCustomClassTwo: 'mt-1 lg:mt-2',
+  mockChildrenTwo: 'Soluciones inteligentes, siempre a la medida de las necesidades de nuestros clientes.',
+};
+
 export {
   mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs, mockFooter,
+  mockParagraph,
 };
