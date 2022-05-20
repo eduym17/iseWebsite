@@ -12,6 +12,8 @@ const TEXT_TWO = 'Soluciones inteligentes, siempre a la medida de las necesidade
 const CLASS_TWO = `${CLASS_DEFAULT} mt-1 lg:mt-2`;
 const TEXT_THREE = 'Fundada en el año 2017, y con más de diez años de experiencia dentro de la industria de las energías renovables, In Situ Energía se ha convertido en la empresa proveedora de servicios de Ingeniería, Procura y Construcción (EPC, por sus siglas en inglés), referente del rubro. Desarrollamos con profesionalismo cada uno de nuestros proyectos, apoyados en nuestras capacidades técnicas, regulatorias y financieras, a través de las cuales somos capaces de generar proyectos de alta calidad.';
 const CLASS_THREE = `${CLASS_DEFAULT} mt-3 mb-6 whitespace-pre-line text-justify md:w-full md:mt-4`;
+const CLASS_FOUR = 'mt-2 whitespace-pre-line lg:mb-4';
+const TEXT_FOUR = 'Lo sentimos pero no pudimos encontrar lo que buscabas. ¡Vuelve a intentar desde nuestra página de inicio!';
 
 describe('Paragraph component', () => {
   it('Should render using default values', () => {
@@ -55,5 +57,16 @@ describe('Paragraph component', () => {
     const paragraphExampleThree = screen.getByText(TEXT_THREE);
     expect(paragraphExampleThree).toBeInTheDocument();
     expect(paragraphExampleThree).toHaveClass(CLASS_THREE);
+  });
+
+  it('Should render text three on notFound view', () => {
+    render(
+      <Paragraph customClass={mockParagraph.mockCustomClassFour}>
+        {mockParagraph.mockChildrenFour}
+      </Paragraph>,
+    );
+    const paragraphExampleFour = screen.getByText(TEXT_FOUR);
+    expect(paragraphExampleFour).toBeInTheDocument();
+    expect(paragraphExampleFour).toHaveClass(CLASS_FOUR);
   });
 });

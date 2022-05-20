@@ -38,6 +38,8 @@ const mockParagraph = {
   mockChildrenTwo: 'Soluciones inteligentes, siempre a la medida de las necesidades de nuestros clientes.',
   mockCustomClassThree: 'mt-3 mb-6 whitespace-pre-line text-justify md:w-full md:mt-4',
   mockChildrenThree: 'Fundada en el año 2017, y con más de diez años de experiencia dentro de la industria de las energías renovables, In Situ Energía se ha convertido en la empresa proveedora de servicios de Ingeniería, Procura y Construcción (EPC, por sus siglas en inglés), referente del rubro. Desarrollamos con profesionalismo cada uno de nuestros proyectos, apoyados en nuestras capacidades técnicas, regulatorias y financieras, a través de las cuales somos capaces de generar proyectos de alta calidad.',
+  mockCustomClassFour: 'mt-2 whitespace-pre-line lg:mb-4',
+  mockChildrenFour: 'Lo sentimos pero no pudimos encontrar lo que buscabas. ¡Vuelve a intentar desde nuestra página de inicio!',
 };
 
 export {
