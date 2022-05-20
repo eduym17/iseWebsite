@@ -42,6 +42,8 @@ const mockParagraph = {
   mockChildrenFour: 'Lo sentimos pero no pudimos encontrar lo que buscabas. ¡Vuelve a intentar desde nuestra página de inicio!',
   mockCustomClassFive: 'mt-4 text-justify whitespace-pre-line lg:mb-4',
   mockChildrenFive: 'De conformidad con la Ley Federal de Protección de Datos personales en Posesión de los Particulares (en adelante la &quot;Ley&quot;), vigente en los Estados Unidos Mexicanos, hacemos de su conocimiento que In Situ Energía, con domicilio en Insurgentes Sur 615, Col. Nápoles, Benito Juárez, CDMX, C.P. 03810, podrá recolectar y usar información proporcionada por usted (en adelante El Usuario) en este sitio web.',
+  mockCustomClassSix: 'mt-3 whitespace-pre-line text-justify md:w-full md:mt-4',
+  mockChildrenSix: 'Aprovecha techos, suelos y estacionamientos para generar tu propia energía eléctrica, reduciendo costos internos. Existen diversos esquemas de conexión eléctrica de acuerdo con la normativa emitida por la Comisión Reguladora de Energía (CRE). A continuación, una breve descripción de los más utilizados y convenientes para ti y tu negocio:',
 };
 
 export {

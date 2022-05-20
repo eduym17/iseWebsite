@@ -12,10 +12,12 @@ const TEXT_TWO = 'Soluciones inteligentes, siempre a la medida de las necesidade
 const CLASS_TWO = `${CLASS_DEFAULT} mt-1 lg:mt-2`;
 const TEXT_THREE = 'Fundada en el año 2017, y con más de diez años de experiencia dentro de la industria de las energías renovables, In Situ Energía se ha convertido en la empresa proveedora de servicios de Ingeniería, Procura y Construcción (EPC, por sus siglas en inglés), referente del rubro. Desarrollamos con profesionalismo cada uno de nuestros proyectos, apoyados en nuestras capacidades técnicas, regulatorias y financieras, a través de las cuales somos capaces de generar proyectos de alta calidad.';
 const CLASS_THREE = `${CLASS_DEFAULT} mt-3 mb-6 whitespace-pre-line text-justify md:w-full md:mt-4`;
-const CLASS_FOUR = 'mt-2 whitespace-pre-line lg:mb-4';
+const CLASS_FOUR = `${CLASS_DEFAULT} mt-2 whitespace-pre-line lg:mb-4`;
 const TEXT_FOUR = 'Lo sentimos pero no pudimos encontrar lo que buscabas. ¡Vuelve a intentar desde nuestra página de inicio!';
-const CLASS_FIVE = 'mt-4 text-justify whitespace-pre-line lg:mb-4';
+const CLASS_FIVE = `${CLASS_DEFAULT} mt-4 text-justify whitespace-pre-line lg:mb-4`;
 const TEXT_FIVE = 'De conformidad con la Ley Federal de Protección de Datos personales en Posesión de los Particulares (en adelante la &quot;Ley&quot;), vigente en los Estados Unidos Mexicanos, hacemos de su conocimiento que In Situ Energía, con domicilio en Insurgentes Sur 615, Col. Nápoles, Benito Juárez, CDMX, C.P. 03810, podrá recolectar y usar información proporcionada por usted (en adelante El Usuario) en este sitio web.';
+const CLASS_SIX = `${CLASS_DEFAULT} mt-3 whitespace-pre-line text-justify md:w-full md:mt-4`;
+const TEXT_SIX = 'Aprovecha techos, suelos y estacionamientos para generar tu propia energía eléctrica, reduciendo costos internos. Existen diversos esquemas de conexión eléctrica de acuerdo con la normativa emitida por la Comisión Reguladora de Energía (CRE). A continuación, una breve descripción de los más utilizados y convenientes para ti y tu negocio:';
 
 describe('Paragraph component', () => {
   it('Should render using default values', () => {
@@ -81,5 +83,16 @@ describe('Paragraph component', () => {
     const paragraphExampleFive = screen.getByText(TEXT_FIVE);
     expect(paragraphExampleFive).toBeInTheDocument();
     expect(paragraphExampleFive).toHaveClass(CLASS_FIVE);
+  });
+
+  it('Should render text five on solutions view', () => {
+    render(
+      <Paragraph customClass={mockParagraph.mockCustomClassSix}>
+        {mockParagraph.mockChildrenSix}
+      </Paragraph>,
+    );
+    const paragraphExampleSix = screen.getByText(TEXT_SIX);
+    expect(paragraphExampleSix).toBeInTheDocument();
+    expect(paragraphExampleSix).toHaveClass(CLASS_SIX);
   });
 });
