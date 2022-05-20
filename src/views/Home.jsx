@@ -99,7 +99,7 @@ function Home() {
         <div className="containerContent">
           <Titles title="Proyectos recientes" magicWord="Proyectos" customClass="mt-6 lg:mt-12" />
           <Paragraph customClass="mt-1 lg:mt-2">
-            Soluciones inteligentes, siempre a la medidas de las necesidades de nuestros clientes.
+            Soluciones inteligentes, siempre a la medida de las necesidades de nuestros clientes.
           </Paragraph>
           <div className="w-full  flex flex-col items-center md:flex-row md:items-start md:justify-center md:gap-3 md:w-11/12 md:mt-6 md:mb-8 lg:mt-10 lg:mb-12 lg:gap-6">
             <ProjectItem mobileImg={roblesMobImg} desktopImg={roblesDeskImg} title="Los Robles" customClass="mt-6 md:mt-0" customClassTexts="">
