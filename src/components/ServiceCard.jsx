@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import epcIcon from '../assets/icons/epc-icon.png';
+import { epcIcon } from './icons';
 
 function ServiceCard({
   children, customClass, title, icon,

@@ -1,6 +1,6 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { Subtitles, Paragraph } from '.';
+import { Subtitles, Paragraph } from './index';
 
 function PrivacyTexts({
   title, magicWord, children, customClass, customClassParagraph,
@@ -24,9 +24,9 @@ PrivacyTexts.propTypes = {
 };
 
 PrivacyTexts.defaultProps = {
-  title: '',
+  title: 'Título aquí',
   magicWord: '',
-  children: '',
+  children: 'Texto aquí',
   customClass: '',
   customClassParagraph: '',
 };
