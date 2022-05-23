@@ -36,4 +36,22 @@ describe('Privacy Texts component', () => {
     expect(privacyTextOne).toBeInTheDocument();
     expect(privacyTitleOne).toBeInTheDocument();
   });
+
+  it('Should render custom classes', () => {
+    render(
+      <PrivacyTexts
+        title={mockPrivacyTexts.mockTitle}
+        customClass={mockPrivacyTexts.mockCustomClass}
+        customClassParagraph={mockPrivacyTexts.mockCustomClassParagraph}
+      >
+        {mockPrivacyTexts.mockChildren}
+      </PrivacyTexts>,
+    );
+    const privacyTitleOne = screen.getAllByText(/1.1/i);
+    const privacyTextOne = screen.getByText(TEXT_ONE);
+    const privacyTextSibling = screen.getByText(TEXT_ONE).previousSibling;
+    expect(privacyTitleOne[0]).toBeInTheDocument();
+    expect(privacyTextOne).toHaveClass(CUSTOM_CLASS_PARAGRAPH);
+    expect(privacyTextSibling).toHaveClass(CUSTOM_CLASS);
+  });
 });
