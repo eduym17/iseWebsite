@@ -46,7 +46,15 @@ const mockParagraph = {
   mockChildrenSix: 'Aprovecha techos, suelos y estacionamientos para generar tu propia energía eléctrica, reduciendo costos internos. Existen diversos esquemas de conexión eléctrica de acuerdo con la normativa emitida por la Comisión Reguladora de Energía (CRE). A continuación, una breve descripción de los más utilizados y convenientes para ti y tu negocio:',
 };
 
+const mockPrivacyTexts = {
+  mockTitle: '1.1 Tratamiento de datos y finalidades de su tratamiento',
+  mockMagicWord: '',
+  mockChildren: 'In Situ Energía recopila y usa únicamente la información proporcionada en alguno de los formularios contenidos en este sitio web por parte El Usuario, con alguno de los siguientes propósitos: a. Fines de identificación, b. Fines estadísticos, c. Contacto vía correo electrónico o vía telefónica por parte de alguno de las o los integrantes de nuestro personal. Lo anterior con el fin de responder a la o las solicitides enviadas, igualmente para fines de administración interna, seguimiento y análisis estadístico. Los datos recolectados son protegidos por los principios marcados en el artículo 6 de la Ley: ilicitud, consentimiento, información, calidad, finalidad, lealtad, proporcionalidad y responsabilidad.',
+  mockCustomClass: 'mt-8',
+  mockCustomClassParagraph: 'mt-2',
+};
+
 export {
   mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs, mockFooter,
-  mockParagraph,
+  mockParagraph, mockPrivacyTexts,
 };
