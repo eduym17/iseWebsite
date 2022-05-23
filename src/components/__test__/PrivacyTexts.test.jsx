@@ -24,4 +24,16 @@ describe('Privacy Texts component', () => {
     expect(privacyTextDefault).toBeInTheDocument();
     expect(privacyTextDefault).toHaveClass(CLASS_MAIN);
   });
+
+  it('Should render title and children text', () => {
+    render(
+      <PrivacyTexts title={mockPrivacyTexts.mockTitle}>
+        {mockPrivacyTexts.mockChildren}
+      </PrivacyTexts>,
+    );
+    const privacyTextOne = screen.getByText(TEXT_ONE);
+    const privacyTitleOne = screen.getByText(TEXT_ONE).previousSibling;
+    expect(privacyTextOne).toBeInTheDocument();
+    expect(privacyTitleOne).toBeInTheDocument();
+  });
 });
