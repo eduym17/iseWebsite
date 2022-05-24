@@ -55,13 +55,11 @@ const mockPrivacyTexts = {
 };
 
 const mockServiceCard = {
-  mockMobileImg: 'mobile-image.png',
-  mockDesktopImg: 'desktop-image.png',
+  mockIcon: 'icon.png',
   mockTitleOne: 'Financiamiento',
   mockTitleTwo: 'Ingeniería, suministro y construcción',
   mockChildren: 'Llevamos hasta ti diferentes esquemas y fuentes de financiamiento, de acuerdo con las necesidades y requerimientos de tu proyecto.',
   mockCustomClass: 'mt-6 md:mt-0',
-  mockCustomClassTexts: 'mt-1',
 };
 
 export {
