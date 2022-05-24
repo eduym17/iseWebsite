@@ -54,7 +54,7 @@ const mockPrivacyTexts = {
   mockCustomClassParagraph: 'mt-2',
 };
 
-const mockProjectItems = {
+const mockServiceCard = {
   mockMobileImg: 'mobile-image.png',
   mockDesktopImg: 'desktop-image.png',
   mockTitleOne: 'Financiamiento',
@@ -66,5 +66,5 @@ const mockProjectItems = {
 
 export {
   mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs, mockFooter,
-  mockParagraph, mockPrivacyTexts, mockProjectItems,
+  mockParagraph, mockPrivacyTexts, mockServiceCard,
 };
