@@ -70,18 +70,18 @@ describe('Project Item component', () => {
     expect(projectItemText).toBeInTheDocument();
   });
 
-  // it('Should change custom classes', () => {
-  //   render(
-  //     <ProjectItem
-  //       customClass={mockProjectItem.mockCustomClass}
-  //       customClassTexts={mockProjectItem.mockCustomClassTexts}
-  //     >
-  //       {mockProjectItem.mockChildren}
-  //     </ProjectItem>,
-  //   );
-  //   const projectItemTextParent = screen.getByText(CHILDREN_ONE).parentElement;
-  //   const parentEl = screen.getByText(CHILDREN_ONE).parentElement.parentElement;
-  //   expect(projectItemTextParent).toHaveClass(CUSTOM_CLASS_TEXTS);
-  //   expect(parentEl).toHaveClass(CUSTOM_CLASS);
-  // });
+  it('Should change custom classes', () => {
+    render(
+      <ProjectItem
+        customClass={mockProjectItem.mockCustomClass}
+        customClassTexts={mockProjectItem.mockCustomClassTexts}
+      >
+        {mockProjectItem.mockChildrenOne}
+      </ProjectItem>,
+    );
+    const projectItemTextParent = screen.getByText(CHILDREN_ONE).parentElement;
+    const parentEl = screen.getByText(CHILDREN_ONE).parentElement.parentElement;
+    expect(projectItemTextParent).toHaveClass(CUSTOM_CLASS_TEXTS);
+    expect(parentEl).toHaveClass(CUSTOM_CLASS);
+  });
 });
