@@ -80,7 +80,14 @@ const mockSubtitles = {
   mockMagicWordTwo: 'térmica',
 };
 
+const mockTitles = {
+  mockTitleOne: 'Nuestras soluciones',
+  mockTitleTwo: 'Nuestros servicios',
+  mockMagicWordOne: 'soluciones',
+  mockMagicWordTwo: 'servicios',
+};
+
 export {
   mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs, mockFooter,
-  mockParagraph, mockPrivacyTexts, mockProjectItem, mockServiceCard, mockSubtitles,
+  mockParagraph, mockPrivacyTexts, mockProjectItem, mockServiceCard, mockSubtitles, mockTitles,
 };
