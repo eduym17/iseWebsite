@@ -42,4 +42,14 @@ describe('Projec Items component', () => {
     expect(desktopImage).toHaveClass(CLASS_DESKTOP);
     expect(desktopImage).toBeInTheDocument();
   });
+
+  it('Should render children text', () => {
+    render(
+      <ProjectItem>
+        {mockProjectItems.mockChildren}
+      </ProjectItem>,
+    );
+    const projectItemText = screen.getByText(CHILDREN_ONE);
+    expect(projectItemText).toBeInTheDocument();
+  });
 });
