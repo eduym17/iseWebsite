@@ -92,8 +92,13 @@ const mockTitles6xl = {
   mockMagicWord: 'beneficios',
 };
 
+const mockTitlesNegative = {
+  mockTitleNegative: '¿Aún tienes alguna pregunta?',
+  mockCustomClass: 'mt-6 md:text-left',
+};
+
 export {
   mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs, mockFooter,
   mockParagraph, mockPrivacyTexts, mockProjectItem, mockServiceCard, mockSubtitles, mockTitles,
-  mockTitles6xl,
+  mockTitles6xl, mockTitlesNegative,
 };
