@@ -77,7 +77,7 @@ const mockSubtitles = {
   mockSubtitleOne: 'Energía eléctrica',
   mockSubtitleTwo: 'Energía térmica',
   mockMagicWordOne: 'eléctrica',
-  mockMagicWordOTwo: 'térmica',
+  mockMagicWordTwo: 'térmica',
 };
 
 export {
