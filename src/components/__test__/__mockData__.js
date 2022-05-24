@@ -73,7 +73,14 @@ const mockServiceCard = {
   mockCustomClass: 'mt-6 md:mt-0',
 };
 
+const mockSubtitles = {
+  mockSubtitleOne: 'Energía eléctrica',
+  mockSubtitleTwo: 'Energía térmica',
+  mockMagicWordOne: 'eléctrica',
+  mockMagicWordOTwo: 'térmica',
+};
+
 export {
   mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs, mockFooter,
-  mockParagraph, mockPrivacyTexts, mockProjectItem, mockServiceCard,
+  mockParagraph, mockPrivacyTexts, mockProjectItem, mockServiceCard, mockSubtitles,
 };

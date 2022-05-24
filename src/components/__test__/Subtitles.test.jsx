@@ -18,4 +18,24 @@ describe('Subtitles component', () => {
     expect(subtitleDefault).toBeInTheDocument();
     expect(parentEl).toHaveClass(CLASS_MAIN);
   });
+
+  it('Should render using real values one', () => {
+    render(
+      <Subtitles title={mockSubtitles.mockSubtitleOne} />,
+    );
+    const subtitleOne = screen.getByText(/eléctrica/i);
+    const parentEl = screen.getByText(/eléctrica/i).parentElement;
+    expect(subtitleOne).toBeInTheDocument();
+    expect(parentEl).toHaveClass(CLASS_MAIN);
+  });
+
+  it('Should render using real values two', () => {
+    render(
+      <Subtitles title={mockSubtitles.mockSubtitleTwo} />,
+    );
+    const subtitleTwo = screen.getByText(/térmica/i);
+    const parentEl = screen.getByText(/térmica/i).parentElement;
+    expect(subtitleTwo).toBeInTheDocument();
+    expect(parentEl).toHaveClass(CLASS_MAIN);
+  });
 });
