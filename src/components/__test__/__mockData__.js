@@ -87,7 +87,13 @@ const mockTitles = {
   mockMagicWordTwo: 'servicios',
 };
 
+const mockTitles6xl = {
+  mockTitle6xl: 'Los beneficios del Sol, siempre a tu alcance',
+  mockMagicWord: 'beneficios',
+};
+
 export {
   mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs, mockFooter,
   mockParagraph, mockPrivacyTexts, mockProjectItem, mockServiceCard, mockSubtitles, mockTitles,
+  mockTitles6xl,
 };
