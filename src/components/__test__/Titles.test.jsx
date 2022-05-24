@@ -6,6 +6,7 @@ import Titles from '../Titles';
 import { mockTitles } from './__mockData__';
 
 const CLASS_MAIN = 'text-3xl font-bold text-center w-[90%] lg:text-5xl';
+const MAGIC_WORD_CLASS = 'text-ise-orange';
 
 describe('Titles component', () => {
   it('Should render using default values', () => {
@@ -37,5 +38,23 @@ describe('Titles component', () => {
     const parentEl = screen.getByText(/Nuestros/i).parentElement;
     expect(titleTwo).toBeInTheDocument();
     expect(parentEl).toHaveClass(CLASS_MAIN);
+  });
+
+  it('Should change magic word class one', () => {
+    render(
+      <Titles title={mockTitles.mockTitleOne} magicWord={mockTitles.mockMagicWordOne} />,
+    );
+    const magicWordOne = screen.getByText(/soluciones/i);
+    expect(magicWordOne).toBeInTheDocument();
+    expect(magicWordOne).toHaveClass(MAGIC_WORD_CLASS);
+  });
+
+  it('Should change magic word class two', () => {
+    render(
+      <Titles title={mockTitles.mockTitleTwo} magicWord={mockTitles.mockMagicWordTwo} />,
+    );
+    const magicWordTwo = screen.getByText(/servicios/i);
+    expect(magicWordTwo).toBeInTheDocument();
+    expect(magicWordTwo).toHaveClass(MAGIC_WORD_CLASS);
   });
 });
