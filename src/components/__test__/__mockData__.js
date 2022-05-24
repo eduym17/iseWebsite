@@ -59,7 +59,8 @@ const mockProjectItem = {
   mockDesktopImg: 'desktop-image.png',
   mockTitleOne: 'Los Robles',
   mockTitleTwo: 'El Junco',
-  mockChildren: 'Llevamos hasta ti diferentes esquemas y fuentes de financiamiento, de acuerdo con las necesidades y requerimientos de tu proyecto.',
+  mockChildrenOne: 'Calentamiento solar de alberca. Capacidad instalada: 84 kW.',
+  mockChildrenTwo: 'Sistema fotovoltaico. Generación distribuida. Capacidad instalada: 499 kW.',
   mockCustomClass: 'mt-6 md:mt-0',
   mockCustomClassTexts: 'mt-1',
 };

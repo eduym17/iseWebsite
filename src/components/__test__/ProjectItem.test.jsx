@@ -7,7 +7,8 @@ import { mockProjectItem } from './__mockData__';
 
 const CLASS_MOBILE = 'md:hidden max-w-sm rounded-t-lg w-[90%]';
 const CLASS_DESKTOP = 'hidden md:flex rounded-t-lg md:w-full';
-const CHILDREN_ONE = 'Llevamos hasta ti diferentes esquemas y fuentes de financiamiento, de acuerdo con las necesidades y requerimientos de tu proyecto.';
+const CHILDREN_ONE = 'Calentamiento solar de alberca. Capacidad instalada: 84 kW.';
+const CHILDREN_TWO = 'Sistema fotovoltaico. Generación distribuida. Capacidad instalada: 499 kW.';
 const MAIN_CLASS = 'flex flex-col items-center w-full hover:drop-shadow-lg lg:hover:drop-shadow-xl lg:w-[29%]';
 const CUSTOM_CLASS = `${MAIN_CLASS} mt-6 md:mt-0`;
 const MAIN_CLASS_TEXTS = 'bg-ise-gray-40 flex flex-col items-center rounded-b-lg w-[90%] px-2 py-2 max-w-sm md:w-full';
@@ -49,15 +50,25 @@ describe('Project Item component', () => {
     expect(desktopImage).toBeInTheDocument();
   });
 
-  // it('Should render children text', () => {
-  //   render(
-  //     <ProjectItem>
-  //       {mockProjectItem.mockChildren}
-  //     </ProjectItem>,
-  //   );
-  //   const projectItemText = screen.getByText(CHILDREN_ONE);
-  //   expect(projectItemText).toBeInTheDocument();
-  // });
+  it('Should render children text one', () => {
+    render(
+      <ProjectItem>
+        {mockProjectItem.mockChildrenOne}
+      </ProjectItem>,
+    );
+    const projectItemText = screen.getByText(CHILDREN_ONE);
+    expect(projectItemText).toBeInTheDocument();
+  });
+
+  it('Should render children text two', () => {
+    render(
+      <ProjectItem>
+        {mockProjectItem.mockChildrenTwo}
+      </ProjectItem>,
+    );
+    const projectItemText = screen.getByText(CHILDREN_TWO);
+    expect(projectItemText).toBeInTheDocument();
+  });
 
   // it('Should change custom classes', () => {
   //   render(
