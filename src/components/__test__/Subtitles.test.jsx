@@ -6,6 +6,7 @@ import Subtitles from '../Subtitles';
 import { mockSubtitles } from './__mockData__';
 
 const CLASS_MAIN = 'text-2xl font-bold text-center w-[90%] lg:text-3xl';
+const CLASS_CUSTOM = `${CLASS_MAIN} mt-1 lg:mt-2`;
 const MAGIC_WORD_CLASS = 'text-ise-orange';
 
 describe('Subtitles component', () => {
@@ -60,5 +61,17 @@ describe('Subtitles component', () => {
     );
     const magicWordTwo = screen.getByText(/térmica/i);
     expect(magicWordTwo).toHaveClass(MAGIC_WORD_CLASS);
+  });
+
+  it('Should change custom classes', () => {
+    render(
+      <Subtitles
+        title={mockSubtitles.mockSubtitleOne}
+        customClass={mockSubtitles.mockCustomClass}
+      />,
+    );
+    const subtitleOne = screen.getByText(/eléctrica/i).parentElement;
+    expect(subtitleOne).toBeInTheDocument();
+    expect(subtitleOne).toHaveClass(CLASS_CUSTOM);
   });
 });

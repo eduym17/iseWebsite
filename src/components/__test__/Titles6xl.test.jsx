@@ -6,6 +6,7 @@ import Titles6xl from '../Titles6xl';
 import { mockTitles6xl } from './__mockData__';
 
 const CLASS_MAIN = 'text-3xl font-bold text-center w-[90%] lg:text-6xl';
+const CLASS_CUSTOM = `${CLASS_MAIN} mt-5 md:text-left lg:w-full`;
 const MAGIC_WORD_CLASS = 'text-ise-orange';
 
 describe('Titles6xl component', () => {
@@ -37,5 +38,17 @@ describe('Titles6xl component', () => {
     const magicWordOne = screen.getByText(/beneficios/i);
     expect(magicWordOne).toBeInTheDocument();
     expect(magicWordOne).toHaveClass(MAGIC_WORD_CLASS);
+  });
+
+  it('Should change custom classes', () => {
+    render(
+      <Titles6xl
+        title={mockTitles6xl.mockTitle6xl}
+        customClass={mockTitles6xl.mockCustomClass}
+      />,
+    );
+    const titleOne = screen.getByText(/beneficios/i).parentElement;
+    expect(titleOne).toBeInTheDocument();
+    expect(titleOne).toHaveClass(CLASS_CUSTOM);
   });
 });

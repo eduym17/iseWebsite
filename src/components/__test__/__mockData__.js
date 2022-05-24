@@ -78,6 +78,7 @@ const mockSubtitles = {
   mockSubtitleTwo: 'Energía térmica',
   mockMagicWordOne: 'eléctrica',
   mockMagicWordTwo: 'térmica',
+  mockCustomClass: 'mt-1 lg:mt-2',
 };
 
 const mockTitles = {
@@ -85,11 +86,13 @@ const mockTitles = {
   mockTitleTwo: 'Nuestros servicios',
   mockMagicWordOne: 'soluciones',
   mockMagicWordTwo: 'servicios',
+  mockCustomClass: 'mt-6 lg:mt-12',
 };
 
 const mockTitles6xl = {
   mockTitle6xl: 'Los beneficios del Sol, siempre a tu alcance',
   mockMagicWord: 'beneficios',
+  mockCustomClass: 'mt-5 md:text-left lg:w-full',
 };
 
 const mockTitlesNegative = {
