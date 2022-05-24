@@ -54,6 +54,16 @@ const mockPrivacyTexts = {
   mockCustomClassParagraph: 'mt-2',
 };
 
+const mockProjectItem = {
+  mockMobileImg: 'mobile-image.png',
+  mockDesktopImg: 'desktop-image.png',
+  mockTitleOne: 'Los Robles',
+  mockTitleTwo: 'El Junco',
+  mockChildren: 'Llevamos hasta ti diferentes esquemas y fuentes de financiamiento, de acuerdo con las necesidades y requerimientos de tu proyecto.',
+  mockCustomClass: 'mt-6 md:mt-0',
+  mockCustomClassTexts: 'mt-1',
+};
+
 const mockServiceCard = {
   mockIcon: 'icon.png',
   mockTitleOne: 'Financiamiento',
@@ -64,5 +74,5 @@ const mockServiceCard = {
 
 export {
   mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs, mockFooter,
-  mockParagraph, mockPrivacyTexts, mockServiceCard,
+  mockParagraph, mockPrivacyTexts, mockProjectItem, mockServiceCard,
 };
