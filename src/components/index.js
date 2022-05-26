@@ -15,9 +15,10 @@ import Footer from './Footer';
 import Header from './Header';
 import ScrollToTop from './ScrollToTop';
 import ProjectItem from './ProjectItem';
+import LogInForm from './LogInForm';
 
 export {
   ButtonAnchor, ButtonLink, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles,
   Faqs, ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header, ScrollToTop,
-  ProjectItem,
+  ProjectItem, LogInForm,
 };
