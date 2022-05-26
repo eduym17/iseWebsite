@@ -94,4 +94,7 @@ html {
   .containerContent {
     @apply w-full max-w-6xl flex flex-col items-center
   }
+  .containerFullHeightFullWidth {
+    @apply w-full h-screen flex flex-col items-center justify-between
+  }
 }
