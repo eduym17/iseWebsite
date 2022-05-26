@@ -39,7 +39,7 @@ function Footer({ customClass }) {
         <div className="pt-1 flex flex-col md:flex-row md:justify-between md:items-center ">
           <div className="router flex text-sm items-center justify-around md:gap-4">
             <Link to="/privacidad" className="hover:text-ise-orange">Política de privacidad</Link>
-            <Link to="/" className="hover:text-ise-orange hidden">Log In</Link>
+            <Link to="/login" className="hover:text-ise-orange">Log In</Link>
           </div>
           <div className="copyright pt-1 text-sm flex justify-center">
             <p>{`© Todos los derechos reservados. In Situ Energía, ${new Date().getFullYear()}.`}</p>
