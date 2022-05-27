@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function InputText({
-  label, customPlaceholder, customClass, condition,
+  label, customPlaceholder, customClass, condition, isRequired,
 }) {
   return (
     <div className={`py-1 ${customClass}`}>
@@ -21,7 +21,8 @@ function InputText({
           name={label}
           id={label}
           placeholder={customPlaceholder}
-          className="w-full px-2 py-1 rounded-lg font-Hero shadow-sm border border-gray-400 focus:outline-none focus:border-ise-orange placeholder:text-sm appearance-none"
+          className="appearance-none w-full px-2 py-1 rounded-lg font-Hero shadow-sm border border-gray-400 focus:outline-none focus:border-ise-orange placeholder:text-sm"
+          required={isRequired}
         />
       </div>
     </div>
@@ -33,6 +34,7 @@ InputText.propTypes = {
   customPlaceholder: PropTypes.string,
   customClass: PropTypes.string,
   condition: PropTypes.string,
+  isRequired: PropTypes.bool,
 };
 
 InputText.defaultProps = {
@@ -40,6 +42,7 @@ InputText.defaultProps = {
   customPlaceholder: 'Placeholder aquí',
   customClass: '',
   condition: '',
+  isRequired: false,
 };
 
 export default InputText;
