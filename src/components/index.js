@@ -16,9 +16,10 @@ import Header from './Header';
 import ScrollToTop from './ScrollToTop';
 import ProjectItem from './ProjectItem';
 import LogInForm from './LogInForm';
+import InputText from './InputText';
 
 export {
   ButtonAnchor, ButtonLink, Paragraph, ServiceCard, Titles, Titles6xl, TitlesNegative, Subtitles,
   Faqs, ExperienceBar, ExperienceItem, ClientsBar, ContactForm, Footer, Header, ScrollToTop,
-  ProjectItem, LogInForm,
+  ProjectItem, LogInForm, InputText,
 };
