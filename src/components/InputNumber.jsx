@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function InputText({
-  label, customPlaceholder, customClass, condition, isRequired,
+  label, customPlaceholder, customClass, isRequired,
 }) {
   return (
     <div className={`py-1 ${customClass}`}>
@@ -11,7 +11,7 @@ function InputText({
           {label}
         </label>
         <span className="pr-1 text-xs text-gray-500">
-          {condition}
+          {isRequired === false ? 'Opcional' : 'Requerido'}
         </span>
       </div>
       <div className="mt-px">
@@ -33,7 +33,6 @@ InputText.propTypes = {
   label: PropTypes.string,
   customPlaceholder: PropTypes.string,
   customClass: PropTypes.string,
-  condition: PropTypes.string,
   isRequired: PropTypes.bool,
 };
 
@@ -41,7 +40,6 @@ InputText.defaultProps = {
   label: 'Label aquí',
   customPlaceholder: 'Placeholder aquí',
   customClass: '',
-  condition: '',
   isRequired: false,
 };
 
