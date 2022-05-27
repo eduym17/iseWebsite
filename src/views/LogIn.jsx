@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Header, Footer, ScrollToTop, LogInForm, InputText,
+  Header, Footer, ScrollToTop, LogInForm, InputText, InputNumber,
 } from '../components';
 
 function Solutions() {
@@ -15,6 +15,7 @@ function Solutions() {
             <InputText label="Apellido" customPlaceholder="Apellido aquí" condition="Opcional" customClass="w-[75%]" />
             <InputText label="E-mail" customPlaceholder="E-mail aquí" condition="Requerido" customClass="" />
             <InputText label="Dirección" customPlaceholder="Calle, Número, Colonia, Municipio, Estado, CP" condition="Opcional" customClass="w-[125%]" />
+            <InputNumber label="Input número" customPlaceholder="0.00" condition="Opcional" customClass="w-[125%]" />
           </div>
           <LogInForm />
         </div>
