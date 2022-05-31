@@ -1,3 +1,3 @@
-import FullHeightFullWidth from './FullHeightFullWidth';
+import Calcs from './Calcs';
 
-export { FullHeightFullWidth };
+export default Calcs;
