@@ -2,12 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function InputSelect({
-  label, customClass, isRequired, isDisabled,
+  label, customClass, isRequired, isDisabled, options, val, onStateChangeProp,
 }) {
-  const entitiesMexico = [
-    'Aguascalientes', 'Baja California', 'Baja California Sur', 'Campeche', 'Chiapas', 'Chihuahua', 'Coahuila', 'Colima', 'CDMX', 'Durango', 'Guanajuato', 'Guerrero', 'Hidalgo', 'Jalisco', 'Estado de México', 'Michoacán', 'Morelos', 'Nayarit', 'Nuevo León', 'Oaxaca', 'Puebla', 'Querétaro', 'Quintana Roo', 'San Luis Potosí', 'Sinaloa', 'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz', 'Yucatán', 'Zacatecas',
-  ];
-
   return (
     <div className={`py-1 ${customClass}`}>
       <div className="flex justify-between items-center">
@@ -20,14 +16,16 @@ function InputSelect({
       </div>
       <div>
         <select
-          name="select"
+          name={label}
           id={label}
           className={`appearance-none w-full bg-ise-white px-2 py-1 rounded-lg font-Hero shadow-sm border focus:outline-none focus:border-ise-orange placeholder:text-sm disabled:cursor-not-allowed ${isDisabled === false ? 'border-gray-400' : 'opacity-50 border-gray-600'}`}
           required={isRequired}
           disabled={isDisabled}
+          value={val}
+          onChange={(e) => onStateChangeProp(e)}
         >
           <option selected disabled hidden>Elige una entidad</option>
-          {entitiesMexico.map((entity) => (
+          {options.map((entity) => (
             <option key={entity}>
               {entity}
             </option>
@@ -43,6 +41,9 @@ InputSelect.propTypes = {
   customClass: PropTypes.string,
   isRequired: PropTypes.bool,
   isDisabled: PropTypes.bool,
+  options: PropTypes.arrayOf(PropTypes.string).isRequired,
+  val: PropTypes.string.isRequired,
+  onStateChangeProp: PropTypes.func.isRequired,
 };
 
 InputSelect.defaultProps = {
