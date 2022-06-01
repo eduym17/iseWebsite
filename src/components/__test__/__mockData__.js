@@ -102,12 +102,15 @@ const mockTitlesNegative = {
 
 const mockTechnicalScheme = {
   mockTitleOne: 'Net Metering',
+  mockSubtitleFooterOne: 'Generación distribuida',
   mockChildrenOne: 'Sistemas con una capacidad instalada mayor o igual a 500 kW para generación y consumo in situ. Pueden tener, o no, intercambio de energía con la red.',
   mockTitleTwo: 'Alta temperatura',
   mockCustomClassOne: 'mt-4 md:mt-5 lg:mt-12',
   mockChildrenTwo: 'La temperatura del fluido, comúnmente agua, se eleva hasta obtener vapor sobrecalentado. Este tipo de sistemas se utilizan para procesos industriales de alta especialización.',
+  mockCustomClassTwo: 'mt-4 mb-6 md:mt-5 lg:mt-6 lg:mb-10',
   mockTitleThree: 'Peak Shaving',
   mockChildrenThree: 'Almacena energía barata de manera estratégica y utilizala cuando más te convenga. Puedes hacerlo desde la red de CFE o generarla por tu propia cuenta, tenemos opciones a tu medida.',
+  mockCustomClassThree: 'mt-4 md:mt-5 lg:mt-12',
 };
 
 export {

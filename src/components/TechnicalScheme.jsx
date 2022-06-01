@@ -37,7 +37,7 @@ TechnicalScheme.propTypes = {
 
 TechnicalScheme.defaultProps = {
   children: 'Descripción aquí',
-  subtitleFooter: 'Pie aquí',
+  subtitleFooter: '',
   title: 'Título aquí',
   magicWord: '',
   customClassSubtitle: '',
