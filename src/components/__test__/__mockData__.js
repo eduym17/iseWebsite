@@ -100,8 +100,18 @@ const mockTitlesNegative = {
   mockCustomClass: 'mt-6 md:text-left',
 };
 
+const mockTechnicalScheme = {
+  mockTitleOne: 'Net Metering',
+  mockChildrenOne: 'Sistemas con una capacidad instalada mayor o igual a 500 kW para generación y consumo in situ. Pueden tener, o no, intercambio de energía con la red.',
+  mockTitleTwo: 'Alta temperatura',
+  mockCustomClassOne: 'mt-4 md:mt-5 lg:mt-12',
+  mockChildrenTwo: 'La temperatura del fluido, comúnmente agua, se eleva hasta obtener vapor sobrecalentado. Este tipo de sistemas se utilizan para procesos industriales de alta especialización.',
+  mockTitleThree: 'Peak Shaving',
+  mockChildrenThree: 'Almacena energía barata de manera estratégica y utilizala cuando más te convenga. Puedes hacerlo desde la red de CFE o generarla por tu propia cuenta, tenemos opciones a tu medida.',
+};
+
 export {
   mockButtonData, mockClientsBar, mockExperienceBar, mockExperienceItem, mockFaqs, mockFooter,
   mockParagraph, mockPrivacyTexts, mockProjectItem, mockServiceCard, mockSubtitles, mockTitles,
-  mockTitles6xl, mockTitlesNegative,
+  mockTitles6xl, mockTitlesNegative, mockTechnicalScheme,
 };
