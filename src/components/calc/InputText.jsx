@@ -38,7 +38,7 @@ InputText.propTypes = {
   isRequired: PropTypes.bool,
   isDisabled: PropTypes.bool,
   type: PropTypes.string.isRequired,
-  val: PropTypes.string.isRequired,
+  val: PropTypes.string,
   onStateChangeProp: PropTypes.func.isRequired,
 };
 
@@ -48,6 +48,7 @@ InputText.defaultProps = {
   customClass: '',
   isRequired: false,
   isDisabled: false,
+  val: '',
 };
 
 export default InputText;
