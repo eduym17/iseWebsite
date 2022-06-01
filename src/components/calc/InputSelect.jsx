@@ -24,9 +24,11 @@ function InputSelect({
           value={val}
           onChange={(e) => onStateChangeProp(e)}
         >
-          <option selected disabled hidden>Elige una entidad</option>
-          {options.map((entity) => (
-            <option key={entity}>
+          {options.map((entity, index) => (
+            <option
+              key={entity}
+              className={index === 0 ? 'hidden' : ''}
+            >
               {entity}
             </option>
           ))}
@@ -42,7 +44,7 @@ InputSelect.propTypes = {
   isRequired: PropTypes.bool,
   isDisabled: PropTypes.bool,
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
-  val: PropTypes.string.isRequired,
+  val: PropTypes.string,
   onStateChangeProp: PropTypes.func.isRequired,
 };
 
@@ -51,5 +53,6 @@ InputSelect.defaultProps = {
   customClass: '',
   isRequired: false,
   isDisabled: false,
+  val: '',
 };
 export default InputSelect;
