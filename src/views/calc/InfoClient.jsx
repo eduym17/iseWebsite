@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { addInfoClient } from '../../store/calc/calcSlice';
 import InputGeneral from '../../components/calc/InputGeneral';
 import INFOCLIENT from './fields';
 
 function InfoClient() {
-  const [infoClient, infoClientSet] = useState({ Entidad: 'Seleccione una entidad' });
+  const infoClient = useSelector((state) => state.calc.infoClient);
+  const dispatch = useDispatch();
   const onChange = (e) => {
     const { name, value } = e.target;
-    infoClientSet({
+    dispatch(addInfoClient({
       ...infoClient, [name]: value,
-    });
+    }));
   };
 
   return (
