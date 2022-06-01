@@ -7,7 +7,10 @@ function InputCurrency({
   return (
     <div className={`py-1 ${customClass}`}>
       <div className="flex justify-between items-center">
-        <label htmlFor={label} className="pl-1 font-medium">
+        <label
+          htmlFor={label}
+          className="pl-1 font-medium"
+        >
           {label}
         </label>
         <span className="pr-1 text-xs text-gray-500">
@@ -16,7 +19,9 @@ function InputCurrency({
       </div>
       <div className="mt-px relative rounded-md shadow-sm">
         <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-          <span className="text-gray-400 sm:text-sm">$</span>
+          <span className="text-gray-400 sm:text-sm">
+            $
+          </span>
         </div>
         <input
           type="text"
@@ -28,8 +33,13 @@ function InputCurrency({
           disabled={isDisabled}
         />
         <div className="absolute inset-y-0 right-0 flex items-center">
-          <label htmlFor="currency" className="">
-            <span className="sr-only">Moneda</span>
+          <label
+            htmlFor="currency"
+            className=""
+          >
+            <span className="sr-only">
+              Moneda
+            </span>
             <select
               name="currency"
               id="currency"

@@ -7,7 +7,10 @@ function InputSelect({
   return (
     <div className={`py-1 ${customClass}`}>
       <div className="flex justify-between items-center">
-        <label htmlFor={label} className="pl-1 font-medium">
+        <label
+          htmlFor={label}
+          className="pl-1 font-medium"
+        >
           {label}
         </label>
         <span className="pr-1 text-xs text-gray-500">
