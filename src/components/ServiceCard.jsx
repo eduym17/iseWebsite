@@ -8,7 +8,11 @@ function ServiceCard({
   return (
     <div className={`bg-ise-gray-40 w-[90%] rounded-lg p-2 hover:drop-shadow-lg md:mt-0 lg:hover:drop-shadow-xl ${customClass}`}>
       <div className="flex items-center gap-2 lg:flex-col lg:gap-0">
-        <img src={icon} alt={title} className="h-6 lg:h-12 lg:mt-4" />
+        <img
+          src={icon}
+          alt={title}
+          className="h-6 lg:h-12 lg:mt-4"
+        />
         <p className="text-2xl font-bold text-left py-1 lg:text-2xl lg:text-center">
           {title}
         </p>

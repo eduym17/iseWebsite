@@ -10,10 +10,17 @@ function LogInForm() {
       <p className="font-Hero text-sm text-center md:w-full pb-6">
         Para uso exclusivo de In Situ Energía.
       </p>
-      <form className="space-y-6" action="/" method="POST">
+      <form
+        className="space-y-6"
+        action="/"
+        method="POST"
+      >
         <div>
           <div className="shadow-md -space-y-px">
-            <label htmlFor="email" className="sr-only">
+            <label
+              htmlFor="email"
+              className="sr-only"
+            >
               Correo electrónico
             </label>
             <input
@@ -27,7 +34,10 @@ function LogInForm() {
             />
           </div>
           <div>
-            <label htmlFor="password" className="sr-only">
+            <label
+              htmlFor="password"
+              className="sr-only"
+            >
               Contraseña
             </label>
             <input
@@ -48,12 +58,18 @@ function LogInForm() {
               type="checkbox"
               className="h-4 w-4"
             />
-            <label htmlFor="remember-me" className="ml-2 block text-sm text-ise-gray-30">
+            <label
+              htmlFor="remember-me"
+              className="ml-2 block text-sm text-ise-gray-30"
+            >
               Recuérdame
             </label>
           </div>
           <div>
-            <a href="mailto:mail@mail.com?subject=Contacta&body=con soporte técnico" className="text-sm hover:text-ise-orange">
+            <a
+              href="mailto:mail@mail.com?subject=Contacta&body=con soporte técnico"
+              className="text-sm hover:text-ise-orange"
+            >
               ¿Olvidaste tu contraseña?
             </a>
           </div>

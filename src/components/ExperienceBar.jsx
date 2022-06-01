@@ -5,7 +5,9 @@ function ExperienceBar({ customClass }) {
   return (
     <div className={`xpresumeSection selection:bg-ise-white selection:text-ise-orange bg-sungradient-y text-ise-white flex flex-wrap gap-x-4 justify-center items-center py-3 lg:py-6 lg:gap-12 ${customClass}`}>
       <div className="flex items-center gap-1">
-        <span className="text-4xl font-bold lg:text-6xl">+25</span>
+        <span className="text-4xl font-bold lg:text-6xl">
+          +25
+        </span>
         <div>
           <p className="leading-none font-Hero text-sm lg:text-lg lg:leading-none">
             clientes
@@ -15,7 +17,9 @@ function ExperienceBar({ customClass }) {
         </div>
       </div>
       <div className="flex items-center gap-1">
-        <span className="text-4xl font-bold lg:text-6xl">+30 </span>
+        <span className="text-4xl font-bold lg:text-6xl">
+          +30
+        </span>
         <div>
           <p className="leading-none font-Hero text-sm lg:text-lg lg:leading-none">
             proyectos
@@ -25,7 +29,9 @@ function ExperienceBar({ customClass }) {
         </div>
       </div>
       <div className="flex items-center gap-1">
-        <span className="text-4xl font-bold lg:text-6xl">+8</span>
+        <span className="text-4xl font-bold lg:text-6xl">
+          +8
+        </span>
         <div>
           <p className="leading-none font-Hero text-sm lg:text-lg lg:leading-none">
             MegaWatts

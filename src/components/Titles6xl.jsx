@@ -4,7 +4,10 @@ import propTypes from 'prop-types';
 function Titles6xl({ title, magicWord, customClass }) {
   return (
     <p className={`text-3xl font-bold text-center w-[90%] lg:text-6xl ${customClass}`}>
-      {title.split(' ').map((word) => (word === magicWord ? <span key={word} className="text-ise-orange">{`${magicWord} `}</span> : <span key={word}>{`${word} `}</span>))}
+      {title.split(' ').map((word) => (
+        word === magicWord
+          ? <span key={word} className="text-ise-orange">{`${magicWord} `}</span>
+          : <span key={word}>{`${word} `}</span>))}
     </p>
   );
 }

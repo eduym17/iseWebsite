@@ -7,7 +7,11 @@ function PrivacyTexts({
 }) {
   return (
     <div className="containerContent">
-      <Subtitles title={title} magicWord={magicWord} customClass={`${customClass}`} />
+      <Subtitles
+        title={title}
+        magicWord={magicWord}
+        customClass={`${customClass}`}
+      />
       <Paragraph customClass={`mt-2 text-justify whitespace-pre-line ${customClassParagraph}`}>
         {children}
       </Paragraph>
