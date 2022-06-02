@@ -10,9 +10,16 @@ function PrivacyPolicy() {
     <div className="text-ise-gray-30 font-Cabin selection:bg-ise-orange selection:text-ise-white">
       <ScrollToTop />
       <Header />
-      <div id="landingPage" className="landingPage bg-ise-gray-10 containerFull">
+      <div
+        id="privacyPolicyPage"
+        className="privacyPolicyPage bg-ise-gray-10 containerFull"
+      >
         <div className="containerContent pb-8 md:pb-10 md:px-7 lg:pb-12">
-          <Titles title="Política de privacidad" magicWord="privacidad" customClass="mt-5 lg:mt-6" />
+          <Titles
+            title="Política de privacidad"
+            magicWord="privacidad"
+            customClass="mt-5 lg:mt-6"
+          />
           <Paragraph customClass="mt-4 text-justify whitespace-pre-line lg:mb-4">
             De conformidad con la Ley Federal de Protección de Datos personales en Posesión de
             {' '}
@@ -28,7 +35,13 @@ function PrivacyPolicy() {
           </Paragraph>
           {
             Privacy.map((subtitle) => (
-              <PrivacyTexts title={subtitle.title} key={subtitle.title} magicWord="" customClass="mt-8" customClassParagraph="mt-2">
+              <PrivacyTexts
+                title={subtitle.title}
+                key={subtitle.title}
+                magicWord=""
+                customClass="mt-8"
+                customClassParagraph="mt-2"
+              >
                 {subtitle.info}
               </PrivacyTexts>
             ))

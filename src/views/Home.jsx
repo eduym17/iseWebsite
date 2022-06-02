@@ -17,32 +17,64 @@ function Home() {
     <div className="text-ise-gray-30 font-Cabin">
       <ScrollToTop />
       <Header />
-      <div id="landingPage" className="landingPage bg-ise-gray-10 containerFull selection:bg-ise-orange selection:text-ise-white">
+      <div
+        id="landingPage"
+        className="landingPage bg-ise-gray-10 containerFull selection:bg-ise-orange selection:text-ise-white"
+      >
         <div className="containerContent md:flex-row-reverse md:justify-center md:py-8 md:px-7">
-          <img src={LandingImg} alt="sistema fotovoltaico" className="w-4/6 max-w-xs lg:max-w-xl" />
+          <img
+            src={LandingImg}
+            alt="sistema fotovoltaico"
+            className="w-4/6 max-w-xs lg:max-w-xl"
+          />
           <div className="flex flex-col items-center md:items-start lg:w-1/2 md:w-1/2">
-            <Titles6xl title="Los beneficios del Sol, siempre a tu alcance" magicWord="beneficios" customClass="mt-5 md:text-left lg:w-full" />
+            <Titles6xl
+              title="Los beneficios del Sol, siempre a tu alcance"
+              magicWord="beneficios"
+              customClass="mt-5 md:text-left lg:w-full"
+            />
             <Paragraph customClass="mt-3 md:text-left md:w-5/6 lg:w-4/5">
               Genera tu propia energía y comienza a ahorrar de inmediato,
               {' '}
               tenemos la solución que necesitas.
             </Paragraph>
-            <ButtonAnchor href="/#contacto" customClass="my-5">Ponte en contacto</ButtonAnchor>
+            <ButtonAnchor
+              href="/#contacto"
+              customClass="my-5"
+            >
+              Ponte en contacto
+            </ButtonAnchor>
           </div>
         </div>
         <ClientsBar customClass="py-5 lg:py-8" />
       </div>
       <div className="solutionsSection bg-ise-gray-20 containerFull selection:bg-ise-orange selection:text-ise-white">
         <div className="containerContent">
-          <Titles title="Nuestras soluciones" magicWord="soluciones" customClass="mt-6 lg:mt-12" />
+          <Titles
+            title="Nuestras soluciones"
+            magicWord="soluciones"
+            customClass="mt-6 lg:mt-12"
+          />
           <Paragraph customClass="mt-1 lg:mt-2">
             Tecnologías rentables que te permitirán generar ahorros con el poder del Sol.
           </Paragraph>
           <div className="flex flex-col items-center md:flex-row md:justify-center md:gap-2 lg:gap-8">
             <div className="flex flex-col items-center md:w-2/5">
-              <img src={electricMobImg} alt="Energía eléctrica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-6" />
-              <img src={electricDeskImg} alt="Energía eléctrica" className="hidden md:flex w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit" />
-              <Subtitles title="Energía eléctrica" magicWord="eléctrica" customClass="mt-1 lg:mt-2" />
+              <img
+                src={electricMobImg}
+                alt="Energía eléctrica"
+                className="md:hidden w-[90%] max-w-sm rounded-lg mt-6"
+              />
+              <img
+                src={electricDeskImg}
+                alt="Energía eléctrica"
+                className="hidden md:flex w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit"
+              />
+              <Subtitles
+                title="Energía eléctrica"
+                magicWord="eléctrica"
+                customClass="mt-1 lg:mt-2"
+              />
               <Paragraph customClass="mt-1 md:w-[90%]">
                 Aprovecha techos, suelos y estacionamientos para generar tu
                 {' '}
@@ -50,9 +82,21 @@ function Home() {
               </Paragraph>
             </div>
             <div className="flex flex-col items-center md:w-2/5">
-              <img src={thermalMobImg} alt="Energía térmica" className="md:hidden w-[90%] max-w-sm rounded-lg mt-6" />
-              <img src={thermalDeskImg} alt="Energía térmica" className="hidden md:flex w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit" />
-              <Subtitles title="Energía térmica" magicWord="térmica" customClass="mt-1 lg:mt-2" />
+              <img
+                src={thermalMobImg}
+                alt="Energía térmica"
+                className="md:hidden w-[90%] max-w-sm rounded-lg mt-6"
+              />
+              <img
+                src={thermalDeskImg}
+                alt="Energía térmica"
+                className="hidden md:flex w-[90%] max-w-sm rounded-lg mt-6 lg:mt-10 lg:h-40 lg:w-fit"
+              />
+              <Subtitles
+                title="Energía térmica"
+                magicWord="térmica"
+                customClass="mt-1 lg:mt-2"
+              />
               <Paragraph customClass="mt-1 md:w-[90%]">
                 Instala un sistema de calentamiento solar que te ayude a disminuir tu
                 {' '}
@@ -60,32 +104,53 @@ function Home() {
               </Paragraph>
             </div>
           </div>
-          <ButtonLink to="/soluciones" customClass="my-6 lg:my-12">Conoce más</ButtonLink>
+          <ButtonLink
+            to="/soluciones"
+            customClass="my-6 lg:my-12"
+          >
+            Conoce más
+          </ButtonLink>
         </div>
       </div>
       <ExperienceBar customClass="" />
       <div className="servicesSection bg-ise-gray-10 containerFull selection:bg-ise-orange selection:text-ise-white">
         <div className="containerContent">
-          <Titles title="Nuestros servicios" magicWord="servicios" customClass="mt-6 lg:mt-12" />
+          <Titles
+            title="Nuestros servicios"
+            magicWord="servicios"
+            customClass="mt-6 lg:mt-12"
+          />
           <Paragraph customClass="mt-1 lg:mt-2">
             Servicios diseñados para ayudarte a potenciar tu proyecto,
             {' '}
             a la medida de tus necesidades.
           </Paragraph>
           <div className="flex flex-col items-center md:flex-row md:items-start md:gap-3 md:my-8 md:justify-center md:w-11/12 lg:w-5/6 lg:gap-6 lg:mt-10 lg:mb-12">
-            <ServiceCard title="Financiamiento" icon={financiamientoIcon} customClass="mt-6 md:mt-0">
+            <ServiceCard
+              title="Financiamiento"
+              icon={financiamientoIcon}
+              customClass="mt-6 md:mt-0"
+            >
               Llevamos hasta ti diferentes esquemas y fuentes de financiamiento,
               {' '}
               de acuerdo con las necesidades y requerimientos de tu proyecto.
             </ServiceCard>
-            <ServiceCard title="Ingeniería, suministro y construcción" icon={epcIcon} customClass="mt-3 md:mt-0">
+            <ServiceCard
+              title="Ingeniería, suministro y construcción"
+              icon={epcIcon}
+              customClass="mt-3 md:mt-0"
+            >
               Desarrollamos proyectos llave en mano, incluyendo ingeniería, procura y construcción,
               {' '}
               con base en energías renovables, especializándonos en energía solar para generación de
               {' '}
               electricidad y calentamiento de fluidos.
             </ServiceCard>
-            <ServiceCard title="Ingeniería y asesoría" icon={asesoriaIcon} customClass="mt-3 mb-8 md:my-0">
+            <ServiceCard
+              title="Ingeniería y asesoría"
+              icon={asesoriaIcon}
+              customClass="mt-3 mb-8 md:my-0"
+            >
               Nuestra experiencia en los aspectos técnicos y regulatorios nos permiten desarrollar
               {' '}
               correctamente proyectos de energía renovable de mediana y gran escala, garantizándote
@@ -95,23 +160,46 @@ function Home() {
           </div>
         </div>
       </div>
-      <div id="proyectos" className="projectsSection bg-ise-gray-20 containerFull selection:bg-ise-orange selection:text-ise-white">
+      <div
+        id="proyectos"
+        className="projectsSection bg-ise-gray-20 containerFull selection:bg-ise-orange selection:text-ise-white"
+      >
         <div className="containerContent">
-          <Titles title="Proyectos recientes" magicWord="Proyectos" customClass="mt-6 lg:mt-12" />
+          <Titles
+            title="Proyectos recientes"
+            magicWord="Proyectos"
+            customClass="mt-6 lg:mt-12"
+          />
           <Paragraph customClass="mt-1 lg:mt-2">
             Soluciones inteligentes, siempre a la medida de las necesidades de nuestros clientes.
           </Paragraph>
           <div className="w-full  flex flex-col items-center md:flex-row md:items-start md:justify-center md:gap-3 md:w-11/12 md:mt-6 md:mb-8 lg:mt-10 lg:mb-12 lg:gap-6">
-            <ProjectItem mobileImg={roblesMobImg} desktopImg={roblesDeskImg} title="Los Robles" customClass="mt-6 md:mt-0" customClassTexts="">
+            <ProjectItem
+              mobileImg={roblesMobImg}
+              desktopImg={roblesDeskImg}
+              title="Los Robles"
+              customClass="mt-6 md:mt-0"
+              customClassTexts=""
+            >
               {`Calentamiento solar de alberca.
               Capacidad instalada: 84 kW.`}
             </ProjectItem>
-            <ProjectItem mobileImg={juncoMobImg} desktopImg={juncoDeskImg} title="El Junco" customClass="mt-3 md:mt-0">
+            <ProjectItem
+              mobileImg={juncoMobImg}
+              desktopImg={juncoDeskImg}
+              title="El Junco"
+              customClass="mt-3 md:mt-0"
+            >
               {`Sistema fotovoltaico.
               Generación distribuida.
               Capacidad instalada: 499 kW.`}
             </ProjectItem>
-            <ProjectItem mobileImg={coatzaMobImg} desktopImg={coatzaDeskImg} title="CIIT" customClass="mt-3 mb-8 md:my-0">
+            <ProjectItem
+              mobileImg={coatzaMobImg}
+              desktopImg={coatzaDeskImg}
+              title="CIIT"
+              customClass="mt-3 mb-8 md:my-0"
+            >
               {`Sistema fotovoltaico.
               Capacidad instalada: 90 kW.`}
             </ProjectItem>
@@ -120,23 +208,54 @@ function Home() {
       </div>
       <div className="xpSection bg-ise-gray-10 containerFull selection:bg-ise-orange selection:text-ise-white">
         <div className="containerContent">
-          <Titles title="Nuestra experiencia" magicWord="experiencia" customClass="mt-6 lg:mt-12" />
+          <Titles
+            title="Nuestra experiencia"
+            magicWord="experiencia"
+            customClass="mt-6 lg:mt-12"
+          />
           <Paragraph customClass="mt-1 lg:mt-2">
             Somos un equipo de profesionales altamente capacitados para atender los
             {' '}
             proyectos más exigentes.
           </Paragraph>
           <div className="flex flex-col items-center md:flex-row md:w-11/12 lg:w-full lg:justify-center md:gap-3">
-            <ExperienceItem text="años de experiencia" magicWord="años" image={xp15} customClass="mt-6 md:mt-10 lg:mt-12" />
-            <ExperienceItem text="proyectos ejecutados" magicWord="proyectos" image={xp30} customClass="mt-10 lg:mt-12" />
-            <ExperienceItem text="MW instalados" magicWord="MW" image={xp85} customClass="mt-10 lg:mt-12" />
+            <ExperienceItem
+              text="años de experiencia"
+              magicWord="años"
+              image={xp15}
+              customClass="mt-6 md:mt-10 lg:mt-12"
+            />
+            <ExperienceItem
+              text="proyectos ejecutados"
+              magicWord="proyectos"
+              image={xp30}
+              customClass="mt-10 lg:mt-12"
+            />
+            <ExperienceItem
+              text="MW instalados"
+              magicWord="MW"
+              image={xp85}
+              customClass="mt-10 lg:mt-12"
+            />
           </div>
-          <ButtonLink to="/nosotros" customClass="mt-10 mb-8 lg:my-12">Acerca de nosotros</ButtonLink>
+          <ButtonLink
+            to="/nosotros"
+            customClass="mt-10 mb-8 lg:my-12"
+          >
+            Acerca de nosotros
+          </ButtonLink>
         </div>
       </div>
-      <div id="faqs" className="faqSection bg-ise-gray-20 containerFull selection:bg-ise-orange selection:text-ise-white">
+      <div
+        id="faqs"
+        className="faqSection bg-ise-gray-20 containerFull selection:bg-ise-orange selection:text-ise-white"
+      >
         <div className="containerContent">
-          <Titles title="Preguntas frecuentes" magicWord="frecuentes" customClass="mt-6 lg:mt-12" />
+          <Titles
+            title="Preguntas frecuentes"
+            magicWord="frecuentes"
+            customClass="mt-6 lg:mt-12"
+          />
           <Paragraph customClass="mt-1 md:w-1/2 lg:mt-2">
             Resuelve tus dudas acerca del funcionamiento de los sistemas solares,
             {' '}
@@ -144,7 +263,11 @@ function Home() {
           </Paragraph>
           <div className="faqs flex flex-col items-center mb-8 md:flex-row md:justify-center md:items-start lg:mb-12">
             <div className="faqElectrica flex flex-col items-center md:w-2/3 lg:w-2/5">
-              <Subtitles title="Energía eléctrica" magicWord="eléctrica" customClass="mt-6 mb-1 lg:mt-10" />
+              <Subtitles
+                title="Energía eléctrica"
+                magicWord="eléctrica"
+                customClass="mt-6 mb-1 lg:mt-10"
+              />
               {
                 faqsFV.map((faq) => (
                   <Faqs question={faq.question} key={faq.question} customClass="my-1">
@@ -154,7 +277,11 @@ function Home() {
               }
             </div>
             <div className="faqTermica flex flex-col items-center md:w-2/3 lg:w-2/5">
-              <Subtitles title="Energía térmica" magicWord="térmica" customClass="mt-6 mb-1 lg:mt-10" />
+              <Subtitles
+                title="Energía térmica"
+                magicWord="térmica"
+                customClass="mt-6 mb-1 lg:mt-10"
+              />
               {
                 faqsFT.map((faq) => (
                   <Faqs question={faq.question} key={faq.question} customClass="my-1">
@@ -169,8 +296,14 @@ function Home() {
       <div id="contacto" className="contactSection bg-ise-orange text-ise-white containerFull selection:bg-ise-white selection:text-ise-orange">
         <div className="containerContent md:flex-row md:items-start md:justify-center md:px-10 md:py-6">
           <div className="md:w-7/12 flex flex-col items-center md:items-start">
-            <TitlesNegative title="¿Aún tienes alguna pregunta?" customClass="mt-6 md:text-left" />
-            <Subtitles title="¡Ponte en contacto con nosotros!" customClass="mt-2 md:text-left" />
+            <TitlesNegative
+              title="¿Aún tienes alguna pregunta?"
+              customClass="mt-6 md:text-left"
+            />
+            <Subtitles
+              title="¡Ponte en contacto con nosotros!"
+              customClass="mt-2 md:text-left"
+            />
             <Paragraph customClass="text-justify mt-1 md:mb-6 md:w-5/6 lg:w-4/5 lg:text-left">
               Acércate a nosotros para poder ofrecerte una solución a la medida de tus necesidades,
               {' '}
