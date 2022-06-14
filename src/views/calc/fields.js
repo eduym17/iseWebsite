@@ -4,7 +4,7 @@ const INFOCLIENT = [
     placeholder: 'Nombre aquí',
     customClass: '',
     required: true,
-    disabled: false,
+    disabled: true,
     type: 'text',
   },
   {
