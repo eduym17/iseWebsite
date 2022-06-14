@@ -14,6 +14,8 @@ jest.mock('../../components/images.js', () => ({
 
 const CLASS_INICIO_ONE = 'hidden';
 const CLASS_INICIO_TWO = 'hidden font-semibold text-lg lg:flex items-center gap-12';
+const CLASS_PRIVACY = 'hover:text-ise-orange';
+const CLASS_LINKEDIN = 'h-7';
 
 describe('About Us view', () => {
   it('Should render view', () => {
@@ -37,5 +39,19 @@ describe('About Us view', () => {
     expect(inicioHeaderTextOne.parentElement).toHaveClass(CLASS_INICIO_ONE);
     expect(inicioHeaderTextTwo).toBeInTheDocument();
     expect(inicioHeaderTextTwo.parentElement).toHaveClass(CLASS_INICIO_TWO);
+  });
+
+  it('Should render footer component', () => {
+    render(
+      <BrowserRouter>
+        <AboutUs />
+      </BrowserRouter>,
+    );
+    const privacyPolicyFooter = screen.getByText('Política de privacidad');
+    const linkedInIconFooter = screen.getByAltText('LinkedIn icon');
+    expect(privacyPolicyFooter).toBeInTheDocument();
+    expect(privacyPolicyFooter).toHaveClass(CLASS_PRIVACY);
+    expect(linkedInIconFooter).toBeInTheDocument();
+    expect(linkedInIconFooter).toHaveClass(CLASS_LINKEDIN);
   });
 });
