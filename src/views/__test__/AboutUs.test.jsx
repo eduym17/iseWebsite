@@ -17,6 +17,10 @@ const CLASS_INICIO_TWO = 'hidden font-semibold text-lg lg:flex items-center gap-
 const CLASS_PRIVACY = 'hover:text-ise-orange';
 const CLASS_LINKEDIN = 'h-7';
 const CLASS_TITLES_ONE = 'text-ise-orange';
+const MAIN_TEXT = 'Fundada en el año 2017, y con más de diez años de experiencia dentro de la industria de las energías renovables, In Situ Energía se ha convertido en la empresa proveedora de servicios de Ingeniería, Procura y Construcción (EPC, por sus siglas en inglés), referente del rubro. Desarrollamos con profesionalismo cada uno de nuestros proyectos, apoyados en nuestras capacidades técnicas, regulatorias y financieras, a través de las cuales somos capaces de generar proyectos de alta calidad.';
+const CLASS_MAIN_TEXT = 'font-Hero text-sm text-center w-[90%] md:w-full lg:text-base mt-3 mb-6 whitespace-pre-line text-justify md:w-full md:mt-4';
+const SECONDARY_TEXT = 'Somos una empresa profundamente comprometida con las causas sociales y el combate al cambio climático, estamos seguros de que podemos ayudar a dejar un mundo mejor para las siguientes generaciones. Actualmente nuestra plantilla está compuesta por 50% de integrantes del género femenino y 50% del género masculino. No tenemos duda de que los mejores resultados surgen cuando combinamos todos nuestros talentos.';
+const CLASS_SECONDARY_TEXT = 'font-Hero text-sm text-center w-[90%] md:w-full lg:text-base mt-3 mb-8 whitespace-pre-line text-justify md:w-full md:mt-4';
 
 describe('About Us view', () => {
   it('Should render view', () => {
@@ -70,5 +74,19 @@ describe('About Us view', () => {
     expect(compromisoTitlesText).toBeInTheDocument();
     expect(compromisoTitlesText).toHaveClass(CLASS_TITLES_ONE);
     expect(compromisoTitlesText.previousSibling).toHaveTextContent('Nuestro');
+  });
+
+  it('Should render paragraph component', () => {
+    render(
+      <BrowserRouter>
+        <AboutUs />
+      </BrowserRouter>,
+    );
+    const companyMainText = screen.getByText(MAIN_TEXT);
+    const companySecondaryText = screen.getByText(SECONDARY_TEXT);
+    expect(companyMainText).toBeInTheDocument();
+    expect(companyMainText).toHaveClass(CLASS_MAIN_TEXT);
+    expect(companySecondaryText).toBeInTheDocument();
+    expect(companySecondaryText).toHaveClass(CLASS_SECONDARY_TEXT);
   });
 });
