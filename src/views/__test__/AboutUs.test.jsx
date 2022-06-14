@@ -16,6 +16,7 @@ const CLASS_INICIO_ONE = 'hidden';
 const CLASS_INICIO_TWO = 'hidden font-semibold text-lg lg:flex items-center gap-12';
 const CLASS_PRIVACY = 'hover:text-ise-orange';
 const CLASS_LINKEDIN = 'h-7';
+const CLASS_TITLES_ONE = 'text-ise-orange';
 
 describe('About Us view', () => {
   it('Should render view', () => {
@@ -53,5 +54,21 @@ describe('About Us view', () => {
     expect(privacyPolicyFooter).toHaveClass(CLASS_PRIVACY);
     expect(linkedInIconFooter).toBeInTheDocument();
     expect(linkedInIconFooter).toHaveClass(CLASS_LINKEDIN);
+  });
+
+  it('Should render titles component', () => {
+    render(
+      <BrowserRouter>
+        <AboutUs />
+      </BrowserRouter>,
+    );
+    const alianzasTitlesText = screen.getByText(/alianzas/i);
+    const compromisoTitlesText = screen.getByText(/compromiso/i);
+    expect(alianzasTitlesText).toBeInTheDocument();
+    expect(alianzasTitlesText).toHaveClass(CLASS_TITLES_ONE);
+    expect(alianzasTitlesText.previousSibling).toHaveTextContent('Nuestras');
+    expect(compromisoTitlesText).toBeInTheDocument();
+    expect(compromisoTitlesText).toHaveClass(CLASS_TITLES_ONE);
+    expect(compromisoTitlesText.previousSibling).toHaveTextContent('Nuestro');
   });
 });
