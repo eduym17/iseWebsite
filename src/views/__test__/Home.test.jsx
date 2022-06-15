@@ -46,4 +46,50 @@ describe('Home view', () => {
     expect(twitterIconFooter).toBeInTheDocument();
     expect(twitterIconFooter).toHaveClass(CLASS_TWITTER);
   });
+
+  it('Should render buttons', () => {
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
+    const buttonAnchorOne = screen.getByText('Ponte en contacto');
+    const buttonLinkOne = screen.getByText('Conoce más');
+    const buttonLinkTwo = screen.getByText('Acerca de nosotros');
+    expect(buttonAnchorOne).toBeInTheDocument();
+    expect(buttonLinkOne).toBeInTheDocument();
+    expect(buttonLinkTwo).toBeInTheDocument();
+  });
+
+  it('Should render titles and subtitles', () => {
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
+    const titles6xl = screen.getByText(/alcance/i);
+    const titlesOne = screen.getByText(/Nuestras/i);
+    const titlesTwo = screen.getAllByText(/servicios/i)[0];
+    const titlesThree = screen.getByText(/recientes/i);
+    const titlesFour = screen.getAllByText(/experiencia/i)[1];
+    const titlesFive = screen.getByText(/Preguntas/i);
+    const titlesNegative = screen.getByText(/alguna/i);
+    const subtitlesOne = screen.getAllByText(/eléctrica/i)[2];
+    const subtitlesTwo = screen.getAllByText(/térmica/i)[0];
+    const subtitlesThree = screen.getByText(/nosotros!/i);
+    expect(titles6xl).toBeInTheDocument();
+    expect(titlesOne).toBeInTheDocument();
+    expect(titlesTwo).toBeInTheDocument();
+    expect(titlesTwo).toHaveClass('text-ise-orange');
+    expect(titlesThree).toBeInTheDocument();
+    expect(titlesFour).toBeInTheDocument();
+    expect(titlesFour).toHaveClass('text-ise-orange');
+    expect(titlesFive).toBeInTheDocument();
+    expect(titlesNegative).toBeInTheDocument();
+    expect(subtitlesOne).toBeInTheDocument();
+    expect(subtitlesOne).toHaveClass('text-ise-orange');
+    expect(subtitlesTwo).toBeInTheDocument();
+    expect(subtitlesTwo).toHaveClass('text-ise-orange');
+    expect(subtitlesThree).toBeInTheDocument();
+  });
 });
