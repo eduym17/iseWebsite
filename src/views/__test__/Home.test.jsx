@@ -25,6 +25,9 @@ const PARAGRAPH_SIX = 'Soluciones inteligentes, siempre a la medida de las neces
 const PARAGRAPH_SEVEN = 'Somos un equipo de profesionales altamente capacitados para atender los proyectos más exigentes.';
 const PARAGRAPH_EIGHT = 'Resuelve tus dudas acerca del funcionamiento de los sistemas solares, te compartimos las más frecuentes a continuación.';
 const PARAGRAPH_NINE = 'Acércate a nosotros para poder ofrecerte una solución a la medida de tus necesidades, escucharemos tus opiniones y buscaremos optimizar tus proyectos.';
+const CLASS_EXPERIENCE_ONE = 'leading-none font-Hero text-sm lg:text-lg lg:leading-none';
+const CLASS_EXPERIENCE_TWO = 'text-4xl font-bold lg:text-6xl';
+const CLASS_CLIENTBAR_IMG = 'h-10 md:h-12 lg:h-14';
 
 describe('Home view', () => {
   it('Should render', () => {
@@ -126,5 +129,39 @@ describe('Home view', () => {
     expect(paragraphSeven).toBeInTheDocument();
     expect(paragraphEight).toBeInTheDocument();
     expect(paragraphNine).toBeInTheDocument();
+  });
+
+  it('Should render experience bar', () => {
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
+    const clientsText = screen.getByText(/satisfechos/i);
+    const plus30Text = screen.getByText('+30');
+    const megawattsText = screen.getByText(/MegaWatts/i);
+    expect(clientsText).toBeInTheDocument();
+    expect(clientsText).toHaveClass(CLASS_EXPERIENCE_ONE);
+    expect(plus30Text).toBeInTheDocument();
+    expect(plus30Text).toHaveClass(CLASS_EXPERIENCE_TWO);
+    expect(megawattsText).toBeInTheDocument();
+    expect(megawattsText).toHaveClass(CLASS_EXPERIENCE_ONE);
+  });
+
+  it('Should render clients bar', () => {
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
+    const toyotaImg = screen.getByAltText('Toyota');
+    const roblesImg = screen.getAllByAltText('Los Robles')[0];
+    const pemexImg = screen.getByAltText('PEMEX');
+    expect(toyotaImg).toBeInTheDocument();
+    expect(toyotaImg).toHaveClass(CLASS_CLIENTBAR_IMG);
+    expect(roblesImg).toBeInTheDocument();
+    expect(roblesImg).toHaveClass(CLASS_CLIENTBAR_IMG);
+    expect(pemexImg).toBeInTheDocument();
+    expect(pemexImg).toHaveClass(CLASS_CLIENTBAR_IMG);
   });
 });
