@@ -31,6 +31,8 @@ const CLASS_CLIENTBAR_IMG = 'h-10 md:h-12 lg:h-14';
 const TEXT_SERVICECARD_ONE = 'Llevamos hasta ti diferentes esquemas y fuentes de financiamiento, de acuerdo con las necesidades y requerimientos de tu proyecto.';
 const TEXT_SERVICECARD_TWO = 'Desarrollamos proyectos llave en mano, incluyendo ingeniería, procura y construcción, con base en energías renovables, especializándonos en energía solar para generación de electricidad y calentamiento de fluidos.';
 const TEXT_SERVICECARD_THREE = 'Nuestra experiencia en los aspectos técnicos y regulatorios nos permiten desarrollar correctamente proyectos de energía renovable de mediana y gran escala, garantizándote un diseño óptimo.';
+const FAQ_TEXT_ONE = 'Los sistemas interconectados a la red no requieren de baterías. Sólo los sistemas que están aislados de la red las requieren.';
+const FAQ_TEXT_LAST = 'Con un sistema de este tipo puedes calentar agua para uso doméstico en regaderas o lavandería, también es posible utilizarlo en industrias o comercios para calentamiento de agua en hoteles, hospitales, restaurantes, lavanderías, procesos industriales y para albercas, entre muchos otros usos.';
 
 describe('Home view', () => {
   it('Should render', () => {
@@ -214,5 +216,19 @@ describe('Home view', () => {
     expect(serviceCardTwo.parentElement.nextSibling).toHaveTextContent(TEXT_SERVICECARD_TWO);
     expect(serviceCardThree).toBeInTheDocument();
     expect(serviceCardThree.parentElement.nextSibling).toHaveTextContent(TEXT_SERVICECARD_THREE);
+  });
+
+  it('Should render faqs', () => {
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
+    const faqOne = screen.getByText('¿Los sistemas solares usan baterías?');
+    const faqLast = screen.getByText('¿En dónde lo puedo usar?');
+    expect(faqOne).toBeInTheDocument();
+    expect(faqOne.parentElement.nextSibling).toHaveTextContent(FAQ_TEXT_ONE);
+    expect(faqLast).toBeInTheDocument();
+    expect(faqLast.parentElement.nextSibling).toHaveTextContent(FAQ_TEXT_LAST);
   });
 });
