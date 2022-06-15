@@ -164,4 +164,35 @@ describe('Home view', () => {
     expect(pemexImg).toBeInTheDocument();
     expect(pemexImg).toHaveClass(CLASS_CLIENTBAR_IMG);
   });
+
+  it('Should render project items', () => {
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
+    const projectItemOne = screen.getByText(/84 kW/i);
+    const projectItemTwo = screen.getByText(/499 kW/i);
+    const projectItemThree = screen.getByText(/90 kW/i);
+    expect(projectItemOne).toBeInTheDocument();
+    expect(projectItemTwo).toBeInTheDocument();
+    expect(projectItemThree).toBeInTheDocument();
+  });
+
+  it('Should render experience items', () => {
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
+    const expItemOne = screen.getAllByText(/experiencia/i)[2];
+    const expItemTwo = screen.getByText('ejecutados');
+    const expItemThree = screen.getByText('instalados');
+    expect(expItemOne).toBeInTheDocument();
+    expect(expItemOne.previousSibling.previousSibling).toHaveClass('text-ise-orange');
+    expect(expItemTwo).toBeInTheDocument();
+    expect(expItemTwo.previousSibling).toHaveClass('text-ise-orange');
+    expect(expItemThree).toBeInTheDocument();
+    expect(expItemThree.previousSibling).toHaveClass('text-ise-orange');
+  });
 });
