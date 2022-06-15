@@ -28,6 +28,9 @@ const PARAGRAPH_NINE = 'Acércate a nosotros para poder ofrecerte una solución 
 const CLASS_EXPERIENCE_ONE = 'leading-none font-Hero text-sm lg:text-lg lg:leading-none';
 const CLASS_EXPERIENCE_TWO = 'text-4xl font-bold lg:text-6xl';
 const CLASS_CLIENTBAR_IMG = 'h-10 md:h-12 lg:h-14';
+const TEXT_SERVICECARD_ONE = 'Llevamos hasta ti diferentes esquemas y fuentes de financiamiento, de acuerdo con las necesidades y requerimientos de tu proyecto.';
+const TEXT_SERVICECARD_TWO = 'Desarrollamos proyectos llave en mano, incluyendo ingeniería, procura y construcción, con base en energías renovables, especializándonos en energía solar para generación de electricidad y calentamiento de fluidos.';
+const TEXT_SERVICECARD_THREE = 'Nuestra experiencia en los aspectos técnicos y regulatorios nos permiten desarrollar correctamente proyectos de energía renovable de mediana y gran escala, garantizándote un diseño óptimo.';
 
 describe('Home view', () => {
   it('Should render', () => {
@@ -194,5 +197,22 @@ describe('Home view', () => {
     expect(expItemTwo.previousSibling).toHaveClass('text-ise-orange');
     expect(expItemThree).toBeInTheDocument();
     expect(expItemThree.previousSibling).toHaveClass('text-ise-orange');
+  });
+
+  it('Should render service card', () => {
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
+    const serviceCardOne = screen.getByText('Financiamiento');
+    const serviceCardTwo = screen.getByText('Ingeniería, suministro y construcción');
+    const serviceCardThree = screen.getByText('Ingeniería y asesoría');
+    expect(serviceCardOne).toBeInTheDocument();
+    expect(serviceCardOne.parentElement.nextSibling).toHaveTextContent(TEXT_SERVICECARD_ONE);
+    expect(serviceCardTwo).toBeInTheDocument();
+    expect(serviceCardTwo.parentElement.nextSibling).toHaveTextContent(TEXT_SERVICECARD_TWO);
+    expect(serviceCardThree).toBeInTheDocument();
+    expect(serviceCardThree.parentElement.nextSibling).toHaveTextContent(TEXT_SERVICECARD_THREE);
   });
 });
