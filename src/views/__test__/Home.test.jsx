@@ -16,6 +16,15 @@ const CLASS_INICIO_ONE = 'hidden';
 const CLASS_INICIO_TWO = 'hidden font-semibold text-lg lg:flex items-center gap-12';
 const CLASS_PRIVACY = 'hover:text-ise-orange';
 const CLASS_TWITTER = 'h-7';
+const PARAGRAPH_ONE = 'Genera tu propia energía y comienza a ahorrar de inmediato, tenemos la solución que necesitas.';
+const PARAGRAPH_TWO = 'Tecnologías rentables que te permitirán generar ahorros con el poder del Sol.';
+const PARAGRAPH_THREE = 'Aprovecha techos, suelos y estacionamientos para generar tu propia energía eléctrica.';
+const PARAGRAPH_FOUR = 'Instala un sistema de calentamiento solar que te ayude a disminuir tu consumo de gas.';
+const PARAGRAPH_FIVE = 'Servicios diseñados para ayudarte a potenciar tu proyecto, a la medida de tus necesidades.';
+const PARAGRAPH_SIX = 'Soluciones inteligentes, siempre a la medida de las necesidades de nuestros clientes.';
+const PARAGRAPH_SEVEN = 'Somos un equipo de profesionales altamente capacitados para atender los proyectos más exigentes.';
+const PARAGRAPH_EIGHT = 'Resuelve tus dudas acerca del funcionamiento de los sistemas solares, te compartimos las más frecuentes a continuación.';
+const PARAGRAPH_NINE = 'Acércate a nosotros para poder ofrecerte una solución a la medida de tus necesidades, escucharemos tus opiniones y buscaremos optimizar tus proyectos.';
 
 describe('Home view', () => {
   it('Should render', () => {
@@ -91,5 +100,31 @@ describe('Home view', () => {
     expect(subtitlesTwo).toBeInTheDocument();
     expect(subtitlesTwo).toHaveClass('text-ise-orange');
     expect(subtitlesThree).toBeInTheDocument();
+  });
+
+  it('Should render paragraphs', () => {
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
+    const paragraphOne = screen.getByText(PARAGRAPH_ONE);
+    const paragraphTwo = screen.getByText(PARAGRAPH_TWO);
+    const paragraphThree = screen.getByText(PARAGRAPH_THREE);
+    const paragraphFour = screen.getByText(PARAGRAPH_FOUR);
+    const paragraphFive = screen.getByText(PARAGRAPH_FIVE);
+    const paragraphSix = screen.getByText(PARAGRAPH_SIX);
+    const paragraphSeven = screen.getByText(PARAGRAPH_SEVEN);
+    const paragraphEight = screen.getByText(PARAGRAPH_EIGHT);
+    const paragraphNine = screen.getByText(PARAGRAPH_NINE);
+    expect(paragraphOne).toBeInTheDocument();
+    expect(paragraphTwo).toBeInTheDocument();
+    expect(paragraphThree).toBeInTheDocument();
+    expect(paragraphFour).toBeInTheDocument();
+    expect(paragraphFive).toBeInTheDocument();
+    expect(paragraphSix).toBeInTheDocument();
+    expect(paragraphSeven).toBeInTheDocument();
+    expect(paragraphEight).toBeInTheDocument();
+    expect(paragraphNine).toBeInTheDocument();
   });
 });
