@@ -33,6 +33,8 @@ const TEXT_SERVICECARD_TWO = 'Desarrollamos proyectos llave en mano, incluyendo 
 const TEXT_SERVICECARD_THREE = 'Nuestra experiencia en los aspectos técnicos y regulatorios nos permiten desarrollar correctamente proyectos de energía renovable de mediana y gran escala, garantizándote un diseño óptimo.';
 const FAQ_TEXT_ONE = 'Los sistemas interconectados a la red no requieren de baterías. Sólo los sistemas que están aislados de la red las requieren.';
 const FAQ_TEXT_LAST = 'Con un sistema de este tipo puedes calentar agua para uso doméstico en regaderas o lavandería, también es posible utilizarlo en industrias o comercios para calentamiento de agua en hoteles, hospitales, restaurantes, lavanderías, procesos industriales y para albercas, entre muchos otros usos.';
+const CLASS_INPUTS = 'font-Hero text-sm text-ise-white bg-transparent border-b-2 w-full placeholder-ise-white lg:text-base';
+const CLASS_SUBMIT_BUTTON = 'font-bold py-1.5 px-6 bg-ise-white text-ise-orange rounded-full self-end mt-2';
 
 describe('Home view', () => {
   it('Should render', () => {
@@ -230,5 +232,22 @@ describe('Home view', () => {
     expect(faqOne.parentElement.nextSibling).toHaveTextContent(FAQ_TEXT_ONE);
     expect(faqLast).toBeInTheDocument();
     expect(faqLast.parentElement.nextSibling).toHaveTextContent(FAQ_TEXT_LAST);
+  });
+
+  it('Should render contact form', () => {
+    render(
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>,
+    );
+    const inputName = screen.getByPlaceholderText('Tu nombre*');
+    const inputText = screen.getByPlaceholderText('¡Haz una pregunta o comentario!');
+    const submitButton = screen.getByText('Enviar');
+    expect(inputName).toBeInTheDocument();
+    expect(inputName).toHaveClass(CLASS_INPUTS);
+    expect(inputText).toBeInTheDocument();
+    expect(inputText).toHaveClass(CLASS_INPUTS);
+    expect(submitButton).toBeInTheDocument();
+    expect(submitButton).toHaveClass(CLASS_SUBMIT_BUTTON);
   });
 });
