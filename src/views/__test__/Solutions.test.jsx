@@ -16,6 +16,9 @@ const CLASS_INICIO_ONE = 'hidden';
 const CLASS_INICIO_TWO = 'hidden font-semibold text-lg lg:flex items-center gap-12';
 const CLASS_PRIVACY = 'hover:text-ise-orange';
 const CLASS_TWITTER = 'h-7';
+const PARAGRAPH_ONE = 'Aprovecha techos, suelos y estacionamientos para generar tu propia energía eléctrica, reduciendo costos internos. Existen diversos esquemas de conexión eléctrica de acuerdo con la normativa emitida por la Comisión Reguladora de Energía (CRE). A continuación, una breve descripción de los más utilizados y convenientes para ti y tu negocio:';
+const PARAGRAPH_TWO = 'Diseñamos sistemas especiales para calentamiento solar de agua, generación de vapor o calentamiento de fluidos, con el objetivo de ahorrar combustible o energía eléctrica. De acuerdo con la temperatura requerida, serán necesarios fluidos y procesos diferentes. A cotinuación, una breve descripción de las soluciones para calentamiento solar que ofrecemos:';
+const PARAGRAPH_THREE = 'Somos pioneros en la implementación de sistemas para el almacenamiento de energía en México. Hemos encontrado una forma de generarte ahorros muy atractivos. Nuestro equipo de ingeniería ha desarrollado un sistema que permite llevar el control y monitoreo de baterías de forma inteligente y sencilla.';
 
 describe('Solutions view', () => {
   it('Should render', () => {
@@ -62,5 +65,19 @@ describe('Solutions view', () => {
     expect(titleTwo).toHaveClass('text-ise-orange');
     expect(titleThree).toBeInTheDocument();
     expect(titleThree).toHaveClass('text-ise-orange');
+  });
+
+  it('Should render paragraphs', () => {
+    render(
+      <BrowserRouter>
+        <Solutions />
+      </BrowserRouter>,
+    );
+    const paragraphOne = screen.getByText(PARAGRAPH_ONE);
+    const paragraphTwo = screen.getByText(PARAGRAPH_TWO);
+    const paragraphThree = screen.getByText(PARAGRAPH_THREE);
+    expect(paragraphOne).toBeInTheDocument();
+    expect(paragraphTwo).toBeInTheDocument();
+    expect(paragraphThree).toBeInTheDocument();
   });
 });
