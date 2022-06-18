@@ -13,7 +13,9 @@ In Situ Energía website.
 ## Roadmap
 
 - [x] Build first website stage.
-- [ ] Testing.
+- [ ] Testing:
+     - [x] Front End
+     - [ ] Back End (calc)
 - [ ] Photovoltaic and photothermal calculators for In Situ Energía employees.
 - [ ] Multi-language support
      - [x] Spanish
