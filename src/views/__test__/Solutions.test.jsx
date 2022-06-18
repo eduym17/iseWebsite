@@ -46,4 +46,21 @@ describe('Solutions view', () => {
     expect(twitterIconFooter).toBeInTheDocument();
     expect(twitterIconFooter).toHaveClass(CLASS_TWITTER);
   });
+
+  it('Should render titles', () => {
+    render(
+      <BrowserRouter>
+        <Solutions />
+      </BrowserRouter>,
+    );
+    const titleOne = screen.getAllByText(/eléctrica/i)[0];
+    const titleTwo = screen.getAllByText(/Calentamiento/i)[0];
+    const titleThree = screen.getAllByText(/Almacenamiento/i)[0];
+    expect(titleOne).toBeInTheDocument();
+    expect(titleOne).toHaveClass('text-ise-orange');
+    expect(titleTwo).toBeInTheDocument();
+    expect(titleTwo).toHaveClass('text-ise-orange');
+    expect(titleThree).toBeInTheDocument();
+    expect(titleThree).toHaveClass('text-ise-orange');
+  });
 });
